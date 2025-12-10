@@ -1,0 +1,465 @@
+/* 🌐 Global font for navbar */
+.navbar-container {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+    "Segoe UI", sans-serif;
+}
+
+/* 🔹 Navbar Container */
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f8f9fa; /* Soft, non-dominant background */
+  padding: 8px 22px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-radius: 0 0 12px 12px;
+  backdrop-filter: blur(6px); /* slight glass effect */
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Back Button */
+.back-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #555;
+  display: flex;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+.back-button:hover {
+  color: #ff6b81;
+  transform: translateX(-2px);
+}
+
+/* 🔸 Logo */
+.navbar-logo {
+  font-size: 1.3rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: #222;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.navbar-logo span {
+  color: #ff6b81;
+}
+
+/* small admin pill near logo */
+.admin-badge {
+  font-size: 0.62rem;
+  text-transform: uppercase;
+  background: #111827;
+  color: #f9fafb;
+  padding: 2px 6px;
+  border-radius: 999px;
+}
+
+/* 🔹 Nav Links */
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: #555;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: color 0.25s ease, transform 0.25s ease, background 0.25s ease;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  position: relative;
+  padding: 6px 12px;
+  border-radius: 8px;
+}
+
+.nav-item:hover {
+  color: #ff6b81;
+  transform: translateY(-1px);
+  background: rgba(255, 107, 129, 0.05);
+}
+
+.nav-item.active {
+  color: #ff6b81;
+  background: rgba(255, 107, 129, 0.1);
+}
+
+/* 🛒 Cart Link Specific Styles */
+.cart-link {
+  position: relative;
+  padding-right: 28px;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -6px;
+  right: 8px;
+  background: #ff4757;
+  color: white;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  font-size: 0.65rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: pulse 2s infinite;
+  border: 2px solid #f8f9fa;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(255, 71, 87, 0.7);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 4px rgba(255, 71, 87, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(255, 71, 87, 0);
+  }
+}
+
+/* Cart icon specific hover effects */
+.cart-link:hover .cart-badge {
+  animation: bounce 0.5s ease;
+}
+
+@keyframes bounce {
+  0%, 20%, 60%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-4px);
+  }
+  80% {
+    transform: translateY(-2px);
+  }
+}
+
+/* 🔹 Right side (user section) */
+.navbar-user-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Admin quick buttons */
+.admin-switch-btn,
+.admin-quick-access {
+  border: none;
+  background: #111827;
+  color: #f9fafb;
+  padding: 6px 10px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  font-size: 0.78rem;
+}
+
+.admin-switch-btn:hover,
+.admin-quick-access:hover {
+  background: #000;
+}
+
+/* 🔸 Avatar / User menu */
+.user-menu-container {
+  position: relative;
+}
+
+/* Avatar circle */
+.navbar-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid #ff6b81;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffe4ea;
+  position: relative;
+}
+
+.navbar-avatar:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(255, 107, 129, 0.35);
+}
+
+.navbar-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.avatar-placeholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #ff6b81, #ff9f43);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  border-radius: 50%;
+}
+
+/* small role tag on avatar */
+.user-role-badge {
+  position: absolute;
+  bottom: -4px;
+  right: -4px;
+  font-size: 0.6rem;
+  background: #111827;
+  color: #f9fafb;
+  padding: 2px 6px;
+  border-radius: 999px;
+}
+
+/* 🧾 Dropdown menu */
+.user-dropdown-menu {
+  position: absolute;
+  top: 46px;
+  right: 0;
+  width: 240px;
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(12px);
+  border-radius: 12px;
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.16);
+  padding: 8px 0;
+  animation: dropdownFade 0.18s ease-out;
+  z-index: 1200;
+}
+
+@keyframes dropdownFade {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Header inside dropdown */
+.dropdown-header {
+  padding: 10px 16px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.user-info strong {
+  display: block;
+  font-size: 0.9rem;
+  color: #111827;
+}
+
+.user-email {
+  display: block;
+  font-size: 0.75rem;
+  color: #6b7280;
+  margin-top: 2px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.user-role-pill {
+  margin-top: 6px;
+  display: inline-block;
+  font-size: 0.65rem;
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: #ffe4ea;
+  color: #b91c1c;
+  font-weight: 500;
+}
+
+/* Divider */
+.dropdown-divider {
+  height: 1px;
+  background: #e5e7eb;
+  margin: 8px 0;
+}
+
+/* Items */
+.dropdown-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-item {
+  padding: 8px 16px;
+  border: none;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: #374151;
+  transition: background 0.15s ease, padding-left 0.15s ease, color 0.15s ease;
+  width: 100%;
+  text-align: left;
+}
+
+.dropdown-item:hover {
+  background: rgba(255, 107, 129, 0.06);
+  padding-left: 20px;
+  color: #111827;
+}
+
+.dropdown-icon {
+  flex-shrink: 0;
+}
+
+/* Logout item special styling */
+.dropdown-item.logout {
+  color: #b91c1c;
+  font-weight: 500;
+}
+
+.dropdown-item.logout:hover {
+  background: #fef2f2;
+}
+
+/* Overlay for closing dropdown on outside click */
+.dropdown-overlay {
+  position: fixed;
+  inset: 0;
+  background: transparent;
+  z-index: 1100;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+  .navbar-container {
+    padding: 8px 16px;
+  }
+
+  .navbar-links {
+    gap: 12px;
+  }
+
+  .nav-item {
+    font-size: 0.85rem;
+    padding: 6px 8px;
+    gap: 4px;
+  }
+
+  /* Hide text on mobile for some items, show only icons if you add them later */
+  .nav-item span:not(.cart-badge) {
+    /* keep as is or comment if you want text visible */
+  }
+
+  .cart-link {
+    padding-right: 20px;
+  }
+
+  .cart-badge {
+    top: -4px;
+    right: 4px;
+    width: 16px;
+    height: 16px;
+    font-size: 0.6rem;
+  }
+
+  .navbar-logo {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-links {
+    gap: 8px;
+  }
+
+  .nav-item {
+    padding: 4px 6px;
+  }
+
+  .cart-link {
+    padding-right: 18px;
+  }
+
+  .cart-badge {
+    width: 14px;
+    height: 14px;
+    font-size: 0.55rem;
+    top: -3px;
+    right: 3px;
+  }
+}
+
+/* 🎨 Dark mode support (optional) */
+@media (prefers-color-scheme: dark) {
+  .navbar-container {
+    background: #1a1a1a;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .back-button {
+    color: #ccc;
+  }
+
+  .navbar-logo {
+    color: #fff;
+  }
+
+  .nav-item {
+    color: #ccc;
+  }
+
+  .nav-item:hover {
+    background: rgba(255, 107, 129, 0.15);
+  }
+
+  .cart-badge {
+    border-color: #1a1a1a;
+  }
+
+  .user-dropdown-menu {
+    background: rgba(17, 24, 39, 0.97);
+    color: #e5e7eb;
+  }
+
+  .dropdown-header {
+    border-bottom-color: #374151;
+  }
+
+  .dropdown-divider {
+    background: #374151;
+  }
+
+  .dropdown-item {
+    color: #d1d5db;
+  }
+
+  .dropdown-item:hover {
+    background: rgba(255, 107, 129, 0.15);
+    color: #fff;
+  }
+}

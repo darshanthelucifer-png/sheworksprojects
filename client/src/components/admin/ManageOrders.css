@@ -1,0 +1,97 @@
+.manage-orders-container {
+  width: 100%;
+  padding: 25px;
+  animation: fadeIn 0.3s ease;
+}
+
+/* Header */
+.manage-orders-header {
+  margin-bottom: 25px;
+}
+
+.manage-orders-header h1 {
+  font-size: 26px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.manage-orders-header p {
+  margin: 5px 0 0;
+  color: #666;
+}
+
+/* Toolbar */
+.manage-orders-toolbar {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.manage-orders-toolbar input {
+  flex: 1;
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.manage-orders-toolbar select {
+  padding: 10px 14px;
+  border-radius: 6px;
+  border: 1px solid #bbb;
+  cursor: pointer;
+}
+
+/* Table */
+.manage-orders-table-container {
+  overflow-x: auto;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  background: #fff;
+}
+
+.manage-orders-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.manage-orders-table th,
+.manage-orders-table td {
+  padding: 14px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+  font-size: 14px;
+}
+
+.manage-orders-table th {
+  background: #f8f9fc;
+  font-weight: 600;
+}
+
+/* Status Badge */
+.status-badge {
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.status-pending { background: #fff3cd; color: #8a6d00; }
+.status-progress { background: #d6ecff; color: #005a9c; }
+.status-completed { background: #d8ffd8; color: #1f7a1f; }
+.status-cancelled { background: #ffd6d6; color: #b30000; }
+
+/* Status Dropdown */
+.status-select {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #bbb;
+  background: #fff;
+  cursor: pointer;
+}
+
+/* Smooth Fade Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

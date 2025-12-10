@@ -1,0 +1,195 @@
+.admin-settings {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  font-family: "Inter", sans-serif;
+}
+
+.admin-settings h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.admin-settings .sub {
+  font-size: 14px;
+  color: #6f6f6f;
+  margin-bottom: 30px;
+}
+
+/* Settings Card */
+.settings-section {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 22px 20px;
+  margin-bottom: 22px;
+  border: 1px solid #e5e7eb;
+  transition: 0.2s;
+}
+
+.settings-section:hover {
+  border-color: #c9ced6;
+}
+
+.settings-section h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 18px;
+  color: #111827;
+}
+
+/* Input Row */
+.input-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input-row label {
+  font-size: 15px;
+  color: #333;
+  font-weight: 500;
+}
+
+.input-row input {
+  width: 120px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.input-row input:focus {
+  border-color: #111;
+}
+
+/* Toggle Switch */
+.toggle {
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.toggle input {
+  display: none;
+}
+
+.toggle span {
+  width: 42px;
+  height: 22px;
+  background: #cfcfcf;
+  border-radius: 20px;
+  position: relative;
+  transition: 0.3s;
+}
+
+.toggle span::after {
+  content: "";
+  width: 18px;
+  height: 18px;
+  background: white;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.toggle input:checked + span {
+  background: #111;
+}
+
+.toggle input:checked + span::after {
+  transform: translateX(20px);
+}
+
+/* Category List */
+.category-list {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.category-item {
+  background: #f9fafb;
+  padding: 10px 14px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #e5e7eb;
+}
+
+.remove-btn {
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  color: #b91c1c;
+  cursor: pointer;
+}
+
+/* Add Category Input */
+.add-category {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+}
+
+.add-category input {
+  flex: 1;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 14px;
+}
+
+.add-btn {
+  padding: 8px 12px;
+  background: #111;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Save Button */
+.save-btn {
+  width: 100%;
+  padding: 14px;
+  background: #111;
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.save-btn:hover {
+  background: #000;
+}
+
+/* ----------- RESPONSIVE ----------- */
+@media (max-width: 600px) {
+  .input-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .input-row input {
+    width: 100%;
+  }
+
+  .add-category {
+    flex-direction: column;
+  }
+
+  .add-btn {
+    width: 100%;
+  }
+}

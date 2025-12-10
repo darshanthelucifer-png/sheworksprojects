@@ -1,0 +1,4004 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Custom Embroidered Kurti",
+      "category": "Machine Embroidery",
+      "serviceId": "machine_embroidery",
+      "price": 1299,
+      "imagePath": "public/assets/products/machine_embroidery_1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Floral Embroidery Pillow Cover",
+      "category": "Machine Embroidery",
+      "serviceId": "machine_embroidery",
+      "price": 599,
+      "imagePath": "public/assets/products/machine_embroidery_2.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Pearl Embroidered Saree Blouse",
+      "category": "Pearl Embroidery",
+      "serviceId": "pearl_embroidery",
+      "price": 2499,
+      "imagePath": "public/assets/products/pearl_embroidery_1.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Pearl Handbag",
+      "category": "Pearl Embroidery",
+      "serviceId": "pearl_embroidery",
+      "price": 1799,
+      "imagePath": "public/assets/products/pearl_embroidery_2.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Beaded Wall Hanging",
+      "category": "Beads Embroidery",
+      "serviceId": "beads_embroidery",
+      "price": 899,
+      "imagePath": "public/assets/products/beads_embroidery_1.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Beaded Jewelry Box",
+      "category": "Beads Embroidery",
+      "serviceId": "beads_embroidery",
+      "price": 1299,
+      "imagePath": "public/assets/products/beads_embroidery_2.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Hand Embroidered Table Runner",
+      "category": "Hand Embroidery",
+      "serviceId": "hand_embroidery",
+      "price": 1599,
+      "imagePath": "public/assets/products/hand_embroidery_1.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Traditional Kantha Quilt",
+      "category": "Hand Embroidery",
+      "serviceId": "hand_embroidery",
+      "price": 3299,
+      "imagePath": "public/assets/products/hand_embroidery_2.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Digital Logo Embroidery Cap",
+      "category": "Machine Embroidery",
+      "serviceId": "machine_embroidery",
+      "price": 499,
+      "imagePath": "public/assets/products/machine_embroidery_3.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Pearl Embellished Cushions",
+      "category": "Pearl Embroidery",
+      "serviceId": "pearl_embroidery",
+      "price": 799,
+      "imagePath": "public/assets/products/pearl_embroidery_3.jpg"
+    },
+    {
+      "id": 11,
+      "name": "Beaded Dream Catcher",
+      "category": "Beads Embroidery",
+      "serviceId": "beads_embroidery",
+      "price": 699,
+      "imagePath": "public/assets/products/beads_embroidery_3.jpg"
+    },
+    {
+      "id": 12,
+      "name": "South Indian Meal Thali",
+      "category": "South Indian Meals",
+      "serviceId": "south_indian_meals",
+      "price": 299,
+      "imagePath": "public/assets/products/south_indian_meals_1.jpg"
+    },
+    {
+      "id": 13,
+      "name": "Dosa Combo Pack",
+      "category": "South Indian Meals",
+      "serviceId": "south_indian_meals",
+      "price": 199,
+      "imagePath": "public/assets/products/south_indian_meals_2.jpg"
+    },
+    {
+      "id": 14,
+      "name": "North Indian Veg Thali",
+      "category": "North Indian Meals",
+      "serviceId": "north_indian_meals",
+      "price": 349,
+      "imagePath": "public/assets/products/north_indian_meals_1.jpg"
+    },
+    {
+      "id": 15,
+      "name": "Butter Chicken Combo",
+      "category": "North Indian Meals",
+      "serviceId": "north_indian_meals",
+      "price": 449,
+      "imagePath": "public/assets/products/north_indian_meals_2.jpg"
+    },
+    {
+      "id": 16,
+      "name": "Samosa",
+      "category": "Quick Snacks",
+      "serviceId": "quick_snacks",
+      "price": 149,
+      "imagePath": "public/assets/products/quick_snacks_1.jpg"
+    },
+    {
+      "id": 17,
+      "name": "Pani Puri Kit",
+      "category": "Quick Snacks",
+      "serviceId": "quick_snacks",
+      "price": 199,
+      "imagePath": "public/assets/products/quick_snacks_2.jpg"
+    },
+    {
+      "id": 18,
+      "name": "Handmade Greeting Cards Set",
+      "category": "Handmade Gifts",
+      "serviceId": "handmade_gifts",
+      "price": 399,
+      "imagePath": "public/assets/products/handmade_gifts_1.jpg"
+    },
+    {
+      "id": 19,
+      "name": "Personalized Photo Frame",
+      "category": "Handmade Gifts",
+      "serviceId": "handmade_gifts",
+      "price": 599,
+      "imagePath": "public/assets/products/handmade_gifts_2.jpg"
+    },
+    {
+      "id": 20,
+      "name": "Birthday Gift Hamper",
+      "category": "Birthday Gifts",
+      "serviceId": "birthday_gifts",
+      "price": 1299,
+      "imagePath": "public/assets/products/birthday_gifts_1.jpg"
+    },
+    {
+      "id": 21,
+      "name": "Customized Cake Topper",
+      "category": "Birthday Gifts",
+      "serviceId": "birthday_gifts",
+      "price": 299,
+      "imagePath": "public/assets/products/birthday_gifts_2.jpg"
+    },
+    {
+      "id": 22,
+      "name": "Wedding Favors Set",
+      "category": "Wedding Gifts",
+      "serviceId": "wedding_gifts",
+      "price": 2499,
+      "imagePath": "public/assets/products/wedding_gifts_1.jpg"
+    },
+    {
+      "id": 23,
+      "name": "Bridal Jewelry Box",
+      "category": "Wedding Gifts",
+      "serviceId": "wedding_gifts",
+      "price": 1899,
+      "imagePath": "public/assets/products/wedding_gifts_2.jpg"
+    },
+    {
+      "id": 24,
+      "name": "Anniversary Photo Book",
+      "category": "Anniversary Gifts",
+      "serviceId": "anniversary_gifts",
+      "price": 999,
+      "imagePath": "public/assets/products/anniversary_gifts_1.jpg"
+    },
+    {
+      "id": 25,
+      "name": "Couple Mugs Set",
+      "category": "Anniversary Gifts",
+      "serviceId": "anniversary_gifts",
+      "price": 499,
+      "imagePath": "public/assets/products/anniversary_gifts_2.jpg"
+    },
+    {
+      "id": 26,
+      "name": "Oil Painting Portrait",
+      "category": "Art Paintings",
+      "serviceId": "art_paintings",
+      "price": 4599,
+      "imagePath": "public/assets/products/art_paintings_1.jpg"
+    },
+    {
+      "id": 27,
+      "name": "Abstract Canvas Art",
+      "category": "Art Paintings",
+      "serviceId": "art_paintings",
+      "price": 3299,
+      "imagePath": "public/assets/products/art_paintings_2.jpg"
+    },
+    {
+      "id": 28,
+      "name": "Origami Paper Kit",
+      "category": "Paper Crafting",
+      "serviceId": "paper_crafting",
+      "price": 299,
+      "imagePath": "public/assets/products/paper_crafting_1.jpg"
+    },
+    {
+      "id": 29,
+      "name": "Quilling Art Set",
+      "category": "Paper Crafting",
+      "serviceId": "paper_crafting",
+      "price": 599,
+      "imagePath": "public/assets/products/paper_crafting_2.jpg"
+    },
+    {
+      "id": 30,
+      "name": "Clay Pottery Kit",
+      "category": "Clay Modelling",
+      "serviceId": "clay_modelling",
+      "price": 799,
+      "imagePath": "public/assets/products/clay_modelling_1.jpg"
+    },
+    {
+      "id": 31,
+      "name": "Sculpting Tools Set",
+      "category": "Clay Modelling",
+      "serviceId": "clay_modelling",
+      "price": 499,
+      "imagePath": "public/assets/products/clay_modelling_2.jpg"
+    },
+    {
+      "id": 32,
+      "name": "Memory Collage Frame",
+      "category": "Collage Making",
+      "serviceId": "collage_making",
+      "price": 699,
+      "imagePath": "public/assets/products/collage_making_1.jpg"
+    },
+    {
+      "id": 33,
+      "name": "Digital Collage Print",
+      "category": "Collage Making",
+      "serviceId": "collage_making",
+      "price": 399,
+      "imagePath": "public/assets/products/collage_making_2.jpg"
+    },
+    {
+      "id": 34,
+      "name": "Designer Saree",
+      "category": "Ladies Wear Fashion",
+      "serviceId": "ladies_wear_fashion",
+      "price": 4599,
+      "imagePath": "public/assets/products/ladies_wear_fashion_1.jpg"
+    },
+    {
+      "id": 35,
+      "name": "Casual Kurti Set",
+      "category": "Ladies Wear Fashion",
+      "serviceId": "ladies_wear_fashion",
+      "price": 1299,
+      "imagePath": "public/assets/products/ladies_wear_fashion_2.jpg"
+    },
+    {
+      "id": 36,
+      "name": "Men's Formal Shirt",
+      "category": "Mens Wear Fashion",
+      "serviceId": "mens_wear_fashion",
+      "price": 1499,
+      "imagePath": "public/assets/products/mens_wear_fashion_1.jpg"
+    },
+    {
+      "id": 37,
+      "name": "Designer Kurta",
+      "category": "Mens Wear Fashion",
+      "serviceId": "mens_wear_fashion",
+      "price": 1999,
+      "imagePath": "public/assets/products/mens_wear_fashion_2.jpg"
+    },
+    {
+      "id": 38,
+      "name": "Kids Party Dress",
+      "category": "Kids Wear Fashion",
+      "serviceId": "kids_wear_fashion",
+      "price": 899,
+      "imagePath": "public/assets/products/kids_wear_fashion_1.jpg"
+    },
+    {
+      "id": 39,
+      "name": "Children's Ethnic Wear",
+      "category": "Kids Wear Fashion",
+      "serviceId": "kids_wear_fashion",
+      "price": 1199,
+      "imagePath": "public/assets/products/kids_wear_fashion_2.jpg"
+    },
+    {
+      "id": 40,
+      "name": "Banarasi Silk Saree",
+      "category": "Ethnic Wear",
+      "serviceId": "ethnic_wear",
+      "price": 7599,
+      "imagePath": "public/assets/products/ethnic_wear_1.jpg"
+    },
+    {
+      "id": 41,
+      "name": "Traditional Lehenga",
+      "category": "Ethnic Wear",
+      "serviceId": "ethnic_wear",
+      "price": 8999,
+      "imagePath": "public/assets/products/ethnic_wear_2.jpg"
+    },
+    {
+      "id": 42,
+      "name": "Sequined Cocktail Dress",
+      "category": "Party Wear Outfits",
+      "serviceId": "party_wear_outfits",
+      "price": 3299,
+      "imagePath": "public/assets/products/party_wear_outfits_1.jpg"
+    },
+    {
+      "id": 43,
+      "name": "Designer Anarkali Suit",
+      "category": "Party Wear Outfits",
+      "serviceId": "party_wear_outfits",
+      "price": 4299,
+      "imagePath": "public/assets/products/party_wear_outfits_2.jpg"
+    },
+    {
+      "id": 44,
+      "name": "Bridal Makeup Kit",
+      "category": "Bridal Makeup",
+      "serviceId": "bridal_makeup",
+      "price": 2999,
+      "imagePath": "public/assets/products/bridal_makeup_1.jpg"
+    },
+    {
+      "id": 45,
+      "name": "Professional Makeup Set",
+      "category": "Bridal Makeup",
+      "serviceId": "bridal_makeup",
+      "price": 1899,
+      "imagePath": "public/assets/products/bridal_makeup_2.jpg"
+    },
+    {
+      "id": 46,
+      "name": "Anti-Aging Cream",
+      "category": "Skin Care Routine",
+      "serviceId": "skin_care_routine",
+      "price": 1299,
+      "imagePath": "public/assets/products/skin_care_routine_1.jpg"
+    },
+    {
+      "id": 47,
+      "name": "Vitamin C Serum",
+      "category": "Skin Care Routine",
+      "serviceId": "skin_care_routine",
+      "price": 899,
+      "imagePath": "public/assets/products/skin_care_routine_2.jpg"
+    },
+    {
+      "id": 48,
+      "name": "Hair Growth Oil",
+      "category": "Hair Care Products",
+      "serviceId": "hair_care_products",
+      "price": 599,
+      "imagePath": "public/assets/products/hair_care_products_1.jpg"
+    },
+    {
+      "id": 49,
+      "name": "Anti-Dandruff Shampoo",
+      "category": "Hair Care Products",
+      "serviceId": "hair_care_products",
+      "price": 449,
+      "imagePath": "public/assets/products/hair_care_products_2.jpg"
+    },
+    {
+      "id": 50,
+      "name": "Manicure Tool Kit",
+      "category": "Manicure Pedicure",
+      "serviceId": "manicure_pedicure",
+      "price": 799,
+      "imagePath": "public/assets/products/manicure_pedicure_1.jpg"
+    },
+    {
+      "id": 51,
+      "name": "Luxury Nail Polish Set",
+      "category": "Manicure Pedicure",
+      "serviceId": "manicure_pedicure",
+      "price": 1299,
+      "imagePath": "public/assets/products/manicure_pedicure_2.jpg"
+    },
+    {
+      "id": 52,
+      "name": "Aromatherapy Massage Oil",
+      "category": "Full Body Massage",
+      "serviceId": "full_body_massage",
+      "price": 899,
+      "imagePath": "public/assets/products/full_body_massage_1.jpg"
+    },
+    {
+      "id": 53,
+      "name": "Hot Stone Massage Kit",
+      "category": "Full Body Massage",
+      "serviceId": "full_body_massage",
+      "price": 1999,
+      "imagePath": "public/assets/products/full_body_massage_2.jpg"
+    },
+    {
+      "id": 54,
+      "name": "Custom Theme Cake",
+      "category": "Cake Artistry",
+      "serviceId": "cake_artistry",
+      "price": 1799,
+      "imagePath": "public/assets/products/cake_artistry_1.jpg"
+    },
+    {
+      "id": 55,
+      "name": "Wedding Cake",
+      "category": "Cake Artistry",
+      "serviceId": "cake_artistry",
+      "price": 4599,
+      "imagePath": "public/assets/products/cake_artistry_2.jpg"
+    },
+    {
+      "id": 56,
+      "name": "Assorted Cupcakes Box",
+      "category": "Cupcake Muffin Creations",
+      "serviceId": "cupcake_muffin_creations",
+      "price": 699,
+      "imagePath": "public/assets/products/cupcake_muffin_creations_1.jpg"
+    },
+    {
+      "id": 57,
+      "name": "Gourmet Muffin Set",
+      "category": "Cupcake Muffin Creations",
+      "serviceId": "cupcake_muffin_creations",
+      "price": 599,
+      "imagePath": "public/assets/products/cupcake_muffin_creations_2.jpg"
+    },
+    {
+      "id": 58,
+      "name": "Decorated Sugar Cookies",
+      "category": "Cookies Biscuits",
+      "serviceId": "cookies_biscuits",
+      "price": 499,
+      "imagePath": "public/assets/products/cookies_biscuits_1.jpg"
+    },
+    {
+      "id": 59,
+      "name": "Assorted Biscuit Tin",
+      "category": "Cookies Biscuits",
+      "serviceId": "cookies_biscuits",
+      "price": 799,
+      "imagePath": "public/assets/products/cookies_biscuits_2.jpg"
+    },
+    {
+      "id": 60,
+      "name": "Artisan Bread Basket",
+      "category": "Bread Pastry Delight",
+      "serviceId": "bread_pastry_delight",
+      "price": 899,
+      "imagePath": "public/assets/products/bread_pastry_delight_1.jpg"
+    },
+    {
+      "id": 61,
+      "name": "French Pastry Assortment",
+      "category": "Bread Pastry Delight",
+      "serviceId": "bread_pastry_delight",
+      "price": 1299,
+      "imagePath": "public/assets/products/bread_pastry_delight_2.jpg"
+    },
+    {
+      "id": 62,
+      "name": "Birthday Balloon Arch",
+      "category": "Birthday Decor",
+      "serviceId": "birthday_decor",
+      "price": 1999,
+      "imagePath": "public/assets/products/birthday_decor_1.jpg"
+    },
+    {
+      "id": 63,
+      "name": "Theme Party Decor Kit",
+      "category": "Birthday Decor",
+      "serviceId": "birthday_decor",
+      "price": 1499,
+      "imagePath": "public/assets/products/birthday_decor_2.jpg"
+    },
+    {
+      "id": 64,
+      "name": "Wedding Mandap Decor",
+      "category": "Wedding Decor",
+      "serviceId": "wedding_decor",
+      "price": 15999,
+      "imagePath": "public/assets/products/wedding_decor_1.jpg"
+    },
+    {
+      "id": 65,
+      "name": "Bridal Stage Setup",
+      "category": "Wedding Decor",
+      "serviceId": "wedding_decor",
+      "price": 8999,
+      "imagePath": "public/assets/products/wedding_decor_2.jpg"
+    },
+    {
+      "id": 66,
+      "name": "Diwali Home Decor Set",
+      "category": "Festive Home Decor",
+      "serviceId": "festive_home_decor",
+      "price": 1999,
+      "imagePath": "public/assets/products/festive_home_decor_1.jpg"
+    },
+    {
+      "id": 67,
+      "name": "Christmas Decor Package",
+      "category": "Festive Home Decor",
+      "serviceId": "festive_home_decor",
+      "price": 2499,
+      "imagePath": "public/assets/products/festive_home_decor_2.jpg"
+    },
+    {
+      "id": 68,
+      "name": "Romantic Anniversary Setup",
+      "category": "Anniversary Decor",
+      "serviceId": "anniversary_decor",
+      "price": 3999,
+      "imagePath": "public/assets/products/anniversary_decor_1.jpg"
+    },
+    {
+      "id": 69,
+      "name": "Milestone Anniversary Decor",
+      "category": "Anniversary Decor",
+      "serviceId": "anniversary_decor",
+      "price": 2999,
+      "imagePath": "public/assets/products/anniversary_decor_2.jpg"
+    },
+    {
+      "id": 70,
+      "name": "Corporate Event Backdrop",
+      "category": "Corporate Event Decor",
+      "serviceId": "corporate_event_decor",
+      "price": 5999,
+      "imagePath": "public/assets/products/corporate_event_decor_1.jpg"
+    },
+    {
+      "id": 71,
+      "name": "Conference Setup Package",
+      "category": "Corporate Event Decor",
+      "serviceId": "corporate_event_decor",
+      "price": 8999,
+      "imagePath": "public/assets/products/corporate_event_decor_2.jpg"
+    },
+    {
+      "id": 72,
+      "name": "Snake Plant",
+      "category": "Indoor Plants",
+      "serviceId": "indoor_plants",
+      "price": 499,
+      "imagePath": "public/assets/products/indoor_plants_1.jpg"
+    },
+    {
+      "id": 73,
+      "name": "Peace Lily",
+      "category": "Indoor Plants",
+      "serviceId": "indoor_plants",
+      "price": 699,
+      "imagePath": "public/assets/products/indoor_plants_2.jpg"
+    },
+    {
+      "id": 74,
+      "name": "Beginner Gardening Kit",
+      "category": "Plant Starter Kit",
+      "serviceId": "plant_starter_kit",
+      "price": 999,
+      "imagePath": "public/assets/products/plant_starter_kit_1.jpg"
+    },
+    {
+      "id": 75,
+      "name": "Complete Planting Set",
+      "category": "Plant Starter Kit",
+      "serviceId": "plant_starter_kit",
+      "price": 1299,
+      "imagePath": "public/assets/products/plant_starter_kit_2.jpg"
+    },
+    {
+      "id": 76,
+      "name": "Kitchen Herb Garden",
+      "category": "Herb Garden Kit",
+      "serviceId": "herb_garden_kit",
+      "price": 799,
+      "imagePath": "public/assets/products/herb_garden_kit_1.jpg"
+    },
+    {
+      "id": 77,
+      "name": "Medicinal Herb Collection",
+      "category": "Herb Garden Kit",
+      "serviceId": "herb_garden_kit",
+      "price": 1199,
+      "imagePath": "public/assets/products/herb_garden_kit_2.jpg"
+    },
+    {
+      "id": 78,
+      "name": "Vegetable Seed Collection",
+      "category": "Vegetable Seed Kit",
+      "serviceId": "vegetable_seed_kit",
+      "price": 599,
+      "imagePath": "public/assets/products/vegetable_seed_kit_1.jpg"
+    },
+    {
+      "id": 79,
+      "name": "Organic Vegetable Seeds",
+      "category": "Vegetable Seed Kit",
+      "serviceId": "vegetable_seed_kit",
+      "price": 899,
+      "imagePath": "public/assets/products/vegetable_seed_kit_2.jpg"
+    },
+    {
+      "id": 80,
+      "name": "Flower Seed Assortment",
+      "category": "Flower Seed Kit",
+      "serviceId": "flower_seed_kit",
+      "price": 499,
+      "imagePath": "public/assets/products/flower_seed_kit_1.jpg"
+    },
+    {
+      "id": 81,
+      "name": "Seasonal Flower Seeds",
+      "category": "Flower Seed Kit",
+      "serviceId": "flower_seed_kit",
+      "price": 699,
+      "imagePath": "public/assets/products/flower_seed_kit_2.jpg"
+    },
+    {
+      "id": 82,
+      "name": "Microgreen Starter Kit",
+      "category": "Microgreen Kit",
+      "serviceId": "microgreen_kit",
+      "price": 899,
+      "imagePath": "public/assets/products/microgreen_kit_1.jpg"
+    },
+    {
+      "id": 83,
+      "name": "Premium Microgreen Seeds",
+      "category": "Microgreen Kit",
+      "serviceId": "microgreen_kit",
+      "price": 599,
+      "imagePath": "public/assets/products/microgreen_kit_2.jpg"
+    },
+    {
+      "id": 84,
+      "name": "Daily Puja Kit",
+      "category": "Puja Kits",
+      "serviceId": "puja_kits",
+      "price": 399,
+      "imagePath": "public/assets/products/puja_kits_1.jpg"
+    },
+    {
+      "id": 85,
+      "name": "Festival Puja Set",
+      "category": "Puja Kits",
+      "serviceId": "puja_kits",
+      "price": 799,
+      "imagePath": "public/assets/products/puja_kits_2.jpg"
+    },
+    {
+      "id": 86,
+      "name": "Festival Decoration Pack",
+      "category": "Festival Essentials",
+      "serviceId": "festival_essentials",
+      "price": 1299,
+      "imagePath": "public/assets/products/festival_essentials_1.jpg"
+    },
+    {
+      "id": 87,
+      "name": "Traditional Festival Items",
+      "category": "Festival Essentials",
+      "serviceId": "festival_essentials",
+      "price": 999,
+      "imagePath": "public/assets/products/festival_essentials_2.jpg"
+    },
+    {
+      "id": 88,
+      "name": "Holi Color Pack",
+      "category": "Holi Festival Kit",
+      "serviceId": "holi_festival_kit",
+      "price": 499,
+      "imagePath": "public/assets/products/holi_festival_kit_1.jpg"
+    },
+    {
+      "id": 89,
+      "name": "Complete Holi Celebration Set",
+      "category": "Holi Festival Kit",
+      "serviceId": "holi_festival_kit",
+      "price": 1299,
+      "imagePath": "public/assets/products/holi_festival_kit_2.jpg"
+    },
+    {
+      "id": 90,
+      "name": "Diwali Diya Set",
+      "category": "Diwali Festival Kit",
+      "serviceId": "diwali_festival_kit",
+      "price": 599,
+      "imagePath": "public/assets/products/diwali_festival_kit_1.jpg"
+    },
+    {
+      "id": 91,
+      "name": "Premium Diwali Hamper",
+      "category": "Diwali Festival Kit",
+      "serviceId": "diwali_festival_kit",
+      "price": 1999,
+      "imagePath": "public/assets/products/diwali_festival_kit_2.jpg"
+    },
+    {
+      "id": 92,
+      "name": "Ganapati Idol",
+      "category": "Ganapati Festival Kit",
+      "serviceId": "ganapati_festival_kit",
+      "price": 1299,
+      "imagePath": "public/assets/products/ganapati_festival_kit_1.jpg"
+    },
+    {
+      "id": 93,
+      "name": "Complete Ganesh Puja Kit",
+      "category": "Ganapati Festival Kit",
+      "serviceId": "ganapati_festival_kit",
+      "price": 1799,
+      "imagePath": "public/assets/products/ganapati_festival_kit_2.jpg"
+    },
+    {
+      "id": 94,
+      "name": "Festive Craft Kit",
+      "category": "Festive Craft Delight",
+      "serviceId": "festive_craft_delight",
+      "price": 699,
+      "imagePath": "public/assets/products/festive_craft_delight_1.jpg"
+    },
+    {
+      "id": 95,
+      "name": "DIY Festival Decor Set",
+      "category": "Festive Craft Delight",
+      "serviceId": "festive_craft_delight",
+      "price": 899,
+      "imagePath": "public/assets/products/festive_craft_delight_2.jpg"
+    },
+    {
+      "id": 96,
+      "name": "Lotus Puja Thali",
+      "category": "Lotus Puja Decor Kit",
+      "serviceId": "lotus_puja_decor_kit",
+      "price": 999,
+      "imagePath": "public/assets/products/lotus_puja_decor_kit_1.jpg"
+    },
+    {
+      "id": 97,
+      "name": "Lotus Flower Decor Set",
+      "category": "Lotus Puja Decor Kit",
+      "serviceId": "lotus_puja_decor_kit",
+      "price": 1299,
+      "imagePath": "public/assets/products/lotus_puja_decor_kit_2.jpg"
+    },
+    {
+      "id": 98,
+      "name": "Embroidery Hoop Set",
+      "category": "Machine Embroidery",
+      "serviceId": "machine_embroidery",
+      "price": 399,
+      "imagePath": "public/assets/products/machine_embroidery_4.jpg"
+    },
+    {
+      "id": 99,
+      "name": "Pearl Border Saree",
+      "category": "Pearl Embroidery",
+      "serviceId": "pearl_embroidery",
+      "price": 5599,
+      "imagePath": "public/assets/products/pearl_embroidery_4.jpg"
+    },
+    {
+      "id": 100,
+      "name": "Beaded Curtain Panel",
+      "category": "Beads Embroidery",
+      "serviceId": "beads_embroidery",
+      "price": 1899,
+      "imagePath": "public/assets/products/beads_embroidery_4.jpg"
+    },
+    {
+      "id": 101,
+      "name": "Idli Sambar Combo",
+      "category": "South Indian Meals",
+      "serviceId": "south_indian_meals",
+      "price": 249,
+      "imagePath": "public/assets/products/south_indian_meals_3.jpg"
+    },
+    {
+      "id": 102,
+      "name": "Punjabi Thali Special",
+      "category": "North Indian Meals",
+      "serviceId": "north_indian_meals",
+      "price": 399,
+      "imagePath": "public/assets/products/north_indian_meals_3.jpg"
+    },
+    {
+      "id": 103,
+      "name": "Kathi Roll Platter",
+      "category": "Quick Snacks",
+      "serviceId": "quick_snacks",
+      "price": 299,
+      "imagePath": "public/assets/products/quick_snacks_3.jpg"
+    },
+    {
+      "id": 104,
+      "name": "Handmade Pottery Mug",
+      "category": "Handmade Gifts",
+      "serviceId": "handmade_gifts",
+      "price": 699,
+      "imagePath": "public/assets/products/handmade_gifts_3.jpg"
+    },
+    {
+      "id": 105,
+      "name": "Birthday Surprise Box",
+      "category": "Birthday Gifts",
+      "serviceId": "birthday_gifts",
+      "price": 1599,
+      "imagePath": "public/assets/products/birthday_gifts_3.jpg"
+    },
+    {
+      "id": 106,
+      "name": "Wedding Return Gifts",
+      "category": "Wedding Gifts",
+      "serviceId": "wedding_gifts",
+      "price": 799,
+      "imagePath": "public/assets/products/wedding_gifts_3.jpg"
+    },
+    {
+      "id": 107,
+      "name": "Anniversary Memory Box",
+      "category": "Anniversary Gifts",
+      "serviceId": "anniversary_gifts",
+      "price": 1199,
+      "imagePath": "public/assets/products/anniversary_gifts_3.jpg"
+    },
+    {
+      "id": 108,
+      "name": "Watercolor Landscape",
+      "category": "Art Paintings",
+      "serviceId": "art_paintings",
+      "price": 2899,
+      "imagePath": "public/assets/products/art_paintings_3.jpg"
+    },
+    {
+      "id": 109,
+      "name": "Paper Mache Art",
+      "category": "Paper Crafting",
+      "serviceId": "paper_crafting",
+      "price": 899,
+      "imagePath": "public/assets/products/paper_crafting_3.jpg"
+    },
+    {
+      "id": 110,
+      "name": "Clay Sculpture Kit",
+      "category": "Clay Modelling",
+      "serviceId": "clay_modelling",
+      "price": 1299,
+      "imagePath": "public/assets/products/clay_modelling_3.jpg"
+    },
+    {
+      "id": 111,
+      "name": "Photo Collage Service",
+      "category": "Collage Making",
+      "serviceId": "collage_making",
+      "price": 599,
+      "imagePath": "public/assets/products/collage_making_3.jpg"
+    },
+    {
+      "id": 112,
+      "name": "Designer Salwar Suit",
+      "category": "Ladies Wear Fashion",
+      "serviceId": "ladies_wear_fashion",
+      "price": 3299,
+      "imagePath": "public/assets/products/ladies_wear_fashion_3.jpg"
+    },
+    {
+      "id": 113,
+      "name": "Men's Wedding Sherwani",
+      "category": "Mens Wear Fashion",
+      "serviceId": "mens_wear_fashion",
+      "price": 8999,
+      "imagePath": "public/assets/products/mens_wear_fashion_3.jpg"
+    },
+    {
+      "id": 114,
+      "name": "Kids Traditional Wear",
+      "category": "Kids Wear Fashion",
+      "serviceId": "kids_wear_fashion",
+      "price": 1499,
+      "imagePath": "public/assets/products/kids_wear_fashion_3.jpg"
+    },
+    {
+      "id": 115,
+      "name": "Designer Chaniya Choli",
+      "category": "Ethnic Wear",
+      "serviceId": "ethnic_wear",
+      "price": 6599,
+      "imagePath": "public/assets/products/ethnic_wear_3.jpg"
+    },
+    {
+      "id": 116,
+      "name": "Evening Gown",
+      "category": "Party Wear Outfits",
+      "serviceId": "party_wear_outfits",
+      "price": 5299,
+      "imagePath": "public/assets/products/party_wear_outfits_3.jpg"
+    },
+    {
+      "id": 117,
+      "name": "Bridal Makeup Trial",
+      "category": "Bridal Makeup",
+      "serviceId": "bridal_makeup",
+      "price": 1999,
+      "imagePath": "public/assets/products/bridal_makeup_3.jpg"
+    },
+    {
+      "id": 118,
+      "name": "Face Care Routine Set",
+      "category": "Skin Care Routine",
+      "serviceId": "skin_care_routine",
+      "price": 1899,
+      "imagePath": "public/assets/products/skin_care_routine_3.jpg"
+    },
+    {
+      "id": 119,
+      "name": "Hair Treatment Pack",
+      "category": "Hair Care Products",
+      "serviceId": "hair_care_products",
+      "price": 1299,
+      "imagePath": "public/assets/products/hair_care_products_3.jpg"
+    },
+    {
+      "id": 120,
+      "name": "Spa Pedicure Kit",
+      "category": "Manicure Pedicure",
+      "serviceId": "manicure_pedicure",
+      "price": 1499,
+      "imagePath": "public/assets/products/manicure_pedicure_3.jpg"
+    },
+    {
+      "id": 121,
+      "name": "Ayurvedic Massage Oil",
+      "category": "Full Body Massage",
+      "serviceId": "full_body_massage",
+      "price": 799,
+      "imagePath": "public/assets/products/full_body_massage_3.jpg"
+    },
+    {
+      "id": 122,
+      "name": "Custom Photo Cake",
+      "category": "Cake Artistry",
+      "serviceId": "cake_artistry",
+      "price": 2299,
+      "imagePath": "public/assets/products/cake_artistry_3.jpg"
+    },
+    {
+      "id": 123,
+      "name": "Mini Cupcake Tower",
+      "category": "Cupcake Muffin Creations",
+      "serviceId": "cupcake_muffin_creations",
+      "price": 899,
+      "imagePath": "public/assets/products/cupcake_muffin_creations_3.jpg"
+    },
+    {
+      "id": 124,
+      "name": "Festive Cookie Set",
+      "category": "Cookies Biscuits",
+      "serviceId": "cookies_biscuits",
+      "price": 699,
+      "imagePath": "public/assets/products/cookies_biscuits_3.jpg"
+    },
+    {
+      "id": 125,
+      "name": "Artisan Sourdough Bread",
+      "category": "Bread Pastry Delight",
+      "serviceId": "bread_pastry_delight",
+      "price": 499,
+      "imagePath": "public/assets/products/bread_pastry_delight_3.jpg"
+    },
+    {
+      "id": 126,
+      "name": "Kids Birthday Decor",
+      "category": "Birthday Decor",
+      "serviceId": "birthday_decor",
+      "price": 1799,
+      "imagePath": "public/assets/products/birthday_decor_3.jpg"
+    },
+    {
+      "id": 127,
+      "name": "Reception Decor Package",
+      "category": "Wedding Decor",
+      "serviceId": "wedding_decor",
+      "price": 12999,
+      "imagePath": "public/assets/products/wedding_decor_3.jpg"
+    },
+    {
+      "id": 128,
+      "name": "Eid Home Decor Set",
+      "category": "Festive Home Decor",
+      "serviceId": "festive_home_decor",
+      "price": 1699,
+      "imagePath": "public/assets/products/festive_home_decor_3.jpg"
+    },
+    {
+      "id": 129,
+      "name": "Golden Anniversary Decor",
+      "category": "Anniversary Decor",
+      "serviceId": "anniversary_decor",
+      "price": 4999,
+      "imagePath": "public/assets/products/anniversary_decor_3.jpg"
+    },
+    {
+      "id": 130,
+      "name": "Product Launch Decor",
+      "category": "Corporate Event Decor",
+      "serviceId": "corporate_event_decor",
+      "price": 11999,
+      "imagePath": "public/assets/products/corporate_event_decor_3.jpg"
+    },
+    {
+      "id": 131,
+      "name": "Money Plant",
+      "category": "Indoor Plants",
+      "serviceId": "indoor_plants",
+      "price": 299,
+      "imagePath": "public/assets/products/indoor_plants_3.jpg"
+    },
+    {
+      "id": 132,
+      "name": "Advanced Gardening Kit",
+      "category": "Plant Starter Kit",
+      "serviceId": "plant_starter_kit",
+      "price": 1899,
+      "imagePath": "public/assets/products/plant_starter_kit_3.jpg"
+    },
+    {
+      "id": 133,
+      "name": "Aromatic Herb Garden",
+      "category": "Herb Garden Kit",
+      "serviceId": "herb_garden_kit",
+      "price": 999,
+      "imagePath": "public/assets/products/herb_garden_kit_3.jpg"
+    },
+    {
+      "id": 134,
+      "name": "Heirloom Vegetable Seeds",
+      "category": "Vegetable Seed Kit",
+      "serviceId": "vegetable_seed_kit",
+      "price": 799,
+      "imagePath": "public/assets/products/vegetable_seed_kit_3.jpg"
+    },
+    {
+      "id": 135,
+      "name": "Rose Garden Seeds",
+      "category": "Flower Seed Kit",
+      "serviceId": "flower_seed_kit",
+      "price": 599,
+      "imagePath": "public/assets/products/flower_seed_kit_3.jpg"
+    },
+    {
+      "id": 136,
+      "name": "Salad Microgreen Kit",
+      "category": "Microgreen Kit",
+      "serviceId": "microgreen_kit",
+      "price": 1099,
+      "imagePath": "public/assets/products/microgreen_kit_3.jpg"
+    },
+    {
+      "id": 137,
+      "name": "Special Occasion Puja Kit",
+      "category": "Puja Kits",
+      "serviceId": "puja_kits",
+      "price": 1299,
+      "imagePath": "public/assets/products/puja_kits_3.jpg"
+    },
+    {
+      "id": 138,
+      "name": "Festival Lighting Set",
+      "category": "Festival Essentials",
+      "serviceId": "festival_essentials",
+      "price": 899,
+      "imagePath": "public/assets/products/festival_essentials_3.jpg"
+    },
+    {
+      "id": 139,
+      "name": "Organic Holi Colors",
+      "category": "Holi Festival Kit",
+      "serviceId": "holi_festival_kit",
+      "price": 799,
+      "imagePath": "public/assets/products/holi_festival_kit_3.jpg"
+    },
+    {
+      "id": 140,
+      "name": "Diwali Sweet Box",
+      "category": "Diwali Festival Kit",
+      "serviceId": "diwali_festival_kit",
+      "price": 1299,
+      "imagePath": "public/assets/products/diwali_festival_kit_3.jpg"
+    },
+    {
+      "id": 141,
+      "name": "Eco-Friendly Ganapati",
+      "category": "Ganapati Festival Kit",
+      "serviceId": "ganapati_festival_kit",
+      "price": 1599,
+      "imagePath": "public/assets/products/ganapati_festival_kit_3.jpg"
+    },
+    {
+      "id": 142,
+      "name": "Kids Craft Kit",
+      "category": "Festive Craft Delight",
+      "serviceId": "festive_craft_delight",
+      "price": 499,
+      "imagePath": "public/assets/products/festive_craft_delight_3.jpg"
+    },
+    {
+      "id": 143,
+      "name": "Lotus Flower Garland",
+      "category": "Lotus Puja Decor Kit",
+      "serviceId": "lotus_puja_decor_kit",
+      "price": 799,
+      "imagePath": "public/assets/products/lotus_puja_decor_kit_3.jpg"
+    },
+    {
+      "id": 144,
+      "name": "Embroidery Thread Set",
+      "category": "Machine Embroidery",
+      "serviceId": "machine_embroidery",
+      "price": 299,
+      "imagePath": "public/assets/products/machine_embroidery_5.jpg"
+    },
+    {
+      "id": 145,
+      "name": "Pearl Accessory Kit",
+      "category": "Pearl Embroidery",
+      "serviceId": "pearl_embroidery",
+      "price": 899,
+      "imagePath": "public/assets/products/pearl_embroidery_5.jpg"
+    },
+    {
+      "id": 146,
+      "name": "Beaded Fashion Jewelry",
+      "category": "Beads Embroidery",
+      "serviceId": "beads_embroidery",
+      "price": 1299,
+      "imagePath": "public/assets/products/beads_embroidery_5.jpg"
+    },
+    {
+      "id": 147,
+      "name": "Hand Embroidered Shawl",
+      "category": "Hand Embroidery",
+      "serviceId": "hand_embroidery",
+      "price": 2299,
+      "imagePath": "public/assets/products/hand_embroidery_3.jpg"
+    },
+    {
+      "id": 148,
+      "name": "Uttapam Breakfast Set",
+      "category": "South Indian Meals",
+      "serviceId": "south_indian_meals",
+      "price": 179,
+      "imagePath": "public/assets/products/south_indian_meals_4.jpg"
+    },
+    {
+      "id": 149,
+      "name": "Kashmiri Rogan Josh",
+      "category": "North Indian Meals",
+      "serviceId": "north_indian_meals",
+      "price": 549,
+      "imagePath": "public/assets/products/north_indian_meals_4.jpg"
+    },
+    {
+      "id": 150,
+      "name": "Chaat Platter",
+      "category": "Quick Snacks",
+      "serviceId": "quick_snacks",
+      "price": 249,
+      "imagePath": "public/assets/products/quick_snacks_4.jpg"
+    },
+    {
+      "id": 151,
+      "name": "Handmade Scented Candle",
+      "category": "Handmade Gifts",
+      "serviceId": "handmade_gifts",
+      "price": 399,
+      "imagePath": "public/assets/products/handmade_gifts_4.jpg"
+    },
+    {
+      "id": 152,
+      "name": "Birthday Decor Kit",
+      "category": "Birthday Gifts",
+      "serviceId": "birthday_gifts",
+      "price": 899,
+      "imagePath": "public/assets/products/birthday_gifts_4.jpg"
+    },
+    {
+      "id": 153,
+      "name": "Bridal Bouquet",
+      "category": "Wedding Gifts",
+      "serviceId": "wedding_gifts",
+      "price": 1899,
+      "imagePath": "public/assets/products/wedding_gifts_4.jpg"
+    },
+    {
+      "id": 154,
+      "name": "Anniversary Plaque",
+      "category": "Anniversary Gifts",
+      "serviceId": "anniversary_gifts",
+      "price": 699,
+      "imagePath": "public/assets/products/anniversary_gifts_4.jpg"
+    },
+    {
+      "id": 155,
+      "name": "Miniature Painting",
+      "category": "Art Paintings",
+      "serviceId": "art_paintings",
+      "price": 1899,
+      "imagePath": "public/assets/products/art_paintings_4.jpg"
+    },
+    {
+      "id": 156,
+      "name": "Paper Flower Kit",
+      "category": "Paper Crafting",
+      "serviceId": "paper_crafting",
+      "price": 499,
+      "imagePath": "public/assets/products/paper_crafting_4.jpg"
+    },
+    {
+      "id": 157,
+      "name": "Pottery Wheel Kit",
+      "category": "Clay Modelling",
+      "serviceId": "clay_modelling",
+      "price": 2999,
+      "imagePath": "public/assets/products/clay_modelling_4.jpg"
+    },
+    {
+      "id": 158,
+      "name": "Digital Collage Service",
+      "category": "Collage Making",
+      "serviceId": "collage_making",
+      "price": 799,
+      "imagePath": "public/assets/products/collage_making_4.jpg"
+    },
+    {
+      "id": 159,
+      "name": "Designer Western Dress",
+      "category": "Ladies Wear Fashion",
+      "serviceId": "ladies_wear_fashion",
+      "price": 2799,
+      "imagePath": "public/assets/products/ladies_wear_fashion_4.jpg"
+    },
+    {
+      "id": 160,
+      "name": "Men's Casual Wear",
+      "category": "Mens Wear Fashion",
+      "serviceId": "mens_wear_fashion",
+      "price": 1699,
+      "imagePath": "public/assets/products/mens_wear_fashion_4.jpg"
+    },
+    {
+      "id": 161,
+      "name": "Kids Winter Wear",
+      "category": "Kids Wear Fashion",
+      "serviceId": "kids_wear_fashion",
+      "price": 1299,
+      "imagePath": "public/assets/products/kids_wear_fashion_4.jpg"
+    },
+    {
+      "id": 162,
+      "name": "Silk Saree Collection",
+      "category": "Ethnic Wear",
+      "serviceId": "ethnic_wear",
+      "price": 8999,
+      "imagePath": "public/assets/products/ethnic_wear_4.jpg"
+    },
+    {
+      "id": 163,
+      "name": "Designer Gown",
+      "category": "Party Wear Outfits",
+      "serviceId": "party_wear_outfits",
+      "price": 6899,
+      "imagePath": "public/assets/products/party_wear_outfits_4.jpg"
+    },
+    {
+      "id": 164,
+      "name": "Airbrush Makeup Kit",
+      "category": "Bridal Makeup",
+      "serviceId": "bridal_makeup",
+      "price": 3599,
+      "imagePath": "public/assets/products/bridal_makeup_4.jpg"
+    },
+    {
+      "id": 165,
+      "name": "Organic Face Pack",
+      "category": "Skin Care Routine",
+      "serviceId": "skin_care_routine",
+      "price": 599,
+      "imagePath": "public/assets/products/skin_care_routine_4.jpg"
+    },
+    {
+      "id": 166,
+      "name": "Hair Styling Kit",
+      "category": "Hair Care Products",
+      "serviceId": "hair_care_products",
+      "price": 1499,
+      "imagePath": "public/assets/products/hair_care_products_4.jpg"
+    },
+    {
+      "id": 167,
+      "name": "Nail Art Kit",
+      "category": "Manicure Pedicure",
+      "serviceId": "manicure_pedicure",
+      "price": 999,
+      "imagePath": "public/assets/products/manicure_pedicure_4.jpg"
+    },
+    {
+      "id": 168,
+      "name": "Couples Massage Set",
+      "category": "Full Body Massage",
+      "serviceId": "full_body_massage",
+      "price": 2999,
+      "imagePath": "public/assets/products/full_body_massage_4.jpg"
+    },
+    {
+      "id": 169,
+      "name": "Fondant Cake",
+      "category": "Cake Artistry",
+      "serviceId": "cake_artistry",
+      "price": 2899,
+      "imagePath": "public/assets/products/cake_artistry_4.jpg"
+    },
+    {
+      "id": 170,
+      "name": "Vegan Cupcake Box",
+      "category": "Cupcake Muffin Creations",
+      "serviceId": "cupcake_muffin_creations",
+      "price": 799,
+      "imagePath": "public/assets/products/cupcake_muffin_creations_4.jpg"
+    },
+    {
+      "id": 171,
+      "name": "Macaron Assortment",
+      "category": "Cookies Biscuits",
+      "serviceId": "cookies_biscuits",
+      "price": 1199,
+      "imagePath": "public/assets/products/cookies_biscuits_4.jpg"
+    },
+    {
+      "id": 172,
+      "name": "Croissant Basket",
+      "category": "Bread Pastry Delight",
+      "serviceId": "bread_pastry_delight",
+      "price": 699,
+      "imagePath": "public/assets/products/bread_pastry_delight_4.jpg"
+    },
+    {
+      "id": 173,
+      "name": "Adult Birthday Decor",
+      "category": "Birthday Decor",
+      "serviceId": "birthday_decor",
+      "price": 2299,
+      "imagePath": "public/assets/products/birthday_decor_4.jpg"
+    },
+    {
+      "id": 174,
+      "name": "Mehndi Decor Package",
+      "category": "Wedding Decor",
+      "serviceId": "wedding_decor",
+      "price": 6999,
+      "imagePath": "public/assets/products/wedding_decor_4.jpg"
+    },
+    {
+      "id": 175,
+      "name": "Christmas Tree Decor",
+      "category": "Festive Home Decor",
+      "serviceId": "festive_home_decor",
+      "price": 1899,
+      "imagePath": "public/assets/products/festive_home_decor_4.jpg"
+    },
+    {
+      "id": 176,
+      "name": "Silver Anniversary Setup",
+      "category": "Anniversary Decor",
+      "serviceId": "anniversary_decor",
+      "price": 3599,
+      "imagePath": "public/assets/products/anniversary_decor_4.jpg"
+    },
+    {
+      "id": 177,
+      "name": "Award Ceremony Decor",
+      "category": "Corporate Event Decor",
+      "serviceId": "corporate_event_decor",
+      "price": 7999,
+      "imagePath": "public/assets/products/corporate_event_decor_4.jpg"
+    },
+    {
+      "id": 178,
+      "name": "Spider Plant",
+      "category": "Indoor Plants",
+      "serviceId": "indoor_plants",
+      "price": 399,
+      "imagePath": "public/assets/products/indoor_plants_4.jpg"
+    },
+    {
+      "id": 179,
+      "name": "Organic Starter Kit",
+      "category": "Plant Starter Kit",
+      "serviceId": "plant_starter_kit",
+      "price": 1499,
+      "imagePath": "public/assets/products/plant_starter_kit_4.jpg"
+    },
+    {
+      "id": 180,
+      "name": "Tea Herb Garden",
+      "category": "Herb Garden Kit",
+      "serviceId": "herb_garden_kit",
+      "price": 899,
+      "imagePath": "public/assets/products/herb_garden_kit_4.jpg"
+    },
+    {
+      "id": 181,
+      "name": "Salad Seed Kit",
+      "category": "Vegetable Seed Kit",
+      "serviceId": "vegetable_seed_kit",
+      "price": 499,
+      "imagePath": "public/assets/products/vegetable_seed_kit_4.jpg"
+    },
+    {
+      "id": 182,
+      "name": "Wildflower Seed Mix",
+      "category": "Flower Seed Kit",
+      "serviceId": "flower_seed_kit",
+      "price": 449,
+      "imagePath": "public/assets/products/flower_seed_kit_4.jpg"
+    },
+    {
+      "id": 183,
+      "name": "Spicy Microgreen Mix",
+      "category": "Microgreen Kit",
+      "serviceId": "microgreen_kit",
+      "price": 799,
+      "imagePath": "public/assets/products/microgreen_kit_4.jpg"
+    },
+    {
+      "id": 184,
+      "name": "Havan Puja Kit",
+      "category": "Puja Kits",
+      "serviceId": "puja_kits",
+      "price": 1599,
+      "imagePath": "public/assets/products/puja_kits_4.jpg"
+    },
+    {
+      "id": 185,
+      "name": "Festival Gift Pack",
+      "category": "Festival Essentials",
+      "serviceId": "festival_essentials",
+      "price": 1499,
+      "imagePath": "public/assets/products/festival_essentials_4.jpg"
+    },
+    {
+      "id": 186,
+      "name": "Holi Pichkari Set",
+      "category": "Holi Festival Kit",
+      "serviceId": "holi_festival_kit",
+      "price": 399,
+      "imagePath": "public/assets/products/holi_festival_kit_4.jpg"
+    },
+    {
+      "id": 187,
+      "name": "Diwali Crackers Pack",
+      "category": "Diwali Festival Kit",
+      "serviceId": "diwali_festival_kit",
+      "price": 899,
+      "imagePath": "public/assets/products/diwali_festival_kit_4.jpg"
+    },
+    {
+      "id": 188,
+      "name": "Ganapati Decor Set",
+      "category": "Ganapati Festival Kit",
+      "serviceId": "ganapati_festival_kit",
+      "price": 1399,
+      "imagePath": "public/assets/products/ganapati_festival_kit_4.jpg"
+    },
+    {
+      "id": 189,
+      "name": "Rangoli Craft Kit",
+      "category": "Festive Craft Delight",
+      "serviceId": "festive_craft_delight",
+      "price": 599,
+      "imagePath": "public/assets/products/festive_craft_delight_4.jpg"
+    },
+    {
+      "id": 190,
+      "name": "Lotus Diya Set",
+      "category": "Lotus Puja Decor Kit",
+      "serviceId": "lotus_puja_decor_kit",
+      "price": 699,
+      "imagePath": "public/assets/products/lotus_puja_decor_kit_4.jpg"
+    },
+    {
+      "id": 191,
+      "name": "Embroidery Pattern Book",
+      "category": "Machine Embroidery",
+      "serviceId": "machine_embroidery",
+      "price": 499,
+      "imagePath": "public/assets/products/machine_embroidery_6.jpg"
+    },
+    {
+      "id": 192,
+      "name": "Pearl Craft Supplies",
+      "category": "Pearl Embroidery",
+      "serviceId": "pearl_embroidery",
+      "price": 699,
+      "imagePath": "public/assets/products/pearl_embroidery_6.jpg"
+    },
+    {
+      "id": 193,
+      "name": "Beaded Home Decor",
+      "category": "Beads Embroidery",
+      "serviceId": "beads_embroidery",
+      "price": 1599,
+      "imagePath": "public/assets/products/beads_embroidery_6.jpg"
+    },
+    {
+      "id": 194,
+      "name": "Phulkari Dupatta",
+      "category": "Hand Embroidery",
+      "serviceId": "hand_embroidery",
+      "price": 1899,
+      "imagePath": "public/assets/products/hand_embroidery_4.jpg"
+    },
+    {
+      "id": 195,
+      "name": "Rava Dosa Combo",
+      "category": "South Indian Meals",
+      "serviceId": "south_indian_meals",
+      "price": 219,
+      "imagePath": "public/assets/products/south_indian_meals_5.jpg"
+    },
+    {
+      "id": 196,
+      "name": "Awadhi Biryani Set",
+      "category": "North Indian Meals",
+      "serviceId": "north_indian_meals",
+      "price": 499,
+      "imagePath": "public/assets/products/north_indian_meals_5.jpg"
+    },
+    {
+      "id": 197,
+      "name": "Pakora Platter",
+      "category": "Quick Snacks",
+      "serviceId": "quick_snacks",
+      "price": 179,
+      "imagePath": "public/assets/products/quick_snacks_5.jpg"
+    },
+    {
+      "id": 198,
+      "name": "Handmade Jewelry",
+      "category": "Handmade Gifts",
+      "serviceId": "handmade_gifts",
+      "price": 899,
+      "imagePath": "public/assets/products/handmade_gifts_5.jpg"
+    },
+    {
+      "id": 199,
+      "name": "Birthday Balloon Box",
+      "category": "Birthday Gifts",
+      "serviceId": "birthday_gifts",
+      "price": 699,
+      "imagePath": "public/assets/products/birthday_gifts_5.jpg"
+    },
+    {
+      "id": 200,
+      "name": "Wedding Photo Album",
+      "category": "Wedding Gifts",
+      "serviceId": "wedding_gifts",
+      "price": 1499,
+      "imagePath": "public/assets/products/wedding_gifts_5.jpg"
+    },
+    {
+      "id": 201,
+      "name": "Anniversary Wine Set",
+      "category": "Anniversary Gifts",
+      "serviceId": "anniversary_gifts",
+      "price": 1899,
+      "imagePath": "public/assets/products/anniversary_gifts_5.jpg"
+    },
+    {
+      "id": 202,
+      "name": "Charcoal Sketch",
+      "category": "Art Paintings",
+      "serviceId": "art_paintings",
+      "price": 1599,
+      "imagePath": "public/assets/products/art_paintings_5.jpg"
+    },
+    {
+      "id": 203,
+      "name": "Origami Animal Set",
+      "category": "Paper Crafting",
+      "serviceId": "paper_crafting",
+      "price": 399,
+      "imagePath": "public/assets/products/paper_crafting_5.jpg"
+    },
+    {
+      "id": 204,
+      "name": "Sculpture Clay",
+      "category": "Clay Modelling",
+      "serviceId": "clay_modelling",
+      "price": 599,
+      "imagePath": "public/assets/products/clay_modelling_5.jpg"
+    },
+    {
+      "id": 205,
+      "name": "Travel Collage Kit",
+      "category": "Collage Making",
+      "serviceId": "collage_making",
+      "price": 499,
+      "imagePath": "public/assets/products/collage_making_5.jpg"
+    },
+    {
+      "id": 206,
+      "name": "Designer Jacket",
+      "category": "Ladies Wear Fashion",
+      "serviceId": "ladies_wear_fashion",
+      "price": 3799,
+      "imagePath": "public/assets/products/ladies_wear_fashion_5.jpg"
+    },
+    {
+      "id": 207,
+      "name": "Men's Blazer",
+      "category": "Mens Wear Fashion",
+      "serviceId": "mens_wear_fashion",
+      "price": 4599,
+      "imagePath": "public/assets/products/mens_wear_fashion_5.jpg"
+    },
+    {
+      "id": 208,
+      "name": "Kids Sports Wear",
+      "category": "Kids Wear Fashion",
+      "serviceId": "kids_wear_fashion",
+      "price": 799,
+      "imagePath": "public/assets/products/kids_wear_fashion_5.jpg"
+    },
+    {
+      "id": 209,
+      "name": "Designer Kurta Set",
+      "category": "Ethnic Wear",
+      "serviceId": "ethnic_wear",
+      "price": 4299,
+      "imagePath": "public/assets/products/ethnic_wear_5.jpg"
+    },
+    {
+      "id": 210,
+      "name": "Cocktail Dress",
+      "category": "Party Wear Outfits",
+      "serviceId": "party_wear_outfits",
+      "price": 3899,
+      "imagePath": "public/assets/products/party_wear_outfits_5.jpg"
+    },
+    {
+      "id": 211,
+      "name": "HD Makeup Kit",
+      "category": "Bridal Makeup",
+      "serviceId": "bridal_makeup",
+      "price": 2799,
+      "imagePath": "public/assets/products/bridal_makeup_5.jpg"
+    },
+    {
+      "id": 212,
+      "name": "Face Serum Collection",
+      "category": "Skin Care Routine",
+      "serviceId": "skin_care_routine",
+      "price": 1399,
+      "imagePath": "public/assets/products/skin_care_routine_5.jpg"
+    },
+    {
+      "id": 213,
+      "name": "Hair Color Kit",
+      "category": "Hair Care Products",
+      "serviceId": "hair_care_products",
+      "price": 799,
+      "imagePath": "public/assets/products/hair_care_products_5.jpg"
+    },
+    {
+      "id": 214,
+      "name": "Gel Nail Kit",
+      "category": "Manicure Pedicure",
+      "serviceId": "manicure_pedicure",
+      "price": 1299,
+      "imagePath": "public/assets/products/manicure_pedicure_5.jpg"
+    },
+    {
+      "id": 215,
+      "name": "Sports Massage Oil",
+      "category": "Full Body Massage",
+      "serviceId": "full_body_massage",
+      "price": 899,
+      "imagePath": "public/assets/products/full_body_massage_5.jpg"
+    },
+    {
+      "id": 216,
+      "name": "Number Cake",
+      "category": "Cake Artistry",
+      "serviceId": "cake_artistry",
+      "price": 1599,
+      "imagePath": "public/assets/products/cake_artistry_5.jpg"
+    },
+    {
+      "id": 217,
+      "name": "Gluten-free Muffins",
+      "category": "Cupcake Muffin Creations",
+      "serviceId": "cupcake_muffin_creations",
+      "price": 899,
+      "imagePath": "public/assets/products/cupcake_muffin_creations_5.jpg"
+    },
+    {
+      "id": 218,
+      "name": "Shortbread Cookies",
+      "category": "Cookies Biscuits",
+      "serviceId": "cookies_biscuits",
+      "price": 599,
+      "imagePath": "public/assets/products/cookies_biscuits_5.jpg"
+    },
+    {
+      "id": 219,
+      "name": "Danish Pastry Box",
+      "category": "Bread Pastry Delight",
+      "serviceId": "bread_pastry_delight",
+      "price": 799,
+      "imagePath": "public/assets/products/bread_pastry_delight_5.jpg"
+    },
+    {
+      "id": 220,
+      "name": "Baby Birthday Decor",
+      "category": "Birthday Decor",
+      "serviceId": "birthday_decor",
+      "price": 1299,
+      "imagePath": "public/assets/products/birthday_decor_5.jpg"
+    },
+    {
+      "id": 221,
+      "name": "Sangeet Decor Package",
+      "category": "Wedding Decor",
+      "serviceId": "wedding_decor",
+      "price": 8999,
+      "imagePath": "public/assets/products/wedding_decor_5.jpg"
+    },
+    {
+      "id": 222,
+      "name": "Eid Special Decor",
+      "category": "Festive Home Decor",
+      "serviceId": "festive_home_decor",
+      "price": 1399,
+      "imagePath": "public/assets/products/festive_home_decor_5.jpg"
+    },
+    {
+      "id": 223,
+      "name": "Diamond Anniversary Setup",
+      "category": "Anniversary Decor",
+      "serviceId": "anniversary_decor",
+      "price": 5999,
+      "imagePath": "public/assets/products/anniversary_decor_5.jpg"
+    },
+    {
+      "id": 224,
+      "name": "Seminar Setup Package",
+      "category": "Corporate Event Decor",
+      "serviceId": "corporate_event_decor",
+      "price": 6999,
+      "imagePath": "public/assets/products/corporate_event_decor_5.jpg"
+    },
+    {
+      "id": 225,
+      "name": "Aloe Vera Plant",
+      "category": "Indoor Plants",
+      "serviceId": "indoor_plants",
+      "price": 349,
+      "imagePath": "public/assets/products/indoor_plants_5.jpg"
+    },
+    {
+      "id": 226,
+      "name": "Kids Gardening Kit",
+      "category": "Plant Starter Kit",
+      "serviceId": "plant_starter_kit",
+      "price": 799,
+      "imagePath": "public/assets/products/plant_starter_kit_5.jpg"
+    },
+    {
+      "id": 227,
+      "name": "Italian Herb Collection",
+      "category": "Herb Garden Kit",
+      "serviceId": "herb_garden_kit",
+      "price": 849,
+      "imagePath": "public/assets/products/herb_garden_kit_5.jpg"
+    },
+    {
+      "id": 228,
+      "name": "Tomato Seed Pack",
+      "category": "Vegetable Seed Kit",
+      "serviceId": "vegetable_seed_kit",
+      "price": 299,
+      "imagePath": "public/assets/products/vegetable_seed_kit_5.jpg"
+    },
+    {
+      "id": 229,
+      "name": "Orchid Seed Kit",
+      "category": "Flower Seed Kit",
+      "serviceId": "flower_seed_kit",
+      "price": 899,
+      "imagePath": "public/assets/products/flower_seed_kit_5.jpg"
+    },
+    {
+      "id": 230,
+      "name": "Gourmet Microgreen Set",
+      "category": "Microgreen Kit",
+      "serviceId": "microgreen_kit",
+      "price": 1299,
+      "imagePath": "public/assets/products/microgreen_kit_5.jpg"
+    },
+    {
+      "id": 231,
+      "name": "Travel Puja Set",
+      "category": "Puja Kits",
+      "serviceId": "puja_kits",
+      "price": 299,
+      "imagePath": "public/assets/products/puja_kits_5.jpg"
+    },
+    {
+      "id": 232,
+      "name": "Festival Music Collection",
+      "category": "Festival Essentials",
+      "serviceId": "festival_essentials",
+      "price": 499,
+      "imagePath": "public/assets/products/festival_essentials_5.jpg"
+    },
+    {
+      "id": 233,
+      "name": "Holi Sweet Box",
+      "category": "Holi Festival Kit",
+      "serviceId": "holi_festival_kit",
+      "price": 699,
+      "imagePath": "public/assets/products/holi_festival_kit_5.jpg"
+    },
+    {
+      "id": 234,
+      "name": "Diwali Lantern Set",
+      "category": "Diwali Festival Kit",
+      "serviceId": "diwali_festival_kit",
+      "price": 799,
+      "imagePath": "public/assets/products/diwali_festival_kit_5.jpg"
+    },
+    {
+      "id": 235,
+      "name": "Ganapati Modak Set",
+      "category": "Ganapati Festival Kit",
+      "serviceId": "ganapati_festival_kit",
+      "price": 899,
+      "imagePath": "public/assets/products/ganapati_festival_kit_5.jpg"
+    },
+    {
+      "id": 236,
+      "name": "DIY Toran Kit",
+      "category": "Festive Craft Delight",
+      "serviceId": "festive_craft_delight",
+      "price": 449,
+      "imagePath": "public/assets/products/festive_craft_delight_5.jpg"
+    },
+    {
+      "id": 237,
+      "name": "Lotus Incense Set",
+      "category": "Lotus Puja Decor Kit",
+      "serviceId": "lotus_puja_decor_kit",
+      "price": 399,
+      "imagePath": "public/assets/products/lotus_puja_decor_kit_5.jpg"
+    },
+    {
+      "id": 238,
+      "name": "Embroidery Machine Cover",
+      "category": "Machine Embroidery",
+      "serviceId": "machine_embroidery",
+      "price": 799,
+      "imagePath": "public/assets/products/machine_embroidery_7.jpg"
+    },
+    {
+      "id": 239,
+      "name": "Pearl Border Material",
+      "category": "Pearl Embroidery",
+      "serviceId": "pearl_embroidery",
+      "price": 499,
+      "imagePath": "public/assets/products/pearl_embroidery_7.jpg"
+    },
+    {
+      "id": 240,
+      "name": "Beaded Curtain String",
+      "category": "Beads Embroidery",
+      "serviceId": "beads_embroidery",
+      "price": 299,
+      "imagePath": "public/assets/products/beads_embroidery_7.jpg"
+    },
+    {
+      "id": 241,
+      "name": "Chikankari Kurta",
+      "category": "Hand Embroidery",
+      "serviceId": "hand_embroidery",
+      "price": 2799,
+      "imagePath": "public/assets/products/hand_embroidery_5.jpg"
+    },
+    {
+      "id": 242,
+      "name": "Medu Vada Combo",
+      "category": "South Indian Meals",
+      "serviceId": "south_indian_meals",
+      "price": 189,
+      "imagePath": "public/assets/products/south_indian_meals_6.jpg"
+    },
+    {
+      "id": 243,
+      "name": "Butter Naan Set",
+      "category": "North Indian Meals",
+      "serviceId": "north_indian_meals",
+      "price": 249,
+      "imagePath": "public/assets/products/north_indian_meals_6.jpg"
+    },
+    {
+      "id": 244,
+      "name": "Spring Roll Platter",
+      "category": "Quick Snacks",
+      "serviceId": "quick_snacks",
+      "price": 329,
+      "imagePath": "public/assets/products/quick_snacks_6.jpg"
+    },
+    {
+      "id": 245,
+      "name": "Handmade Dream Catcher",
+      "category": "Handmade Gifts",
+      "serviceId": "handmade_gifts",
+      "price": 599,
+      "imagePath": "public/assets/products/handmade_gifts_6.jpg"
+    },
+    {
+      "id": 246,
+      "name": "Birthday Photo Cake",
+      "category": "Birthday Gifts",
+      "serviceId": "birthday_gifts",
+      "price": 1299,
+      "imagePath": "public/assets/products/birthday_gifts_6.jpg"
+    },
+    {
+      "id": 247,
+      "name": "Wedding Vase",
+      "category": "Wedding Gifts",
+      "serviceId": "wedding_gifts",
+      "price": 1699,
+      "imagePath": "public/assets/products/wedding_gifts_6.jpg"
+    },
+    {
+      "id": 248,
+      "name": "Anniversary Clock",
+      "category": "Anniversary Gifts",
+      "serviceId": "anniversary_gifts",
+      "price": 1499,
+      "imagePath": "public/assets/products/anniversary_gifts_6.jpg"
+    },
+    {
+      "id": 249,
+      "name": "Abstract Art Print",
+      "category": "Art Paintings",
+      "serviceId": "art_paintings",
+      "price": 1199,
+      "imagePath": "public/assets/products/art_paintings_6.jpg"
+    },
+    {
+      "id": 250,
+      "name": "Paper Quilling Kit",
+      "category": "Paper Crafting",
+      "serviceId": "paper_crafting",
+      "price": 449,
+      "imagePath": "public/assets/products/paper_crafting_6.jpg"
+    },
+    {
+      "id": 251,
+      "name": "Clay Modeling Tools",
+      "category": "Clay Modelling",
+      "serviceId": "clay_modelling",
+      "price": 399,
+      "imagePath": "public/assets/products/clay_modelling_6.jpg"
+    },
+    {
+      "id": 252,
+      "name": "Memory Collage Service",
+      "category": "Collage Making",
+      "serviceId": "collage_making",
+      "price": 899,
+      "imagePath": "public/assets/products/collage_making_6.jpg"
+    },
+    {
+      "id": 253,
+      "name": "Designer Leggings",
+      "category": "Ladies Wear Fashion",
+      "serviceId": "ladies_wear_fashion",
+      "price": 899,
+      "imagePath": "public/assets/products/ladies_wear_fashion_6.jpg"
+    },
+    {
+      "id": 254,
+      "name": "Men's Ethnic Set",
+      "category": "Mens Wear Fashion",
+      "serviceId": "mens_wear_fashion",
+      "price": 3299,
+      "imagePath": "public/assets/products/mens_wear_fashion_6.jpg"
+    },
+    {
+      "id": 255,
+      "name": "Kids Party Shoes",
+      "category": "Kids Wear Fashion",
+      "serviceId": "kids_wear_fashion",
+      "price": 699,
+      "imagePath": "public/assets/products/kids_wear_fashion_6.jpg"
+    },
+    {
+      "id": 256,
+      "name": "Designer Saree Blouse",
+      "category": "Ethnic Wear",
+      "serviceId": "ethnic_wear",
+      "price": 1599,
+      "imagePath": "public/assets/products/ethnic_wear_6.jpg"
+    },
+    {
+      "id": 257,
+      "name": "Sequined Top",
+      "category": "Party Wear Outfits",
+      "serviceId": "party_wear_outfits",
+      "price": 1899,
+      "imagePath": "public/assets/products/party_wear_outfits_6.jpg"
+    },
+    {
+      "id": 258,
+      "name": "Mineral Makeup Kit",
+      "category": "Bridal Makeup",
+      "serviceId": "bridal_makeup",
+      "price": 2299,
+      "imagePath": "public/assets/products/bridal_makeup_6.jpg"
+    },
+    {
+      "id": 259,
+      "name": "Face Mask Collection",
+      "category": "Skin Care Routine",
+      "serviceId": "skin_care_routine",
+      "price": 799,
+      "imagePath": "public/assets/products/skin_care_routine_6.jpg"
+    },
+    {
+      "id": 260,
+      "name": "Hair Treatment Oil",
+      "category": "Hair Care Products",
+      "serviceId": "hair_care_products",
+      "price": 549,
+      "imagePath": "public/assets/products/hair_care_products_6.jpg"
+    },
+    {
+      "id": 261,
+      "name": "Nail Care Kit",
+      "category": "Manicure Pedicure",
+      "serviceId": "manicure_pedicure",
+      "price": 699,
+      "imagePath": "public/assets/products/manicure_pedicure_6.jpg"
+    },
+    {
+      "id": 262,
+      "name": "Aromatherapy Set",
+      "category": "Full Body Massage",
+      "serviceId": "full_body_massage",
+      "price": 1499,
+      "imagePath": "public/assets/products/full_body_massage_6.jpg"
+    },
+    {
+      "id": 263,
+      "name": "Sculpted Cake",
+      "category": "Cake Artistry",
+      "serviceId": "cake_artistry",
+      "price": 3799,
+      "imagePath": "public/assets/products/cake_artistry_6.jpg"
+    },
+    {
+      "id": 264,
+      "name": "Holiday Cupcakes",
+      "category": "Cupcake Muffin Creations",
+      "serviceId": "cupcake_muffin_creations",
+      "price": 999,
+      "imagePath": "public/assets/products/cupcake_muffin_creations_6.jpg"
+    },
+    {
+      "id": 265,
+      "name": "Festive Cookie Box",
+      "category": "Cookies Biscuits",
+      "serviceId": "cookies_biscuits",
+      "price": 899,
+      "imagePath": "public/assets/products/cookies_biscuits_6.jpg"
+    },
+    {
+      "id": 266,
+      "name": "Bread Making Kit",
+      "category": "Bread Pastry Delight",
+      "serviceId": "bread_pastry_delight",
+      "price": 1299,
+      "imagePath": "public/assets/products/bread_pastry_delight_6.jpg"
+    },
+    {
+      "id": 267,
+      "name": "Surprise Birthday Decor",
+      "category": "Birthday Decor",
+      "serviceId": "birthday_decor",
+      "price": 2799,
+      "imagePath": "public/assets/products/birthday_decor_6.jpg"
+    },
+    {
+      "id": 268,
+      "name": "Outdoor Wedding Setup",
+      "category": "Wedding Decor",
+      "serviceId": "wedding_decor",
+      "price": 18999,
+      "imagePath": "public/assets/products/wedding_decor_6.jpg"
+    },
+    {
+      "id": 269,
+      "name": "Pooja Room Decor",
+      "category": "Festive Home Decor",
+      "serviceId": "festive_home_decor",
+      "price": 1599,
+      "imagePath": "public/assets/products/festive_home_decor_6.jpg"
+    },
+    {
+      "id": 270,
+      "name": "Rose Anniversary Setup",
+      "category": "Anniversary Decor",
+      "serviceId": "anniversary_decor",
+      "price": 4299,
+      "imagePath": "public/assets/products/anniversary_decor_6.jpg"
+    },
+    {
+      "id": 271,
+      "name": "Brand Launch Decor",
+      "category": "Corporate Event Decor",
+      "serviceId": "corporate_event_decor",
+      "price": 14999,
+      "imagePath": "public/assets/products/corporate_event_decor_6.jpg"
+    },
+    {
+      "id": 272,
+      "name": "Lucky Bamboo",
+      "category": "Indoor Plants",
+      "serviceId": "indoor_plants",
+      "price": 599,
+      "imagePath": "public/assets/products/indoor_plants_6.jpg"
+    },
+    {
+      "id": 273,
+      "name": "Balcony Garden Kit",
+      "category": "Plant Starter Kit",
+      "serviceId": "plant_starter_kit",
+      "price": 1699,
+      "imagePath": "public/assets/products/plant_starter_kit_6.jpg"
+    },
+    {
+      "id": 274,
+      "name": "Culinary Herb Set",
+      "category": "Herb Garden Kit",
+      "serviceId": "herb_garden_kit",
+      "price": 749,
+      "imagePath": "public/assets/products/herb_garden_kit_6.jpg"
+    },
+    {
+      "id": 275,
+      "name": "Bell Pepper Seeds",
+      "category": "Vegetable Seed Kit",
+      "serviceId": "vegetable_seed_kit",
+      "price": 349,
+      "imagePath": "public/assets/products/vegetable_seed_kit_6.jpg"
+    },
+    {
+      "id": 276,
+      "name": "Sunflower Seed Pack",
+      "category": "Flower Seed Kit",
+      "serviceId": "flower_seed_kit",
+      "price": 249,
+      "imagePath": "public/assets/products/flower_seed_kit_6.jpg"
+    },
+    {
+      "id": 277,
+      "name": "Salad Micro Mix",
+      "category": "Microgreen Kit",
+      "serviceId": "microgreen_kit",
+      "price": 699,
+      "imagePath": "public/assets/products/microgreen_kit_6.jpg"
+    },
+    {
+      "id": 278,
+      "name": "Festival Puja Pack",
+      "category": "Puja Kits",
+      "serviceId": "puja_kits",
+      "price": 1099,
+      "imagePath": "public/assets/products/puja_kits_6.jpg"
+    },
+    {
+      "id": 279,
+      "name": "Traditional Wear Set",
+      "category": "Festival Essentials",
+      "serviceId": "festival_essentials",
+      "price": 1999,
+      "imagePath": "public/assets/products/festival_essentials_6.jpg"
+    },
+    {
+      "id": 280,
+      "name": "Holi Water Gun",
+      "category": "Holi Festival Kit",
+      "serviceId": "holi_festival_kit",
+      "price": 299,
+      "imagePath": "public/assets/products/holi_festival_kit_6.jpg"
+    },
+    {
+      "id": 281,
+      "name": "Diwali Rangoli Kit",
+      "category": "Diwali Festival Kit",
+      "serviceId": "diwali_festival_kit",
+      "price": 499,
+      "imagePath": "public/assets/products/diwali_festival_kit_6.jpg"
+    },
+    {
+      "id": 282,
+      "name": "Ganapati Aarti Book",
+      "category": "Ganapati Festival Kit",
+      "serviceId": "ganapati_festival_kit",
+      "price": 199,
+      "imagePath": "public/assets/products/ganapati_festival_kit_6.jpg"
+    },
+    {
+      "id": 283,
+      "name": "Paper Lantern Kit",
+      "category": "Festive Craft Delight",
+      "serviceId": "festive_craft_delight",
+      "price": 399,
+      "imagePath": "public/assets/products/festive_craft_delight_6.jpg"
+    },
+    {
+      "id": 284,
+      "name": "Lotus Candle Holder",
+      "category": "Lotus Puja Decor Kit",
+      "serviceId": "lotus_puja_decor_kit",
+      "price": 599,
+      "imagePath": "public/assets/products/lotus_puja_decor_kit_6.jpg"
+    },
+    {
+      "id": 285,
+      "name": "Embroidery Stabilizer",
+      "category": "Machine Embroidery",
+      "serviceId": "machine_embroidery",
+      "price": 199,
+      "imagePath": "public/assets/products/machine_embroidery_8.jpg"
+    },
+    {
+      "id": 286,
+      "name": "Pearl Needle Set",
+      "category": "Pearl Embroidery",
+      "serviceId": "pearl_embroidery",
+      "price": 349,
+      "imagePath": "public/assets/products/pearl_embroidery_8.jpg"
+    },
+    {
+      "id": 287,
+      "name": "Bead Storage Box",
+      "category": "Beads Embroidery",
+      "serviceId": "beads_embroidery",
+      "price": 449,
+      "imagePath": "public/assets/products/beads_embroidery_8.jpg"
+    },
+    {
+      "id": 288,
+      "name": "Kashmiri Embroidery Shawl",
+      "category": "Hand Embroidery",
+      "serviceId": "hand_embroidery",
+      "price": 4599,
+      "imagePath": "public/assets/products/hand_embroidery_6.jpg"
+    },
+    {
+      "id": 289,
+      "name": "Pongal Meal Set",
+      "category": "South Indian Meals",
+      "serviceId": "south_indian_meals",
+      "price": 279,
+      "imagePath": "public/assets/products/south_indian_meals_7.jpg"
+    },
+    {
+      "id": 290,
+      "name": "Tandoori Platter",
+      "category": "North Indian Meals",
+      "serviceId": "north_indian_meals",
+      "price": 599,
+      "imagePath": "public/assets/products/north_indian_meals_7.jpg"
+    },
+    {
+      "id": 291,
+      "name": "Samosa Chaat Kit",
+      "category": "Quick Snacks",
+      "serviceId": "quick_snacks",
+      "price": 229,
+      "imagePath": "public/assets/products/quick_snacks_7.jpg"
+    },
+    {
+      "id": 292,
+      "name": "Handmade Soap Set",
+      "category": "Handmade Gifts",
+      "serviceId": "handmade_gifts",
+      "price": 499,
+      "imagePath": "public/assets/products/handmade_gifts_7.jpg"
+    },
+    {
+      "id": 293,
+      "name": "Birthday Card Set",
+      "category": "Birthday Gifts",
+      "serviceId": "birthday_gifts",
+      "price": 299,
+      "imagePath": "public/assets/products/birthday_gifts_7.jpg"
+    },
+    {
+      "id": 294,
+      "name": "Wedding Champagne Set",
+      "category": "Wedding Gifts",
+      "serviceId": "wedding_gifts",
+      "price": 2199,
+      "imagePath": "public/assets/products/wedding_gifts_7.jpg"
+    },
+    {
+      "id": 295,
+      "name": "Anniversary Photo Frame",
+      "category": "Anniversary Gifts",
+      "serviceId": "anniversary_gifts",
+      "price": 799,
+      "imagePath": "public/assets/products/anniversary_gifts_7.jpg"
+    },
+    {
+      "id": 296,
+      "name": "Modern Art Piece",
+      "category": "Art Paintings",
+      "serviceId": "art_paintings",
+      "price": 3899,
+      "imagePath": "public/assets/products/art_paintings_7.jpg"
+    },
+    {
+      "id": 297,
+      "name": "Paper Cutting Kit",
+      "category": "Paper Crafting",
+      "serviceId": "paper_crafting",
+      "price": 599,
+      "imagePath": "public/assets/products/paper_crafting_7.jpg"
+    },
+    {
+      "id": 298,
+      "name": "Air Dry Clay",
+      "category": "Clay Modelling",
+      "serviceId": "clay_modelling",
+      "price": 399,
+      "imagePath": "public/assets/products/clay_modelling_7.jpg"
+    },
+    {
+      "id": 299,
+      "name": "Digital Photo Collage",
+      "category": "Collage Making",
+      "serviceId": "collage_making",
+      "price": 699,
+      "imagePath": "public/assets/products/collage_making_7.jpg"
+    },
+    {
+      "id": 300,
+      "name": "Designer Handbag",
+      "category": "Ladies Wear Fashion",
+      "serviceId": "ladies_wear_fashion",
+      "price": 2899,
+      "imagePath": "public/assets/products/ladies_wear_fashion_7.jpg"
+    },
+    {
+      "id": 301,
+      "name": "Men's Winter Coat",
+      "category": "Mens Wear Fashion",
+      "serviceId": "mens_wear_fashion",
+      "price": 3899,
+      "imagePath": "public/assets/products/mens_wear_fashion_7.jpg"
+    },
+    {
+      "id": 302,
+      "name": "Kids School Uniform",
+      "category": "Kids Wear Fashion",
+      "serviceId": "kids_wear_fashion",
+      "price": 1199,
+      "imagePath": "public/assets/products/kids_wear_fashion_7.jpg"
+    },
+    {
+      "id": 303,
+      "name": "Designer Patiala Suit",
+      "category": "Ethnic Wear",
+      "serviceId": "ethnic_wear",
+      "price": 3599,
+      "imagePath": "public/assets/products/ethnic_wear_7.jpg"
+    },
+    {
+      "id": 304,
+      "name": "Evening Dress",
+      "category": "Party Wear Outfits",
+      "serviceId": "party_wear_outfits",
+      "price": 4899,
+      "imagePath": "public/assets/products/party_wear_outfits_7.jpg"
+    },
+    {
+      "id": 305,
+      "name": "Bridal Touch-up Kit",
+      "category": "Bridal Makeup",
+      "serviceId": "bridal_makeup",
+      "price": 899,
+      "imagePath": "public/assets/products/bridal_makeup_7.jpg"
+    },
+    {
+      "id": 306,
+      "name": "Night Cream",
+      "category": "Skin Care Routine",
+      "serviceId": "skin_care_routine",
+      "price": 699,
+      "imagePath": "public/assets/products/skin_care_routine_7.jpg"
+    },
+    {
+      "id": 307,
+      "name": "Hair Serum",
+      "category": "Hair Care Products",
+      "serviceId": "hair_care_products",
+      "price": 649,
+      "imagePath": "public/assets/products/hair_care_products_7.jpg"
+    },
+    {
+      "id": 308,
+      "name": "Foot Spa Kit",
+      "category": "Manicure Pedicure",
+      "serviceId": "manicure_pedicure",
+      "price": 1599,
+      "imagePath": "public/assets/products/manicure_pedicure_7.jpg"
+    },
+    {
+      "id": 309,
+      "name": "Reflexology Mat",
+      "category": "Full Body Massage",
+      "serviceId": "full_body_massage",
+      "price": 1299,
+      "imagePath": "public/assets/products/full_body_massage_7.jpg"
+    },
+    {
+      "id": 310,
+      "name": "Character Cake",
+      "category": "Cake Artistry",
+      "serviceId": "cake_artistry",
+      "price": 2299,
+      "imagePath": "public/assets/products/cake_artistry_7.jpg"
+    },
+    {
+      "id": 311,
+      "name": "Mini Cake Pops",
+      "category": "Cupcake Muffin Creations",
+      "serviceId": "cupcake_muffin_creations",
+      "price": 599,
+      "imagePath": "public/assets/products/cupcake_muffin_creations_7.jpg"
+    },
+    {
+      "id": 312,
+      "name": "Biscuit Assortment",
+      "category": "Cookies Biscuits",
+      "serviceId": "cookies_biscuits",
+      "price": 799,
+      "imagePath": "public/assets/products/cookies_biscuits_7.jpg"
+    },
+    {
+      "id": 313,
+      "name": "Artisan Bread Loaf",
+      "category": "Bread Pastry Delight",
+      "serviceId": "bread_pastry_delight",
+      "price": 349,
+      "imagePath": "public/assets/products/bread_pastry_delight_7.jpg"
+    },
+    {
+      "id": 314,
+      "name": "Themed Birthday Decor",
+      "category": "Birthday Decor",
+      "serviceId": "birthday_decor",
+      "price": 1899,
+      "imagePath": "public/assets/products/birthday_decor_7.jpg"
+    },
+    {
+      "id": 315,
+      "name": "Cocktail Decor Package",
+      "category": "Wedding Decor",
+      "serviceId": "wedding_decor",
+      "price": 7999,
+      "imagePath": "public/assets/products/wedding_decor_7.jpg"
+    },
+    {
+      "id": 316,
+      "name": "Wall Hanging Set",
+      "category": "Festive Home Decor",
+      "serviceId": "festive_home_decor",
+      "price": 899,
+      "imagePath": "public/assets/products/festive_home_decor_7.jpg"
+    },
+    {
+      "id": 317,
+      "name": "Candlelight Dinner Setup",
+      "category": "Anniversary Decor",
+      "serviceId": "anniversary_decor",
+      "price": 2499,
+      "imagePath": "public/assets/products/anniversary_decor_7.jpg"
+    },
+    {
+      "id": 318,
+      "name": "Exhibition Booth Design",
+      "category": "Corporate Event Decor",
+      "serviceId": "corporate_event_decor",
+      "price": 10999,
+      "imagePath": "public/assets/products/corporate_event_decor_7.jpg"
+    },
+    {
+      "id": 319,
+      "name": "Fern Plant",
+      "category": "Indoor Plants",
+      "serviceId": "indoor_plants",
+      "price": 449,
+      "imagePath": "public/assets/products/indoor_plants_7.jpg"
+    },
+    {
+      "id": 320,
+      "name": "Terrarium Kit",
+      "category": "Plant Starter Kit",
+      "serviceId": "plant_starter_kit",
+      "price": 1299,
+      "imagePath": "public/assets/products/plant_starter_kit_7.jpg"
+    },
+    {
+      "id": 321,
+      "name": "Medicinal Herb Kit",
+      "category": "Herb Garden Kit",
+      "serviceId": "herb_garden_kit",
+      "price": 999,
+      "imagePath": "public/assets/products/herb_garden_kit_7.jpg"
+    },
+    {
+      "id": 322,
+      "name": "Carrot Seed Pack",
+      "category": "Vegetable Seed Kit",
+      "serviceId": "vegetable_seed_kit",
+      "price": 199,
+      "imagePath": "public/assets/products/vegetable_seed_kit_7.jpg"
+    },
+    {
+      "id": 323,
+      "name": "Lavender Seeds",
+      "category": "Flower Seed Kit",
+      "serviceId": "flower_seed_kit",
+      "price": 399,
+      "imagePath": "public/assets/products/flower_seed_kit_7.jpg"
+    },
+    {
+      "id": 324,
+      "name": "Wheatgrass Kit",
+      "category": "Microgreen Kit",
+      "serviceId": "microgreen_kit",
+      "price": 599,
+      "imagePath": "public/assets/products/microgreen_kit_7.jpg"
+    },
+    {
+      "id": 325,
+      "name": "Daily Worship Kit",
+      "category": "Puja Kits",
+      "serviceId": "puja_kits",
+      "price": 599,
+      "imagePath": "public/assets/products/puja_kits_7.jpg"
+    },
+    {
+      "id": 326,
+      "name": "Festival Game Set",
+      "category": "Festival Essentials",
+      "serviceId": "festival_essentials",
+      "price": 799,
+      "imagePath": "public/assets/products/festival_essentials_7.jpg"
+    },
+    {
+      "id": 327,
+      "name": "Holi Party Pack",
+      "category": "Holi Festival Kit",
+      "serviceId": "holi_festival_kit",
+      "price": 1499,
+      "imagePath": "public/assets/products/holi_festival_kit_7.jpg"
+    },
+    {
+      "id": 328,
+      "name": "Diwali Gift Hamper",
+      "category": "Diwali Festival Kit",
+      "serviceId": "diwali_festival_kit",
+      "price": 1699,
+      "imagePath": "public/assets/products/diwali_festival_kit_7.jpg"
+    },
+    {
+      "id": 329,
+      "name": "Ganapati Flower Set",
+      "category": "Ganapati Festival Kit",
+      "serviceId": "ganapati_festival_kit",
+      "price": 699,
+      "imagePath": "public/assets/products/ganapati_festival_kit_7.jpg"
+    },
+    {
+      "id": 330,
+      "name": "DIY Diya Kit",
+      "category": "Festive Craft Delight",
+      "serviceId": "festive_craft_delight",
+      "price": 349,
+      "imagePath": "public/assets/products/festive_craft_delight_7.jpg"
+    },
+    {
+      "id": 331,
+      "name": "Lotus Petal Pack",
+      "category": "Lotus Puja Decor Kit",
+      "serviceId": "lotus_puja_decor_kit",
+      "price": 299,
+      "imagePath": "public/assets/products/lotus_puja_decor_kit_7.jpg"
+    },
+    {
+      "id": 332,
+      "name": "Embroidery Hoop Stand",
+      "category": "Machine Embroidery",
+      "serviceId": "machine_embroidery",
+      "price": 599,
+      "imagePath": "public/assets/products/machine_embroidery_9.jpg"
+    },
+    {
+      "id": 333,
+      "name": "Pearl Thread Roll",
+      "category": "Pearl Embroidery",
+      "serviceId": "pearl_embroidery",
+      "price": 249,
+      "imagePath": "public/assets/products/pearl_embroidery_9.jpg"
+    },
+    {
+      "id": 334,
+      "name": "Beaded Keychain Kit",
+      "category": "Beads Embroidery",
+      "serviceId": "beads_embroidery",
+      "price": 199,
+      "imagePath": "public/assets/products/beads_embroidery_9.jpg"
+    },
+    {
+      "id": 335,
+      "name": "Sujani Embroidery Piece",
+      "category": "Hand Embroidery",
+      "serviceId": "hand_embroidery",
+      "price": 1899,
+      "imagePath": "public/assets/products/hand_embroidery_7.jpg"
+    },
+    {
+      "id": 336,
+      "name": "Filter Coffee Kit",
+      "category": "South Indian Meals",
+      "serviceId": "south_indian_meals",
+      "price": 399,
+      "imagePath": "public/assets/products/south_indian_meals_8.jpg"
+    },
+    {
+      "id": 337,
+      "name": "Rajasthani Thali",
+      "category": "North Indian Meals",
+      "serviceId": "north_indian_meals",
+      "price": 449,
+      "imagePath": "public/assets/products/north_indian_meals_8.jpg"
+    },
+    {
+      "id": 338,
+      "name": "Sandwich Platter",
+      "category": "Quick Snacks",
+      "serviceId": "quick_snacks",
+      "price": 279,
+      "imagePath": "public/assets/products/quick_snacks_8.jpg"
+    },
+    {
+      "id": 339,
+      "name": "Handmade Potpourri",
+      "category": "Handmade Gifts",
+      "serviceId": "handmade_gifts",
+      "price": 349,
+      "imagePath": "public/assets/products/handmade_gifts_8.jpg"
+    },
+    {
+      "id": 340,
+      "name": "Birthday Banner",
+      "category": "Birthday Gifts",
+      "serviceId": "birthday_gifts",
+      "price": 399,
+      "imagePath": "public/assets/products/birthday_gifts_8.jpg"
+    },
+    {
+      "id": 341,
+      "name": "Wedding Card Holder",
+      "category": "Wedding Gifts",
+      "serviceId": "wedding_gifts",
+      "price": 899,
+      "imagePath": "public/assets/products/wedding_gifts_8.jpg"
+    },
+    {
+      "id": 342,
+      "name": "Anniversary Music CD",
+      "category": "Anniversary Gifts",
+      "serviceId": "anniversary_gifts",
+      "price": 499,
+      "imagePath": "public/assets/products/anniversary_gifts_8.jpg"
+    },
+    {
+      "id": 343,
+      "name": "Folk Art Painting",
+      "category": "Art Paintings",
+      "serviceId": "art_paintings",
+      "price": 2299,
+      "imagePath": "public/assets/products/art_paintings_8.jpg"
+    },
+    {
+      "id": 344,
+      "name": "Paper Marbling Kit",
+      "category": "Paper Crafting",
+      "serviceId": "paper_crafting",
+      "price": 799,
+      "imagePath": "public/assets/products/paper_crafting_8.jpg"
+    },
+    {
+      "id": 345,
+      "name": "Sculpture Stand",
+      "category": "Clay Modelling",
+      "serviceId": "clay_modelling",
+      "price": 699,
+      "imagePath": "public/assets/products/clay_modelling_8.jpg"
+    },
+    {
+      "id": 346,
+      "name": "Family Collage Service",
+      "category": "Collage Making",
+      "serviceId": "collage_making",
+      "price": 999,
+      "imagePath": "public/assets/products/collage_making_8.jpg"
+    },
+    {
+      "id": 347,
+      "name": "Designer Scarf",
+      "category": "Ladies Wear Fashion",
+      "serviceId": "ladies_wear_fashion",
+      "price": 1299,
+      "imagePath": "public/assets/products/ladies_wear_fashion_8.jpg"
+    },
+    {
+      "id": 348,
+      "name": "Men's Accessory Set",
+      "category": "Mens Wear Fashion",
+      "serviceId": "mens_wear_fashion",
+      "price": 1499,
+      "imagePath": "public/assets/products/mens_wear_fashion_8.jpg"
+    },
+    {
+      "id": 349,
+      "name": "Kids Rainwear",
+      "category": "Kids Wear Fashion",
+      "serviceId": "kids_wear_fashion",
+      "price": 999,
+      "imagePath": "public/assets/products/kids_wear_fashion_8.jpg"
+    },
+    {
+      "id": 350,
+      "name": "Designer Dupatta",
+      "category": "Ethnic Wear",
+      "serviceId": "ethnic_wear",
+      "price": 1899,
+      "imagePath": "public/assets/products/ethnic_wear_8.jpg"
+    },
+    {
+      "id": 351,
+      "name": "Cocktail Saree",
+      "category": "Party Wear Outfits",
+      "serviceId": "party_wear_outfits",
+      "price": 4299,
+      "imagePath": "public/assets/products/party_wear_outfits_8.jpg"
+    },
+    {
+      "id": 352,
+      "name": "Bridal Lipstick Set",
+      "category": "Bridal Makeup",
+      "serviceId": "bridal_makeup",
+      "price": 1299,
+      "imagePath": "public/assets/products/bridal_makeup_8.jpg"
+    },
+    {
+      "id": 353,
+      "name": "Face Toner",
+      "category": "Skin Care Routine",
+      "serviceId": "skin_care_routine",
+      "price": 449,
+      "imagePath": "public/assets/products/skin_care_routine_8.jpg"
+    },
+    {
+      "id": 354,
+      "name": "Hair Mask",
+      "category": "Hair Care Products",
+      "serviceId": "hair_care_products",
+      "price": 599,
+      "imagePath": "public/assets/products/hair_care_products_8.jpg"
+    },
+    {
+      "id": 355,
+      "name": "Nail File Set",
+      "category": "Manicure Pedicure",
+      "serviceId": "manicure_pedicure",
+      "price": 299,
+      "imagePath": "public/assets/products/manicure_pedicure_8.jpg"
+    },
+    {
+      "id": 356,
+      "name": "Massage Roller",
+      "category": "Full Body Massage",
+      "serviceId": "full_body_massage",
+      "price": 799,
+      "imagePath": "public/assets/products/full_body_massage_8.jpg"
+    },
+    {
+      "id": 357,
+      "name": "Tiered Cake",
+      "category": "Cake Artistry",
+      "serviceId": "cake_artistry",
+      "price": 5599,
+      "imagePath": "public/assets/products/cake_artistry_8.jpg"
+    },
+    {
+      "id": 358,
+      "name": "Savory Muffin Box",
+      "category": "Cupcake Muffin Creations",
+      "serviceId": "cupcake_muffin_creations",
+      "price": 699,
+      "imagePath": "public/assets/products/cupcake_muffin_creations_8.jpg"
+    },
+    {
+      "id": 359,
+      "name": "Healthy Biscuit Pack",
+      "category": "Cookies Biscuits",
+      "serviceId": "cookies_biscuits",
+      "price": 499,
+      "imagePath": "public/assets/products/cookies_biscuits_8.jpg"
+    },
+    {
+      "id": 360,
+      "name": "Sourdough Starter Kit",
+      "category": "Bread Pastry Delight",
+      "serviceId": "bread_pastry_delight",
+      "price": 899,
+      "imagePath": "public/assets/products/bread_pastry_delight_8.jpg"
+    },
+    {
+      "id": 361,
+      "name": "Balloon Garland Kit",
+      "category": "Birthday Decor",
+      "serviceId": "birthday_decor",
+      "price": 1299,
+      "imagePath": "public/assets/products/birthday_decor_8.jpg"
+    },
+    {
+      "id": 362,
+      "name": "Floral Decor Package",
+      "category": "Wedding Decor",
+      "serviceId": "wedding_decor",
+      "price": 12999,
+      "imagePath": "public/assets/products/wedding_decor_8.jpg"
+    },
+    {
+      "id": 363,
+      "name": "Table Centerpiece",
+      "category": "Festive Home Decor",
+      "serviceId": "festive_home_decor",
+      "price": 799,
+      "imagePath": "public/assets/products/festive_home_decor_8.jpg"
+    },
+    {
+      "id": 364,
+      "name": "Anniversary Photo Display",
+      "category": "Anniversary Decor",
+      "serviceId": "anniversary_decor",
+      "price": 1699,
+      "imagePath": "public/assets/products/anniversary_decor_8.jpg"
+    },
+    {
+      "id": 365,
+      "name": "Stage Setup Package",
+      "category": "Corporate Event Decor",
+      "serviceId": "corporate_event_decor",
+      "price": 8999,
+      "imagePath": "public/assets/products/corporate_event_decor_8.jpg"
+    },
+    {
+      "id": 366,
+      "name": "Cactus Collection",
+      "category": "Indoor Plants",
+      "serviceId": "indoor_plants",
+      "price": 699,
+      "imagePath": "public/assets/products/indoor_plants_8.jpg"
+    },
+    {
+      "id": 367,
+      "name": "Window Garden Kit",
+      "category": "Plant Starter Kit",
+      "serviceId": "plant_starter_kit",
+      "price": 1099,
+      "imagePath": "public/assets/products/plant_starter_kit_8.jpg"
+    },
+    {
+      "id": 368,
+      "name": "Aromatic Mint Set",
+      "category": "Herb Garden Kit",
+      "serviceId": "herb_garden_kit",
+      "price": 549,
+      "imagePath": "public/assets/products/herb_garden_kit_8.jpg"
+    },
+    {
+      "id": 369,
+      "name": "Spinach Seed Pack",
+      "category": "Vegetable Seed Kit",
+      "serviceId": "vegetable_seed_kit",
+      "price": 179,
+      "imagePath": "public/assets/products/vegetable_seed_kit_8.jpg"
+    },
+    {
+      "id": 370,
+      "name": "Marigold Seeds",
+      "category": "Flower Seed Kit",
+      "serviceId": "flower_seed_kit",
+      "price": 149,
+      "imagePath": "public/assets/products/flower_seed_kit_8.jpg"
+    },
+    {
+      "id": 371,
+      "name": "Radish Microgreen Kit",
+      "category": "Microgreen Kit",
+      "serviceId": "microgreen_kit",
+      "price": 649,
+      "imagePath": "public/assets/products/microgreen_kit_8.jpg"
+    },
+    {
+      "id": 372,
+      "name": "Special Puja Thali",
+      "category": "Puja Kits",
+      "serviceId": "puja_kits",
+      "price": 899,
+      "imagePath": "public/assets/products/puja_kits_8.jpg"
+    },
+    {
+      "id": 373,
+      "name": "Festival Costume Set",
+      "category": "Festival Essentials",
+      "serviceId": "festival_essentials",
+      "price": 2299,
+      "imagePath": "public/assets/products/festival_essentials_8.jpg"
+    },
+    {
+      "id": 374,
+      "name": "Holi Protective Cream",
+      "category": "Holi Festival Kit",
+      "serviceId": "holi_festival_kit",
+      "price": 399,
+      "imagePath": "public/assets/products/holi_festival_kit_8.jpg"
+    },
+    {
+      "id": 375,
+      "name": "Diwali Candle Set",
+      "category": "Diwali Festival Kit",
+      "serviceId": "diwali_festival_kit",
+      "price": 599,
+      "imagePath": "public/assets/products/diwali_festival_kit_8.jpg"
+    },
+    {
+      "id": 376,
+      "name": "Ganapati Aarti Set",
+      "category": "Ganapati Festival Kit",
+      "serviceId": "ganapati_festival_kit",
+      "price": 499,
+      "imagePath": "public/assets/products/ganapati_festival_kit_8.jpg"
+    },
+    {
+      "id": 377,
+      "name": "Paper Flower Kit",
+      "category": "Festive Craft Delight",
+      "serviceId": "festive_craft_delight",
+      "price": 449,
+      "imagePath": "public/assets/products/festive_craft_delight_8.jpg"
+    },
+    {
+      "id": 378,
+      "name": "Lotus Essential Oil",
+      "category": "Lotus Puja Decor Kit",
+      "serviceId": "lotus_puja_decor_kit",
+      "price": 699,
+      "imagePath": "public/assets/products/lotus_puja_decor_kit_8.jpg"
+    },
+    {
+      "id": 379,
+      "name": "Embroidery Design Software",
+      "category": "Machine Embroidery",
+      "serviceId": "machine_embroidery",
+      "price": 2999,
+      "imagePath": "public/assets/products/machine_embroidery_10.jpg"
+    },
+    {
+      "id": 380,
+      "name": "Pearl Craft Book",
+      "category": "Pearl Embroidery",
+      "serviceId": "pearl_embroidery",
+      "price": 599,
+      "imagePath": "public/assets/products/pearl_embroidery_10.jpg"
+    },
+    {
+      "id": 381,
+      "name": "Beaded Lampshade",
+      "category": "Beads Embroidery",
+      "serviceId": "beads_embroidery",
+      "price": 1899,
+      "imagePath": "public/assets/products/beads_embroidery_10.jpg"
+    },
+    {
+      "id": 382,
+      "name": "Kashida Embroidery Piece",
+      "category": "Hand Embroidery",
+      "serviceId": "hand_embroidery",
+      "price": 2799,
+      "imagePath": "public/assets/products/hand_embroidery_8.jpg"
+    },
+    {
+      "id": 383,
+      "name": "Sambar Powder Kit",
+      "category": "South Indian Meals",
+      "serviceId": "south_indian_meals",
+      "price": 349,
+      "imagePath": "public/assets/products/south_indian_meals_9.jpg"
+    },
+    {
+      "id": 384,
+      "name": "Kashmiri Kahwa Set",
+      "category": "North Indian Meals",
+      "serviceId": "north_indian_meals",
+      "price": 599,
+      "imagePath": "public/assets/products/north_indian_meals_9.jpg"
+    },
+    {
+      "id": 385,
+      "name": "Pakora Mix",
+      "category": "Quick Snacks",
+      "serviceId": "quick_snacks",
+      "price": 199,
+      "imagePath": "public/assets/products/quick_snacks_9.jpg"
+    },
+    {
+      "id": 386,
+      "name": "Handmade Bookmark Set",
+      "category": "Handmade Gifts",
+      "serviceId": "handmade_gifts",
+      "price": 249,
+      "imagePath": "public/assets/products/handmade_gifts_9.jpg"
+    },
+    {
+      "id": 387,
+      "name": "Birthday Crown",
+      "category": "Birthday Gifts",
+      "serviceId": "birthday_gifts",
+      "price": 199,
+      "imagePath": "public/assets/products/birthday_gifts_9.jpg"
+    },
+    {
+      "id": 388,
+      "name": "Wedding Guest Book",
+      "category": "Wedding Gifts",
+      "serviceId": "wedding_gifts",
+      "price": 1299,
+      "imagePath": "public/assets/products/wedding_gifts_9.jpg"
+    },
+    {
+      "id": 389,
+      "name": "Anniversary Plaque",
+      "category": "Anniversary Gifts",
+      "serviceId": "anniversary_gifts",
+      "price": 899,
+      "imagePath": "public/assets/products/anniversary_gifts_9.jpg"
+    },
+    {
+      "id": 390,
+      "name": "Digital Art Print",
+      "category": "Art Paintings",
+      "serviceId": "art_paintings",
+      "price": 899,
+      "imagePath": "public/assets/products/art_paintings_9.jpg"
+    },
+    {
+      "id": 391,
+      "name": "Paper Weaving Kit",
+      "category": "Paper Crafting",
+      "serviceId": "paper_crafting",
+      "price": 499,
+      "imagePath": "public/assets/products/paper_crafting_9.jpg"
+    },
+    {
+      "id": 392,
+      "name": "Clay Jewelry Set",
+      "category": "Clay Modelling",
+      "serviceId": "clay_modelling",
+      "price": 799,
+      "imagePath": "public/assets/products/clay_modelling_9.jpg"
+    },
+    {
+      "id": 393,
+      "name": "Travel Memory Collage",
+      "category": "Collage Making",
+      "serviceId": "collage_making",
+      "price": 699,
+      "imagePath": "public/assets/products/collage_making_9.jpg"
+    },
+    {
+      "id": 394,
+      "name": "Designer Jumpsuit",
+      "category": "Ladies Wear Fashion",
+      "serviceId": "ladies_wear_fashion",
+      "price": 3299,
+      "imagePath": "public/assets/products/ladies_wear_fashion_9.jpg"
+    },
+    {
+      "id": 395,
+      "name": "Men's Summer Wear",
+      "category": "Mens Wear Fashion",
+      "serviceId": "mens_wear_fashion",
+      "price": 1899,
+      "imagePath": "public/assets/products/mens_wear_fashion_9.jpg"
+    },
+    {
+      "id": 396,
+      "name": "Kids Traditional Jewelry",
+      "category": "Kids Wear Fashion",
+      "serviceId": "kids_wear_fashion",
+      "price": 599,
+      "imagePath": "public/assets/products/kids_wear_fashion_9.jpg"
+    },
+    {
+      "id": 397,
+      "name": "Designer Salwar",
+      "category": "Ethnic Wear",
+      "serviceId": "ethnic_wear",
+      "price": 2899,
+      "imagePath": "public/assets/products/ethnic_wear_9.jpg"
+    },
+    {
+      "id": 398,
+      "name": "Cocktail Skirt",
+      "category": "Party Wear Outfits",
+      "serviceId": "party_wear_outfits",
+      "price": 2399,
+      "imagePath": "public/assets/products/party_wear_outfits_9.jpg"
+    },
+    {
+      "id": 399,
+      "name": "Bridal Eye Shadow",
+      "category": "Bridal Makeup",
+      "serviceId": "bridal_makeup",
+      "price": 799,
+      "imagePath": "public/assets/products/bridal_makeup_9.jpg"
+    },
+    {
+      "id": 400,
+      "name": "Face Wash",
+      "category": "Skin Care Routine",
+      "serviceId": "skin_care_routine",
+      "price": 349,
+      "imagePath": "public/assets/products/skin_care_routine_9.jpg"
+    },
+    {
+      "id": 401,
+      "name": "Hair Conditioner",
+      "category": "Hair Care Products",
+      "serviceId": "hair_care_products",
+      "price": 449,
+      "imagePath": "public/assets/products/hair_care_products_9.jpg"
+    },
+    {
+      "id": 402,
+      "name": "Cuticle Oil",
+      "category": "Manicure Pedicure",
+      "serviceId": "manicure_pedicure",
+      "price": 249,
+      "imagePath": "public/assets/products/manicure_pedicure_9.jpg"
+    },
+    {
+      "id": 403,
+      "name": "Massage Stone Set",
+      "category": "Full Body Massage",
+      "serviceId": "full_body_massage",
+      "price": 1299,
+      "imagePath": "public/assets/products/full_body_massage_9.jpg"
+    },
+    {
+      "id": 404,
+      "name": "Fondant Decorations",
+      "category": "Cake Artistry",
+      "serviceId": "cake_artistry",
+      "price": 899,
+      "imagePath": "public/assets/products/cake_artistry_9.jpg"
+    },
+    {
+      "id": 405,
+      "name": "Mini Cheesecake Set",
+      "category": "Cupcake Muffin Creations",
+      "serviceId": "cupcake_muffin_creations",
+      "price": 1199,
+      "imagePath": "public/assets/products/cupcake_muffin_creations_9.jpg"
+    },
+    {
+      "id": 406,
+      "name": "Oatmeal Cookies",
+      "category": "Cookies Biscuits",
+      "serviceId": "cookies_biscuits",
+      "price": 449,
+      "imagePath": "public/assets/products/cookies_biscuits_9.jpg"
+    },
+    {
+      "id": 407,
+      "name": "Bread Flour Kit",
+      "category": "Bread Pastry Delight",
+      "serviceId": "bread_pastry_delight",
+      "price": 599,
+      "imagePath": "public/assets/products/bread_pastry_delight_9.jpg"
+    },
+    {
+      "id": 408,
+      "name": "Photo Booth Props",
+      "category": "Birthday Decor",
+      "serviceId": "birthday_decor",
+      "price": 499,
+      "imagePath": "public/assets/products/birthday_decor_9.jpg"
+    },
+    {
+      "id": 409,
+      "name": "Ceiling Decor Package",
+      "category": "Wedding Decor",
+      "serviceId": "wedding_decor",
+      "price": 6999,
+      "imagePath": "public/assets/products/wedding_decor_9.jpg"
+    },
+    {
+      "id": 410,
+      "name": "Door Decor Set",
+      "category": "Festive Home Decor",
+      "serviceId": "festive_home_decor",
+      "price": 699,
+      "imagePath": "public/assets/products/festive_home_decor_9.jpg"
+    },
+    {
+      "id": 411,
+      "name": "Anniversary Lighting",
+      "category": "Anniversary Decor",
+      "serviceId": "anniversary_decor",
+      "price": 1299,
+      "imagePath": "public/assets/products/anniversary_decor_9.jpg"
+    },
+    {
+      "id": 412,
+      "name": "Backdrop Design",
+      "category": "Corporate Event Decor",
+      "serviceId": "corporate_event_decor",
+      "price": 4999,
+      "imagePath": "public/assets/products/corporate_event_decor_9.jpg"
+    },
+    {
+      "id": 413,
+      "name": "Bonsai Tree",
+      "category": "Indoor Plants",
+      "serviceId": "indoor_plants",
+      "price": 1899,
+      "imagePath": "public/assets/products/indoor_plants_9.jpg"
+    },
+    {
+      "id": 414,
+      "name": "Hydroponic Kit",
+      "category": "Plant Starter Kit",
+      "serviceId": "plant_starter_kit",
+      "price": 2999,
+      "imagePath": "public/assets/products/plant_starter_kit_9.jpg"
+    },
+    {
+      "id": 415,
+      "name": "Basil Growing Kit",
+      "category": "Herb Garden Kit",
+      "serviceId": "herb_garden_kit",
+      "price": 649,
+      "imagePath": "public/assets/products/herb_garden_kit_9.jpg"
+    },
+    {
+      "id": 416,
+      "name": "Cucumber Seeds",
+      "category": "Vegetable Seed Kit",
+      "serviceId": "vegetable_seed_kit",
+      "price": 229,
+      "imagePath": "public/assets/products/vegetable_seed_kit_9.jpg"
+    },
+    {
+      "id": 417,
+      "name": "Jasmine Plant Seeds",
+      "category": "Flower Seed Kit",
+      "serviceId": "flower_seed_kit",
+      "price": 349,
+      "imagePath": "public/assets/products/flower_seed_kit_9.jpg"
+    },
+    {
+      "id": 418,
+      "name": "Broccoli Microgreen",
+      "category": "Microgreen Kit",
+      "serviceId": "microgreen_kit",
+      "price": 749,
+      "imagePath": "public/assets/products/microgreen_kit_9.jpg"
+    },
+    {
+      "id": 419,
+      "name": "Havan Samagri",
+      "category": "Puja Kits",
+      "serviceId": "puja_kits",
+      "price": 799,
+      "imagePath": "public/assets/products/puja_kits_9.jpg"
+    },
+    {
+      "id": 420,
+      "name": "Festival Snack Box",
+      "category": "Festival Essentials",
+      "serviceId": "festival_essentials",
+      "price": 899,
+      "imagePath": "public/assets/products/festival_essentials_9.jpg"
+    },
+    {
+      "id": 421,
+      "name": "Holi Party Games",
+      "category": "Holi Festival Kit",
+      "serviceId": "holi_festival_kit",
+      "price": 599,
+      "imagePath": "public/assets/products/holi_festival_kit_9.jpg"
+    },
+    {
+      "id": 422,
+      "name": "Diwali Sweet Maker",
+      "category": "Diwali Festival Kit",
+      "serviceId": "diwali_festival_kit",
+      "price": 1299,
+      "imagePath": "public/assets/products/diwali_festival_kit_9.jpg"
+    },
+    {
+      "id": 423,
+      "name": "Ganapati Decor Lights",
+      "category": "Ganapati Festival Kit",
+      "serviceId": "ganapati_festival_kit",
+      "price": 899,
+      "imagePath": "public/assets/products/ganapati_festival_kit_9.jpg"
+    },
+    {
+      "id": 424,
+      "name": "Rangoli Powder Set",
+      "category": "Festive Craft Delight",
+      "serviceId": "festive_craft_delight",
+      "price": 299,
+      "imagePath": "public/assets/products/festive_craft_delight_9.jpg"
+    },
+    {
+      "id": 425,
+      "name": "Lotus Flower Stand",
+      "category": "Lotus Puja Decor Kit",
+      "serviceId": "lotus_puja_decor_kit",
+      "price": 899,
+      "imagePath": "public/assets/products/lotus_puja_decor_kit_9.jpg"
+    },
+    {
+      "id": 426,
+      "name": "Embroidery Transfer Paper",
+      "category": "Machine Embroidery",
+      "serviceId": "machine_embroidery",
+      "price": 149,
+      "imagePath": "public/assets/products/machine_embroidery_11.jpg"
+    },
+    {
+      "id": 427,
+      "name": "Pearl Button Set",
+      "category": "Pearl Embroidery",
+      "serviceId": "pearl_embroidery",
+      "price": 399,
+      "imagePath": "public/assets/products/pearl_embroidery_11.jpg"
+    },
+    {
+      "id": 428,
+      "name": "Beaded Table Mat",
+      "category": "Beads Embroidery",
+      "serviceId": "beads_embroidery",
+      "price": 799,
+      "imagePath": "public/assets/products/beads_embroidery_11.jpg"
+    },
+    {
+      "id": 429,
+      "name": "Hand Embroidered Cushion",
+      "category": "Hand Embroidery",
+      "serviceId": "hand_embroidery",
+      "price": 1299,
+      "imagePath": "public/assets/products/hand_embroidery_9.jpg"
+    },
+    {
+      "id": 430,
+      "name": "Coconut Chutney Kit",
+      "category": "South Indian Meals",
+      "serviceId": "south_indian_meals",
+      "price": 179,
+      "imagePath": "public/assets/products/south_indian_meals_10.jpg"
+    },
+    {
+      "id": 431,
+      "name": "Paneer Butter Masala",
+      "category": "North Indian Meals",
+      "serviceId": "north_indian_meals",
+      "price": 379,
+      "imagePath": "public/assets/products/north_indian_meals_10.jpg"
+    },
+    {
+      "id": 432,
+      "name": "Bread Pizza Kit",
+      "category": "Quick Snacks",
+      "serviceId": "quick_snacks",
+      "price": 249,
+      "imagePath": "public/assets/products/quick_snacks_10.jpg"
+    },
+    {
+      "id": 433,
+      "name": "Handmade Journal",
+      "category": "Handmade Gifts",
+      "serviceId": "handmade_gifts",
+      "price": 599,
+      "imagePath": "public/assets/products/handmade_gifts_10.jpg"
+    },
+    {
+      "id": 434,
+      "name": "Birthday Sparklers",
+      "category": "Birthday Gifts",
+      "serviceId": "birthday_gifts",
+      "price": 299,
+      "imagePath": "public/assets/products/birthday_gifts_10.jpg"
+    },
+    {
+      "id": 435,
+      "name": "Wedding Candle Set",
+      "category": "Wedding Gifts",
+      "serviceId": "wedding_gifts",
+      "price": 799,
+      "imagePath": "public/assets/products/wedding_gifts_10.jpg"
+    },
+    {
+      "id": 436,
+      "name": "Anniversary Wine Glass",
+      "category": "Anniversary Gifts",
+      "serviceId": "anniversary_gifts",
+      "price": 699,
+      "imagePath": "public/assets/products/anniversary_gifts_10.jpg"
+    },
+    {
+      "id": 437,
+      "name": "Canvas Print",
+      "category": "Art Paintings",
+      "serviceId": "art_paintings",
+      "price": 1599,
+      "imagePath": "public/assets/products/art_paintings_10.jpg"
+    },
+    {
+      "id": 438,
+      "name": "Paper Embossing Kit",
+      "category": "Paper Crafting",
+      "serviceId": "paper_crafting",
+      "price": 699,
+      "imagePath": "public/assets/products/paper_crafting_10.jpg"
+    },
+    {
+      "id": 439,
+      "name": "Clay Painting Kit",
+      "category": "Clay Modelling",
+      "serviceId": "clay_modelling",
+      "price": 899,
+      "imagePath": "public/assets/products/clay_modelling_10.jpg"
+    },
+    {
+      "id": 440,
+      "name": "Digital Memory Book",
+      "category": "Collage Making",
+      "serviceId": "collage_making",
+      "price": 1199,
+      "imagePath": "public/assets/products/collage_making_10.jpg"
+    },
+    {
+      "id": 441,
+      "name": "Designer Tops",
+      "category": "Ladies Wear Fashion",
+      "serviceId": "ladies_wear_fashion",
+      "price": 1499,
+      "imagePath": "public/assets/products/ladies_wear_fashion_10.jpg"
+    },
+    {
+      "id": 442,
+      "name": "Men's Formal Shoes",
+      "category": "Mens Wear Fashion",
+      "serviceId": "mens_wear_fashion",
+      "price": 2299,
+      "imagePath": "public/assets/products/mens_wear_fashion_10.jpg"
+    },
+    {
+      "id": 443,
+      "name": "Kids Winter Jacket",
+      "category": "Kids Wear Fashion",
+      "serviceId": "kids_wear_fashion",
+      "price": 1599,
+      "imagePath": "public/assets/products/kids_wear_fashion_10.jpg"
+    },
+    {
+      "id": 444,
+      "name": "Designer Shawl",
+      "category": "Ethnic Wear",
+      "serviceId": "ethnic_wear",
+      "price": 2399,
+      "imagePath": "public/assets/products/ethnic_wear_10.jpg"
+    },
+    {
+      "id": 445,
+      "name": "Party Dress Shoes",
+      "category": "Party Wear Outfits",
+      "serviceId": "party_wear_outfits",
+      "price": 1899,
+      "imagePath": "public/assets/products/party_wear_outfits_10.jpg"
+    },
+    {
+      "id": 446,
+      "name": "Bridal Blush",
+      "category": "Bridal Makeup",
+      "serviceId": "bridal_makeup",
+      "price": 599,
+      "imagePath": "public/assets/products/bridal_makeup_10.jpg"
+    },
+    {
+      "id": 447,
+      "name": "Face Scrub",
+      "category": "Skin Care Routine",
+      "serviceId": "skin_care_routine",
+      "price": 399,
+      "imagePath": "public/assets/products/skin_care_routine_10.jpg"
+    },
+    {
+      "id": 448,
+      "name": "Hair Spray",
+      "category": "Hair Care Products",
+      "serviceId": "hair_care_products",
+      "price": 349,
+      "imagePath": "public/assets/products/hair_care_products_10.jpg"
+    },
+    {
+      "id": 449,
+      "name": "Nail Polish Remover",
+      "category": "Manicure Pedicure",
+      "serviceId": "manicure_pedicure",
+      "price": 149,
+      "imagePath": "public/assets/products/manicure_pedicure_10.jpg"
+    },
+    {
+      "id": 450,
+      "name": "Massage Cream",
+      "category": "Full Body Massage",
+      "serviceId": "full_body_massage",
+      "price": 499,
+      "imagePath": "public/assets/products/full_body_massage_10.jpg"
+    },
+    {
+      "id": 451,
+      "name": "Custom Cake Topper",
+      "category": "Cake Artistry",
+      "serviceId": "cake_artistry",
+      "price": 399,
+      "imagePath": "public/assets/products/cake_artistry_10.jpg"
+    },
+    {
+      "id": 452,
+      "name": "Birthday Cupcake Set",
+      "category": "Cupcake Muffin Creations",
+      "serviceId": "cupcake_muffin_creations",
+      "price": 799,
+      "imagePath": "public/assets/products/cupcake_muffin_creations_10.jpg"
+    },
+    {
+      "id": 453,
+      "name": "Sugar-free Cookies",
+      "category": "Cookies Biscuits",
+      "serviceId": "cookies_biscuits",
+      "price": 549,
+      "imagePath": "public/assets/products/cookies_biscuits_10.jpg"
+    },
+    {
+      "id": 454,
+      "name": "Bread Knife Set",
+      "category": "Bread Pastry Delight",
+      "serviceId": "bread_pastry_delight",
+      "price": 899,
+      "imagePath": "public/assets/products/bread_pastry_delight_10.jpg"
+    },
+    {
+      "id": 455,
+      "name": "Birthday Tableware",
+      "category": "Birthday Decor",
+      "serviceId": "birthday_decor",
+      "price": 599,
+      "imagePath": "public/assets/products/birthday_decor_10.jpg"
+    },
+    {
+      "id": 456,
+      "name": "Aisle Decor Package",
+      "category": "Wedding Decor",
+      "serviceId": "wedding_decor",
+      "price": 4999,
+      "imagePath": "public/assets/products/wedding_decor_10.jpg"
+    },
+    {
+      "id": 457,
+      "name": "Wall Sticker Set",
+      "category": "Festive Home Decor",
+      "serviceId": "festive_home_decor",
+      "price": 499,
+      "imagePath": "public/assets/products/festive_home_decor_10.jpg"
+    },
+    {
+      "id": 458,
+      "name": "Anniversary Rose Petals",
+      "category": "Anniversary Decor",
+      "serviceId": "anniversary_decor",
+      "price": 799,
+      "imagePath": "public/assets/products/anniversary_decor_10.jpg"
+    },
+    {
+      "id": 459,
+      "name": "Branding Material Kit",
+      "category": "Corporate Event Decor",
+      "serviceId": "corporate_event_decor",
+      "price": 2999,
+      "imagePath": "public/assets/products/corporate_event_decor_10.jpg"
+    },
+    {
+      "id": 460,
+      "name": "Orchid Plant",
+      "category": "Indoor Plants",
+      "serviceId": "indoor_plants",
+      "price": 1299,
+      "imagePath": "public/assets/products/indoor_plants_10.jpg"
+    },
+    {
+      "id": 461,
+      "name": "Seed Starting Tray",
+      "category": "Plant Starter Kit",
+      "serviceId": "plant_starter_kit",
+      "price": 399,
+      "imagePath": "public/assets/products/plant_starter_kit_10.jpg"
+    },
+    {
+      "id": 462,
+      "name": "Rosemary Plant Kit",
+      "category": "Herb Garden Kit",
+      "serviceId": "herb_garden_kit",
+      "price": 599,
+      "imagePath": "public/assets/products/herb_garden_kit_10.jpg"
+    },
+    {
+      "id": 463,
+      "name": "Lettuce Seed Pack",
+      "category": "Vegetable Seed Kit",
+      "serviceId": "vegetable_seed_kit",
+      "price": 199,
+      "imagePath": "public/assets/products/vegetable_seed_kit_10.jpg"
+    },
+    {
+      "id": 464,
+      "name": "Tulip Bulbs",
+      "category": "Flower Seed Kit",
+      "serviceId": "flower_seed_kit",
+      "price": 799,
+      "imagePath": "public/assets/products/flower_seed_kit_10.jpg"
+    },
+    {
+      "id": 465,
+      "name": "Mustard Microgreen",
+      "category": "Microgreen Kit",
+      "serviceId": "microgreen_kit",
+      "price": 549,
+      "imagePath": "public/assets/products/microgreen_kit_10.jpg"
+    },
+    {
+      "id": 466,
+      "name": "Incense Stick Set",
+      "category": "Puja Kits",
+      "serviceId": "puja_kits",
+      "price": 299,
+      "imagePath": "public/assets/products/puja_kits_10.jpg"
+    },
+    {
+      "id": 467,
+      "name": "Festival Music Instrument",
+      "category": "Festival Essentials",
+      "serviceId": "festival_essentials",
+      "price": 1499,
+      "imagePath": "public/assets/products/festival_essentials_10.jpg"
+    },
+    {
+      "id": 468,
+      "name": "Holi Traditional Dress",
+      "category": "Holi Festival Kit",
+      "serviceId": "holi_festival_kit",
+      "price": 1299,
+      "imagePath": "public/assets/products/holi_festival_kit_10.jpg"
+    },
+    {
+      "id": 469,
+      "name": "Diwali Pooja Thali",
+      "category": "Diwali Festival Kit",
+      "serviceId": "diwali_festival_kit",
+      "price": 899,
+      "imagePath": "public/assets/products/diwali_festival_kit_10.jpg"
+    },
+    {
+      "id": 470,
+      "name": "Ganapati Prasad Box",
+      "category": "Ganapati Festival Kit",
+      "serviceId": "ganapati_festival_kit",
+      "price": 499,
+      "imagePath": "public/assets/products/ganapati_festival_kit_10.jpg"
+    },
+    {
+      "id": 471,
+      "name": "DIY Paper Garland",
+      "category": "Festive Craft Delight",
+      "serviceId": "festive_craft_delight",
+      "price": 349,
+      "imagePath": "public/assets/products/festive_craft_delight_10.jpg"
+    },
+    {
+      "id": 472,
+      "name": "Lotus Scented Stick",
+      "category": "Lotus Puja Decor Kit",
+      "serviceId": "lotus_puja_decor_kit",
+      "price": 199,
+      "imagePath": "public/assets/products/lotus_puja_decor_kit_10.jpg"
+    },
+    {
+      "id": 473,
+      "name": "Embroidery Scissors",
+      "category": "Machine Embroidery",
+      "serviceId": "machine_embroidery",
+      "price": 249,
+      "imagePath": "public/assets/products/machine_embroidery_12.jpg"
+    },
+    {
+      "id": 474,
+      "name": "Pearl Glue",
+      "category": "Pearl Embroidery",
+      "serviceId": "pearl_embroidery",
+      "price": 149,
+      "imagePath": "public/assets/products/pearl_embroidery_12.jpg"
+    },
+    {
+      "id": 475,
+      "name": "Beaded Curtain Beads",
+      "category": "Beads Embroidery",
+      "serviceId": "beads_embroidery",
+      "price": 399,
+      "imagePath": "public/assets/products/beads_embroidery_12.jpg"
+    },
+    {
+      "id": 476,
+      "name": "Hand Embroidered Bag",
+      "category": "Hand Embroidery",
+      "serviceId": "hand_embroidery",
+      "price": 1699,
+      "imagePath": "public/assets/products/hand_embroidery_10.jpg"
+    },
+    {
+      "id": 477,
+      "name": "Rasam Powder Kit",
+      "category": "South Indian Meals",
+      "serviceId": "south_indian_meals",
+      "price": 229,
+      "imagePath": "public/assets/products/south_indian_meals_11.jpg"
+    },
+    {
+      "id": 478,
+      "name": "Naan Bread Kit",
+      "category": "North Indian Meals",
+      "serviceId": "north_indian_meals",
+      "price": 329,
+      "imagePath": "public/assets/products/north_indian_meals_11.jpg"
+    },
+    {
+      "id": 479,
+      "name": "French Fries Kit",
+      "category": "Quick Snacks",
+      "serviceId": "quick_snacks",
+      "price": 179,
+      "imagePath": "public/assets/products/quick_snacks_11.jpg"
+    },
+    {
+      "id": 480,
+      "name": "Handmade Keychain",
+      "category": "Handmade Gifts",
+      "serviceId": "handmade_gifts",
+      "price": 199,
+      "imagePath": "public/assets/products/handmade_gifts_11.jpg"
+    },
+    {
+      "id": 481,
+      "name": "Birthday Confetti",
+      "category": "Birthday Gifts",
+      "serviceId": "birthday_gifts",
+      "price": 149,
+      "imagePath": "public/assets/products/birthday_gifts_11.jpg"
+    },
+    {
+      "id": 482,
+      "name": "Wedding Photo Frame",
+      "category": "Wedding Gifts",
+      "serviceId": "wedding_gifts",
+      "price": 699,
+      "imagePath": "public/assets/products/wedding_gifts_11.jpg"
+    },
+    {
+      "id": 483,
+      "name": "Anniversary Card",
+      "category": "Anniversary Gifts",
+      "serviceId": "anniversary_gifts",
+      "price": 299,
+      "imagePath": "public/assets/products/anniversary_gifts_11.jpg"
+    },
+    {
+      "id": 484,
+      "name": "Watercolor Set",
+      "category": "Art Paintings",
+      "serviceId": "art_paintings",
+      "price": 1299,
+      "imagePath": "public/assets/products/art_paintings_11.jpg"
+    },
+    {
+      "id": 485,
+      "name": "Paper Punch Set",
+      "category": "Paper Crafting",
+      "serviceId": "paper_crafting",
+      "price": 399,
+      "imagePath": "public/assets/products/paper_crafting_11.jpg"
+    },
+    {
+      "id": 486,
+      "name": "Clay Modeling Book",
+      "category": "Clay Modelling",
+      "serviceId": "clay_modelling",
+      "price": 499,
+      "imagePath": "public/assets/products/clay_modelling_11.jpg"
+    },
+    {
+      "id": 487,
+      "name": "Collage Frame Set",
+      "category": "Collage Making",
+      "serviceId": "collage_making",
+      "price": 799,
+      "imagePath": "public/assets/products/collage_making_11.jpg"
+    },
+    {
+      "id": 488,
+      "name": "Designer Skirt",
+      "category": "Ladies Wear Fashion",
+      "serviceId": "ladies_wear_fashion",
+      "price": 1899,
+      "imagePath": "public/assets/products/ladies_wear_fashion_11.jpg"
+    },
+    {
+      "id": 489,
+      "name": "Men's Track Suit",
+      "category": "Mens Wear Fashion",
+      "serviceId": "mens_wear_fashion",
+      "price": 2199,
+      "imagePath": "public/assets/products/mens_wear_fashion_11.jpg"
+    },
+    {
+      "id": 490,
+      "name": "Kids Party Hat",
+      "category": "Kids Wear Fashion",
+      "serviceId": "kids_wear_fashion",
+      "price": 99,
+      "imagePath": "public/assets/products/kids_wear_fashion_11.jpg"
+    },
+    {
+      "id": 491,
+      "name": "Designer Kurta Material",
+      "category": "Ethnic Wear",
+      "serviceId": "ethnic_wear",
+      "price": 1599,
+      "imagePath": "public/assets/products/ethnic_wear_11.jpg"
+    },
+    {
+      "id": 492,
+      "name": "Party Clutch",
+      "category": "Party Wear Outfits",
+      "serviceId": "party_wear_outfits",
+      "price": 1299,
+      "imagePath": "public/assets/products/party_wear_outfits_11.jpg"
+    },
+    {
+      "id": 493,
+      "name": "Bridal Eyeliner",
+      "category": "Bridal Makeup",
+      "serviceId": "bridal_makeup",
+      "price": 399,
+      "imagePath": "public/assets/products/bridal_makeup_11.jpg"
+    },
+    {
+      "id": 494,
+      "name": "Face Moisturizer",
+      "category": "Skin Care Routine",
+      "serviceId": "skin_care_routine",
+      "price": 599,
+      "imagePath": "public/assets/products/skin_care_routine_11.jpg"
+    },
+    {
+      "id": 495,
+      "name": "Hair Comb",
+      "category": "Hair Care Products",
+      "serviceId": "hair_care_products",
+      "price": 199,
+      "imagePath": "public/assets/products/hair_care_products_11.jpg"
+    },
+    {
+      "id": 496,
+      "name": "Nail Buffer",
+      "category": "Manicure Pedicure",
+      "serviceId": "manicure_pedicure",
+      "price": 149,
+      "imagePath": "public/assets/products/manicure_pedicure_11.jpg"
+    },
+    {
+      "id": 497,
+      "name": "Massage Table",
+      "category": "Full Body Massage",
+      "serviceId": "full_body_massage",
+      "price": 5999,
+      "imagePath": "public/assets/products/full_body_massage_11.jpg"
+    },
+    {
+      "id": 498,
+      "name": "Cake Stand",
+      "category": "Cake Artistry",
+      "serviceId": "cake_artistry",
+      "price": 799,
+      "imagePath": "public/assets/products/cake_artistry_11.jpg"
+    },
+    {
+      "id": 499,
+      "name": "Muffin Tray",
+      "category": "Cupcake Muffin Creations",
+      "serviceId": "cupcake_muffin_creations",
+      "price": 499,
+      "imagePath": "public/assets/products/cupcake_muffin_creations_11.jpg"
+    },
+    {
+      "id": 500,
+      "name": "Cookie Cutter Set",
+      "category": "Cookies Biscuits",
+      "serviceId": "cookies_biscuits",
+      "price": 349,
+      "imagePath": "public/assets/products/cookies_biscuits_11.jpg"
+    }
+  ]
+}

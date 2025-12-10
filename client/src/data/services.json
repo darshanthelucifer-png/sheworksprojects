@@ -1,0 +1,161 @@
+{
+  "services": [
+    {
+      "id": 1,
+      "category": "Embroidery",
+      "title": "Embroidery",
+      "description": "Elegant handcrafted embroidery with unique designs.",
+      "image": "/assets/ServiceImages/Embriodrey.jpeg",
+      "color": "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+      "icon": "🪡",
+      "subServices": [
+        { "id": "machine_embroidery", "name": "Machine Embroidery" },
+        { "id": "pearl_embroidery", "name": "Pearl Embroidery" },
+        { "id": "beads_embroidery", "name": "Beads Embroidery" },
+        { "id": "hand_embroidery", "name": "Hand Embroidery" }
+      ]
+    },
+    {
+      "id": 2,
+      "category": "Home Cooked Food",
+      "title": "Home Cooked Food",
+      "description": "Fresh, hygienic, and delicious homemade meals.",
+      "image": "/assets/ServiceImages/Foods.jpeg",
+      "color": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+      "icon": "🍛",
+      "subServices": [
+        { "id": "south_indian_meals", "name": "South Indian Meals" },
+        { "id": "north_indian_meals", "name": "North Indian Meals" },
+        { "id": "quick_snacks", "name": "Quick Snacks" }
+      ]
+    },
+    {
+      "id": 3,
+      "category": "Custom Gifts",
+      "title": "Custom Gifts",
+      "description": "Personalized gifts crafted with love for every occasion.",
+      "image": "/assets/ServiceImages/Gifts.jpeg",
+      "color": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+      "icon": "🎁",
+      "subServices": [
+        { "id": "handmade_gifts", "name": "Handmade Gifts" },
+        { "id": "birthday_gifts", "name": "Birthday Gifts" },
+        { "id": "wedding_gifts", "name": "Wedding Gifts" },
+        { "id": "anniversary_gifts", "name": "Anniversary Gifts" }
+      ]
+    },
+    {
+      "id": 4,
+      "category": "Arts & Crafts",
+      "title": "Arts & Crafts",
+      "description": "Creative handmade décor and craft items.",
+      "image": "/assets/ServiceImages/arts&crafts.jpeg",
+      "color": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+      "icon": "🎨",
+      "subServices": [
+        { "id": "art_paintings", "name": "Art Paintings" },
+        { "id": "paper_crafting", "name": "Paper Crafting" },
+        { "id": "clay_modelling", "name": "Clay Modelling" },
+        { "id": "collage_making", "name": "Collage Making" }
+      ]
+    },
+    {
+      "id": 5,
+      "category": "Fashion & Tailoring",
+      "title": "Fashion & Tailoring",
+      "description": "Stylish custom stitching and alterations.",
+      "image": "/assets/ServiceImages/Tailoring.jpeg",
+      "color": "linear-gradient(135deg, #fa709a 0%, #fee140 100%)",
+      "icon": "👗",
+      "subServices": [
+        { "id": "ladies_wear_fashion", "name": "Ladies Wear Fashion" },
+        { "id": "mens_wear_fashion", "name": "Mens Wear Fashion" },
+        { "id": "kids_wear_fashion", "name": "Kids Wear Fashion" },
+        { "id": "ethnic_wear", "name": "Ethnic Wear" },
+        { "id": "party_wear_outfits", "name": "Party Wear Outfits" }
+      ]
+    },
+    {
+      "id": 6,
+      "category": "Beauty & Wellness",
+      "title": "Beauty & Wellness",
+      "description": "Professional beauty care and wellness services at home.",
+      "image": "/assets/ServiceImages/Beuty&wellness.jpeg",
+      "color": "linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)",
+      "icon": "💄",
+      "subServices": [
+        { "id": "bridal_makeup", "name": "Bridal Makeup" },
+        { "id": "skin_care_routine", "name": "Skin Care Routine" },
+        { "id": "hair_care_products", "name": "Hair Care Products" },
+        { "id": "manicure_pedicure", "name": "Manicure & Pedicure" },
+        { "id": "full_body_massage", "name": "Full Body Massage" }
+      ]
+    },
+    {
+      "id": 7,
+      "category": "Sugar Bloom",
+      "title": "Sugar Bloom",
+      "description": "Delicious homemade baked goods and confectionery.",
+      "image": "/assets/ServiceImages/sugar-bloom.png",
+      "color": "linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%)",
+      "icon": "🍰",
+      "subServices": [
+        { "id": "cake_artistry", "name": "Cake Artistry" },
+        { "id": "cupcake_muffin_creations", "name": "Cupcake & Muffin Creations" },
+        { "id": "cookies_biscuits", "name": "Cookies & Biscuits" },
+        { "id": "bread_pastry_delight", "name": "Bread & Pastry Delight" }
+      ]
+    },
+    {
+      "id": 8,
+      "category": "Event Decoration",
+      "title": "Event Decoration",
+      "description": "Beautiful and budget-friendly event decorations.",
+      "image": "/assets/ServiceImages/Event.jpeg",
+      "color": "linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%)",
+      "icon": "🎉",
+      "subServices": [
+        { "id": "birthday_decor", "name": "Birthday Decor" },
+        { "id": "wedding_decor", "name": "Wedding Decor" },
+        { "id": "festive_home_decor", "name": "Festive Home Decor" },
+        { "id": "anniversary_decor", "name": "Anniversary Decor" },
+        { "id": "corporate_event_decor", "name": "Corporate Event Decor" }
+      ]
+    },
+    {
+      "id": 9,
+      "category": "Home Gardening Kits",
+      "title": "Home Gardening Kits",
+      "description": "Expert care and setup for your home garden.",
+      "image": "/assets/ServiceImages/Gardening.jpeg",
+      "color": "linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%)",
+      "icon": "🌱",
+      "subServices": [
+        { "id": "indoor_plants", "name": "Indoor Plants" },
+        { "id": "plant_starter_kit", "name": "Plant Starter Kit" },
+        { "id": "herb_garden_kit", "name": "Herb Garden Kit" },
+        { "id": "vegetable_seed_kit", "name": "Vegetable Seed Kit" },
+        { "id": "flower_seed_kit", "name": "Flower Seed Kit" },
+        { "id": "microgreen_kit", "name": "Microgreen Kit" }
+      ]
+    },
+    {
+      "id": 10,
+      "category": "Traditional Festival Kits",
+      "title": "Traditional Festival Kits",
+      "description": "Ready-made kits for rituals and festive needs.",
+      "image": "/assets/ServiceImages/Festive.jpeg",
+      "color": "linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%)",
+      "icon": "🪔",
+      "subServices": [
+        { "id": "puja_kits", "name": "Puja Kits" },
+        { "id": "festival_essentials", "name": "Festival Essentials" },
+        { "id": "holi_festival_kit", "name": "Holi Festival Kit" },
+        { "id": "diwali_festival_kit", "name": "Diwali Festival Kit" },
+        { "id": "ganapati_festival_kit", "name": "Ganapati Festival Kit" },
+        { "id": "festive_craft_delight", "name": "Festive Craft Delight" },
+        { "id": "lotus_puja_decor_kit", "name": "Lotus Puja Decor Kit" }
+      ]
+    }
+  ]
+}

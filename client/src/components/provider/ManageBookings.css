@@ -1,0 +1,197 @@
+/* ==========================================
+   UNIVERSAL
+========================================== */
+.manage-bookings {
+  padding: 30px;
+  max-width: 1200px;
+  margin: auto;
+  font-family: "Inter", sans-serif;
+  color: #1f2937;
+}
+
+/* ==========================================
+   HEADER
+========================================== */
+.mb-header {
+  margin-bottom: 25px;
+}
+
+.mb-header h1 {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0;
+  color: #111827;
+}
+
+.mb-header p {
+  margin-top: 6px;
+  font-size: 15px;
+  color: #6b7280;
+}
+
+/* ==========================================
+   FILTER TABS
+========================================== */
+.mb-filters {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.mb-tab {
+  padding: 8px 16px;
+  border-radius: 30px;
+  border: 1px solid #d1d5db;
+  background: white;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  font-size: 14px;
+  color: #4b5563;
+}
+
+.mb-tab:hover {
+  border-color: #2563eb;
+  color: #2563eb;
+}
+
+.mb-tab.active {
+  background: #2563eb;
+  color: white;
+  border-color: #2563eb;
+}
+
+/* ==========================================
+   BOOKING CARDS
+========================================== */
+.mb-list {
+  margin-top: 15px;
+}
+
+.mb-card {
+  background: white;
+  padding: 22px;
+  border-radius: 14px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 18px;
+  transition: all 0.25s ease;
+  border: 1px solid #e5e7eb;
+}
+
+.mb-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* ==========================================
+   CARD HEADER
+========================================== */
+.mb-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.mb-card-header h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.mb-client {
+  display: block;
+  margin-top: 2px;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.mb-status {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+}
+
+/* ==========================================
+   BOOKING DETAILS GRID
+========================================== */
+.mb-info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6px 20px;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.mb-address {
+  background: #f9fafb;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  margin-top: 10px;
+  border: 1px solid #ececec;
+}
+
+/* ==========================================
+   ACTION BUTTONS
+========================================== */
+.mb-actions {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.mb-btn {
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s ease;
+}
+
+/* Individual Button Colors */
+.mb-btn.accept {
+  background: #2563eb;
+  color: white;
+}
+
+.mb-btn.accept:hover {
+  background: #1d4ed8;
+}
+
+.mb-btn.reject,
+.mb-btn.cancel {
+  background: #ef4444;
+  color: white;
+}
+
+.mb-btn.reject:hover,
+.mb-btn.cancel:hover {
+  background: #dc2626;
+}
+
+.mb-btn.complete {
+  background: #10b981;
+  color: white;
+}
+
+.mb-btn.complete:hover {
+  background: #0d9c6d;
+}
+
+/* ==========================================
+   EMPTY / LOADING STATES
+========================================== */
+.mb-loading,
+.mb-empty {
+  text-align: center;
+  padding: 40px 0;
+  font-size: 16px;
+  color: #6b7280;
+}

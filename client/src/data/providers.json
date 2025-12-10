@@ -1,0 +1,354 @@
+{
+  "providers": [
+    {
+      "id": 1,
+      "name": "Priya Sharma",
+      "service": "Machine Embroidery",
+      "serviceId": "machine_embroidery",
+      "imagePath": "public/assets/ServiceProviderImages/machine_embroidery.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Ananya Patel",
+      "service": "Pearl Embroidery",
+      "serviceId": "pearl_embroidery",
+      "imagePath": "public/assets/ServiceProviderImages/pearl_embroidery.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Sneha Reddy",
+      "service": "Beads Embroidery",
+      "serviceId": "beads_embroidery",
+      "imagePath": "public/assets/ServiceProviderImages/beads_embroidery.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Divya Kumar",
+      "service": "Hand Embroidery",
+      "serviceId": "hand_embroidery",
+      "imagePath": "public/assets/ServiceProviderImages/hand_embroidery1.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Ritu Singh",
+      "service": "Digital Embroidery",
+      "serviceId": "machine_embroidery",
+      "imagePath": "public/assets/ServiceProviderImages/machine_embroidery2.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Pooja Mehta",
+      "service": "Luxury Pearl Work",
+      "serviceId": "pearl_embroidery",
+      "imagePath": "public/assets/ServiceProviderImages/pearl_embroidery3.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Neha Gupta",
+      "service": "Artistic Beadwork",
+      "serviceId": "beads_embroidery",
+      "imagePath": "public/assets/ServiceProviderImages/beads_embroidery4.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Lakshmi Iyer",
+      "service": "South Indian Meals",
+      "serviceId": "south_indian_meals",
+      "imagePath": "public/assets/ServiceProviderImages/south_indian_meals.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Sunita Joshi",
+      "service": "North Indian Meals",
+      "serviceId": "north_indian_meals",
+      "imagePath": "public/assets/ServiceProviderImages/north_indian_meals.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Kavya Nair",
+      "service": "Quick Snacks",
+      "serviceId": "quick_snacks",
+      "imagePath": "public/assets/ServiceProviderImages/quick_snacks.jpg"
+    },
+    {
+      "id": 11,
+      "name": "Maya Desai",
+      "service": "Handmade Gifts",
+      "serviceId": "handmade_gifts",
+      "imagePath": "public/assets/ServiceProviderImages/handmade_gifts.jpg"
+    },
+    {
+      "id": 12,
+      "name": "Isha Choudhary",
+      "service": "Birthday Gifts",
+      "serviceId": "birthday_gifts",
+      "imagePath": "public/assets/ServiceProviderImages/birthday_gifts.jpg"
+    },
+    {
+      "id": 13,
+      "name": "Riya Kapoor",
+      "service": "Wedding Gifts",
+      "serviceId": "wedding_gifts",
+      "imagePath": "public/assets/ServiceProviderImages/wedding_gifts.jpg"
+    },
+    {
+      "id": 14,
+      "name": "Tanya Malhotra",
+      "service": "Anniversary Gifts",
+      "serviceId": "anniversary_gifts",
+      "imagePath": "public/assets/ServiceProviderImages/anniversary_gifts.jpg"
+    },
+    {
+      "id": 15,
+      "name": "Shreya Rao",
+      "service": "Art Paintings",
+      "serviceId": "art_paintings",
+      "imagePath": "public/assets/ServiceProviderImages/art_paintings.jpg"
+    },
+    {
+      "id": 16,
+      "name": "Aditi Verma",
+      "service": "Paper Crafting",
+      "serviceId": "paper_crafting",
+      "imagePath": "public/assets/ServiceProviderImages/paper_crafting.jpg"
+    },
+    {
+      "id": 17,
+      "name": "Nisha Yadav",
+      "service": "Clay Modelling",
+      "serviceId": "clay_modelling",
+      "imagePath": "public/assets/ServiceProviderImages/clay_modelling.jpg"
+    },
+    {
+      "id": 18,
+      "name": "Preeti Mishra",
+      "service": "Collage Making",
+      "serviceId": "collage_making",
+      "imagePath": "public/assets/ServiceProviderImages/collage_making.jpg"
+    },
+    {
+      "id": 19,
+      "name": "Anjali Saxena",
+      "service": "Ladies Wear Fashion",
+      "serviceId": "ladies_wear_fashion",
+      "imagePath": "public/assets/ServiceProviderImages/ladies_wear_fashion.jpg"
+    },
+    {
+      "id": 20,
+      "name": "Sonia Agarwal",
+      "service": "Mens Wear Fashion",
+      "serviceId": "mens_wear_fashion",
+      "imagePath": "public/assets/ServiceProviderImages/mens_wear_fashion.jpg"
+    },
+    {
+      "id": 21,
+      "name": "Pooja Srinivasan",
+      "service": "Kids Wear Fashion",
+      "serviceId": "kids_wear_fashion",
+      "imagePath": "public/assets/ServiceProviderImages/kids_wear_fashion.jpg"
+    },
+    {
+      "id": 22,
+      "name": "Madhavi Menon",
+      "service": "Ethnic Wear",
+      "serviceId": "ethnic_wear",
+      "imagePath": "public/assets/ServiceProviderImages/ethnic_wear.jpg"
+    },
+    {
+      "id": 23,
+      "name": "Swati Rajput",
+      "service": "Party Wear Outfits",
+      "serviceId": "party_wear_outfits",
+      "imagePath": "public/assets/ServiceProviderImages/party_wear_outfits.jpg"
+    },
+    {
+      "id": 24,
+      "name": "Ritika Bansal",
+      "service": "Bridal Makeup",
+      "serviceId": "bridal_makeup",
+      "imagePath": "public/assets/ServiceProviderImages/bridal_makeup.jpg"
+    },
+    {
+      "id": 25,
+      "name": "Tanvi Chopra",
+      "service": "Skin Care Routine",
+      "serviceId": "skin_care_routine",
+      "imagePath": "public/assets/ServiceProviderImages/skin_care_routine.jpg"
+    },
+    {
+      "id": 26,
+      "name": "Alisha Thakur",
+      "service": "Hair Care Products",
+      "serviceId": "hair_care_products",
+      "imagePath": "public/assets/ServiceProviderImages/hair_care_products.jpg"
+    },
+    {
+      "id": 27,
+      "name": "Kiran Bedi",
+      "service": "Manicure Pedicure",
+      "serviceId": "manicure_pedicure",
+      "imagePath": "public/assets/ServiceProviderImages/manicure_pedicure.jpg"
+    },
+    {
+      "id": 28,
+      "name": "Sakshi Pandey",
+      "service": "Full Body Massage",
+      "serviceId": "full_body_massage",
+      "imagePath": "public/assets/ServiceProviderImages/full_body_massage.jpg"
+    },
+    {
+      "id": 29,
+      "name": "Deepika Nambiar",
+      "service": "Cake Artistry",
+      "serviceId": "cake_artistry",
+      "imagePath": "public/assets/ServiceProviderImages/cake_artistry.jpg"
+    },
+    {
+      "id": 30,
+      "name": "Shweta Oberoi",
+      "service": "Cupcake Muffin Creations",
+      "serviceId": "cupcake_muffin_creations",
+      "imagePath": "public/assets/ServiceProviderImages/cupcake_muffin_creations.jpg"
+    },
+    {
+      "id": 31,
+      "name": "Mona Khatri",
+      "service": "Cookies Biscuits",
+      "serviceId": "cookies_biscuits",
+      "imagePath": "public/assets/ServiceProviderImages/cookies_biscuits.jpg"
+    },
+    {
+      "id": 32,
+      "name": "Roshni Bajaj",
+      "service": "Bread Pastry Delight",
+      "serviceId": "bread_pastry_delight",
+      "imagePath": "public/assets/ServiceProviderImages/bread_pastry_delight.jpg"
+    },
+    {
+      "id": 33,
+      "name": "Ira Chatterjee",
+      "service": "Birthday Decor",
+      "serviceId": "birthday_decor",
+      "imagePath": "public/assets/ServiceProviderImages/birthday_decor.jpg"
+    },
+    {
+      "id": 34,
+      "name": "Meera Solanki",
+      "service": "Wedding Decor",
+      "serviceId": "wedding_decor",
+      "imagePath": "public/assets/ServiceProviderImages/wedding_decor.jpg"
+    },
+    {
+      "id": 35,
+      "name": "Kriti Arora",
+      "service": "Festive Home Decor",
+      "serviceId": "festive_home_decor",
+      "imagePath": "public/assets/ServiceProviderImages/festive_home_decor.jpg"
+    },
+    {
+      "id": 36,
+      "name": "Anika Trivedi",
+      "service": "Anniversary Decor",
+      "serviceId": "anniversary_decor",
+      "imagePath": "public/assets/ServiceProviderImages/anniversary_decor.jpg"
+    },
+    {
+      "id": 37,
+      "name": "Sana Khan",
+      "service": "Corporate Event Decor",
+      "serviceId": "corporate_event_decor",
+      "imagePath": "public/assets/ServiceProviderImages/corporate_event_decor.jpg"
+    },
+    {
+      "id": 38,
+      "name": "Zara Ahmed",
+      "service": "Indoor Plants",
+      "serviceId": "indoor_plants",
+      "imagePath": "public/assets/ServiceProviderImages/indoor_plants.jpg"
+    },
+    {
+      "id": 39,
+      "name": "Fatima Sheikh",
+      "service": "Plant Starter Kit",
+      "serviceId": "plant_starter_kit",
+      "imagePath": "public/assets/ServiceProviderImages/plant_starter_kit.jpg"
+    },
+    {
+      "id": 40,
+      "name": "Rehana Parveen",
+      "service": "Herb Garden Kit",
+      "serviceId": "herb_garden_kit",
+      "imagePath": "public/assets/ServiceProviderImages/herb_garden_kit.jpg"
+    },
+    {
+      "id": 41,
+      "name": "Asha Kumari",
+      "service": "Vegetable Seed Kit",
+      "serviceId": "vegetable_seed_kit",
+      "imagePath": "public/assets/ServiceProviderImages/vegetable_seed_kit.jpg"
+    },
+    {
+      "id": 42,
+      "name": "Bhavna Dubey",
+      "service": "Flower Seed Kit",
+      "serviceId": "flower_seed_kit",
+      "imagePath": "public/assets/ServiceProviderImages/flower_seed_kit.jpg"
+    },
+    {
+      "id": 43,
+      "name": "Chandni Sinha",
+      "service": "Microgreen Kit",
+      "serviceId": "microgreen_kit",
+      "imagePath": "public/assets/ServiceProviderImages/microgreen_kit.jpg"
+    },
+    {
+      "id": 44,
+      "name": "Dipika Rani",
+      "service": "Puja Kits",
+      "serviceId": "puja_kits",
+      "imagePath": "public/assets/ServiceProviderImages/puja_kits.jpg"
+    },
+    {
+      "id": 45,
+      "name": "Esha Dwivedi",
+      "service": "Festival Essentials",
+      "serviceId": "festival_essentials",
+      "imagePath": "public/assets/ServiceProviderImages/festival_essentials.jpg"
+    },
+    {
+      "id": 46,
+      "name": "Gauri Shukla",
+      "service": "Holi Festival Kit",
+      "serviceId": "holi_festival_kit",
+      "imagePath": "public/assets/ServiceProviderImages/holi_festival_kit.jpg"
+    },
+    {
+      "id": 47,
+      "name": "Hina Qureshi",
+      "service": "Diwali Festival Kit",
+      "serviceId": "diwali_festival_kit",
+      "imagePath": "public/assets/ServiceProviderImages/diwali_festival_kit.jpg"
+    },
+    {
+      "id": 48,
+      "name": "Jhanvi Tiwari",
+      "service": "Ganapati Festival Kit",
+      "serviceId": "ganapati_festival_kit",
+      "imagePath": "public/assets/ServiceProviderImages/ganapati_festival_kit.jpg"
+    },
+    {
+      "id": 49,
+      "name": "Komal Agrawal",
+      "service": "Festive Craft Delight",
+      "serviceId": "festive_craft_delight",
+      "imagePath": "public/assets/ServiceProviderImages/festive_craft_delight.jpg"
+    },
+    {
+      "id": 50,
+      "name": "Lata Prasad",
+      "service": "Lotus Puja Decor Kit",
+      "serviceId": "lotus_puja_decor_kit",
+      "imagePath": "public/assets/ServiceProviderImages/lotus_puja_decor_kit.jpg"
+    }
+  ]
+}

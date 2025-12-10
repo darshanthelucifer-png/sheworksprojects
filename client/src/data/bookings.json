@@ -1,0 +1,13 @@
+{
+  "bookings": [
+    {
+      "id": "booking_1",
+      "providerId": "hand_0",
+      "userId": "user_1",
+      "service": "Hand Embroidery",
+      "status": "completed",
+      "date": "2024-01-15",
+      "amount": 1500
+    }
+  ]
+}

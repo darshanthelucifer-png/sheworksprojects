@@ -1,0 +1,93 @@
+.admin-reports-page {
+  padding: 20px;
+  animation: fadeIn 0.4s ease;
+}
+
+.reports-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.reports-header h1 {
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+.reports-header p {
+  font-size: 15px;
+  color: #666;
+}
+
+/* Grid Layout */
+.reports-grid {
+  display: grid;
+  gap: 22px;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+}
+
+/* Report Card */
+.report-card {
+  background: #fff;
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  text-align: center;
+  transition: 0.25s ease;
+}
+
+.report-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+}
+
+.report-icon {
+  font-size: 40px;
+  margin-bottom: 8px;
+}
+
+.report-btn {
+  margin-top: 12px;
+  background: #007bff;
+  border: none;
+  padding: 8px 14px;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.report-btn:hover {
+  background: #005fcc;
+}
+
+/* Coming Soon Box */
+.coming-soon-box {
+  margin-top: 40px;
+  text-align: center;
+  padding: 25px;
+  border-radius: 12px;
+  background: #f3f6ff;
+  border: 1px dashed #a8bff8;
+}
+
+.coming-soon-box h2 {
+  margin-bottom: 6px;
+  font-size: 20px;
+  color: #4a5fd9;
+}
+
+/* Fade Animation */
+.fade-in {
+  animation: fadeInUp 0.35s ease;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

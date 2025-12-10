@@ -1,0 +1,58 @@
+.test-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.test-container h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.test-container p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+.test-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  max-width: 500px;
+  width: 100%;
+}
+
+.test-card h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.test-card p {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.test-btn {
+  background: #ff4757;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background 0.3s ease;
+}
+
+.test-btn:hover {
+  background: #ff3742;
+}

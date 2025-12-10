@@ -1,0 +1,266 @@
+/* Provider Tabs Styles */
+.providers-tabs-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.providers-tabs {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding: 8px 0;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.provider-tab {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 16px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  min-width: fit-content;
+}
+
+.provider-tab:hover {
+  background: #e2e8f0;
+  border-color: #cbd5e1;
+}
+
+.provider-tab.active {
+  background: #3b82f6;
+  color: white;
+  border-color: #3b82f6;
+}
+
+.tab-provider-image {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.tab-provider-name {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.product-count-badge {
+  background: #6b7280;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.provider-tab.active .product-count-badge {
+  background: #1e40af;
+}
+
+/* Active Provider Content */
+.active-provider-content {
+  flex: 1;
+}
+
+.provider-card.expanded {
+  display: flex;
+  gap: 24px;
+  padding: 24px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+}
+
+/* Products Section */
+.products-section {
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.products-header-section {
+  display: flex;
+  justify-content: between;
+  align-items: center;
+  margin-bottom: 16px;
+  gap: 16px;
+}
+
+.products-header {
+  margin: 0;
+  color: #1f2937;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.products-pagination-info {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.product-card:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-color: #cbd5e1;
+}
+
+.product-image-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.product-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.product-info {
+  flex: 1;
+  margin-bottom: 12px;
+}
+
+.product-name {
+  display: block;
+  font-weight: 500;
+  color: #1f2937;
+  margin-bottom: 4px;
+  line-height: 1.4;
+}
+
+.product-price {
+  display: block;
+  font-weight: 600;
+  color: #059669;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.product-category {
+  display: block;
+  color: #6b7280;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.product-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.product-actions button {
+  flex: 1;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.quick-buy-btn {
+  background: #dc2626;
+  color: white;
+}
+
+.quick-buy-btn:hover {
+  background: #b91c1c;
+}
+
+.add-cart-btn {
+  background: #3b82f6;
+  color: white;
+}
+
+.add-cart-btn:hover {
+  background: #2563eb;
+}
+
+/* Products Pagination */
+.products-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-top: 24px;
+  padding-top: 16px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.pagination-btn {
+  padding: 8px 16px;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s ease;
+}
+
+.pagination-btn:hover:not(:disabled) {
+  background: #2563eb;
+}
+
+.pagination-btn:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
+
+.pagination-info {
+  color: #6b7280;
+  font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .providers-tabs {
+    flex-direction: column;
+    overflow-x: visible;
+  }
+  
+  .provider-card.expanded {
+    flex-direction: column;
+  }
+  
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .products-header-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .products-pagination {
+    flex-direction: column;
+    gap: 12px;
+  }
+}

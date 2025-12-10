@@ -1,0 +1,32 @@
+{
+  "categories": [
+    {
+      "id": "embroidery",
+      "name": "Embroidery",
+      "description": "Beautiful handcrafted embroidery work",
+      "image": "/assets/categories/embroidery.jpg",
+      "subcategories": ["Hand Embroidery", "Machine Embroidery", "Pearl Embroidery", "Beads Embroidery"]
+    },
+    {
+      "id": "food",
+      "name": "Home Cooked Food",
+      "description": "Delicious homemade meals",
+      "image": "/assets/categories/food.jpg",
+      "subcategories": ["South Indian Meals", "North Indian Meals", "Quick Snacks", "Special Diet Meals"]
+    },
+    {
+      "id": "gifts",
+      "name": "Custom Gifts",
+      "description": "Personalized and handmade gifts",
+      "image": "/assets/categories/gifts.jpg",
+      "subcategories": ["Handmade Gifts", "Birthday Gifts", "Wedding Gifts", "Anniversary Gifts"]
+    },
+    {
+      "id": "arts",
+      "name": "Arts & Crafts",
+      "description": "Creative arts and crafts",
+      "image": "/assets/categories/arts.jpg",
+      "subcategories": ["Art Paintings", "Paper Crafting", "Clay Modelling", "Collage Making"]
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+.admin-analytics {
+  padding: 25px;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.analytics-title h1 {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.metric-tabs {
+  margin-top: 18px;
+  display: flex;
+  gap: 12px;
+}
+
+.metric-tabs button {
+  padding: 8px 18px;
+  border-radius: 8px;
+  background: #eee;
+  border: none;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.metric-tabs .active {
+  background: #111;
+  color: #fff;
+}
+
+.overview-grid {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.metric-card {
+  background: #fff;
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
+
+.metric-value {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.service-analytics {
+  margin-top: 30px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.export-btn {
+  padding: 6px 14px;
+  background: #222;
+  color: #fff;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.chart-wrapper {
+  margin-top: 25px;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.donut-chart {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.donut-chart::after {
+  content: "";
+  width: 110px;
+  height: 110px;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 35px;
+  left: 35px;
+}
+
+.legend p {
+  margin: 6px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.legend-box {
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+}
+
+/* Colors for Pie */
+:root {
+  --c1: #7b5cff;
+  --c2: #ff6b6b;
+  --c3: #ffa62b;
+  --c4: #4cc9f0;
+  --c5: #56d364;
+}
+
+.color-1 { background: var(--c1); }
+color-2 { background: var(--c2); }
+.color-3 { background: var(--c3); }
+.color-4 { background: var(--c4); }
+.color-5 { background: var(--c5); }
+
+.analytics-loading {
+  text-align: center;
+  padding: 50px;
+}
+
+.spinner {
+  width: 45px;
+  height: 45px;
+  border: 4px solid #ddd;
+  border-top: 4px solid #000;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin { to { transform: rotate(360deg); } }

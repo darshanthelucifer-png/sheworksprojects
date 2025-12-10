@@ -1,0 +1,193 @@
+.provider-profile-view {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px 16px;
+  font-family: "Inter", sans-serif;
+  color: #333;
+}
+
+/* HEADER */
+.profile-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 22px;
+  padding: 22px;
+  border-radius: 16px;
+  background: rgba(255, 111, 175, 0.10);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 111, 175, 0.25);
+  margin-bottom: 24px;
+}
+
+.profile-pic {
+  width: 115px;
+  height: 115px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ff6faf;
+  background: white;
+}
+
+.profile-header-info h2 {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.provider-tag {
+  color: #ff6faf;
+  font-weight: 500;
+  margin-top: 4px;
+}
+
+.rating-info {
+  margin-top: 6px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.profile-buttons {
+  margin-top: 14px;
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  padding: 8px 16px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background: #f2f2f2;
+  transition: 0.2s;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.btn.primary {
+  background: #ff6faf;
+  color: white;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* SECTIONS */
+.section {
+  margin-top: 28px;
+}
+
+.section h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* DETAILS GRID */
+.details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px 20px;
+  padding: 16px;
+  background: #fff;
+  border-radius: 14px;
+  border: 1px solid #eee;
+}
+
+.details-grid strong {
+  color: #444;
+}
+
+/* SERVICES */
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.service-chip {
+  padding: 8px 14px;
+  border-radius: 20px;
+  background: #ffe3ef;
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid #ff6faf66;
+}
+
+/* BUSINESS STATS */
+.stats-grid {
+  margin-top: 28px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.stat-box {
+  background: white;
+  border-radius: 14px;
+  padding: 14px;
+  text-align: center;
+  border: 1px solid #eee;
+}
+
+.stat-box span {
+  display: block;
+  font-size: 22px;
+  font-weight: 700;
+  color: #ff6faf;
+  margin-bottom: 4px;
+}
+
+/* LOGOUT BUTTON */
+.logout-section {
+  margin-top: 36px;
+  text-align: center;
+}
+
+.logout-btn {
+  padding: 10px 22px;
+  border-radius: 12px;
+  background: #ff4b6f;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.logout-btn:hover {
+  background: #e33c5f;
+  transform: scale(1.05);
+}
+
+/* LOADING & EMPTY STATES */
+.loading-container,
+.no-profile {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.loading-spinner {
+  border: 3px solid #ddd;
+  border-top: 3px solid #ff6faf;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  animation: spin 0.8s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.primary-btn {
+  background: #ff6faf;
+  padding: 10px 22px;
+  border-radius: 10px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 12px;
+}
