@@ -10,7 +10,7 @@ const Navbar = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const [cartItemCount, setCartItemCount] = useState(0);
-  const [showAdminMenu, setShowAdminMenu] = useState(false);
+  const [showUserMenu, setShowUserMenu] = useState(false);
 
   // ✅ SAFER: load user & merge stored role
   let storedUser = {};
@@ -207,31 +207,28 @@ const Navbar = () => {
         <div className="user-menu-container">
           <div
             className="navbar-avatar"
-            onClick={() => setShowAdminMenu(!showAdminMenu)}
-            title={`${user.name || "User"} - ${user.role}`}
+            onClick={() => setShowUserMenu(!showUserMenu)}
+            title={`${user.name || "User"} (${user.role})`}
           >
-            {(user.profileImage || user.profilePic) && (
+            {(user.profileImage || user.profilePic) ? (
               <img
                 src={user.profileImage || user.profilePic}
                 alt="avatar"
                 onError={(e) => (e.target.style.display = "none")}
               />
+            ) : (
+              <div className="avatar-placeholder">
+                {user.name?.charAt(0)?.toUpperCase() || "U"}
+              </div>
             )}
-
-            <div className="avatar-placeholder">
-              {user.name?.charAt(0)?.toUpperCase() || "U"}
-            </div>
-
-            <span className="user-role-badge">{user.role}</span>
           </div>
 
-          {showAdminMenu && (
+          {showUserMenu && (
             <div className="user-dropdown-menu">
               <div className="dropdown-header">
                 <div className="user-info">
                   <strong>{user.name || "User"}</strong>
                   <span className="user-email">{user.email}</span>
-                  <span className="user-role-pill">{user.role?.toUpperCase()}</span>
                 </div>
               </div>
 
@@ -242,7 +239,7 @@ const Navbar = () => {
                   className="dropdown-item"
                   onClick={() => {
                     handleAvatarClick();
-                    setShowAdminMenu(false);
+                    setShowUserMenu(false);
                   }}
                 >
                   <User size={16} className="dropdown-icon" />
@@ -254,7 +251,7 @@ const Navbar = () => {
                     className="dropdown-item"
                     onClick={() => {
                       navigate("/admin");
-                      setShowAdminMenu(false);
+                      setShowUserMenu(false);
                     }}
                   >
                     <Shield size={16} className="dropdown-icon" />
@@ -262,16 +259,19 @@ const Navbar = () => {
                   </button>
                 )}
 
-                <button
-                  className="dropdown-item"
-                  onClick={() => {
-                    navigate(`/${user.role}/settings`);
-                    setShowAdminMenu(false);
-                  }}
-                >
-                  <Settings size={16} className="dropdown-icon" />
-                  <span>Settings</span>
-                </button>
+                {/* Show Settings option only for non-client roles */}
+                {user.role !== "client" && (
+                  <button
+                    className="dropdown-item"
+                    onClick={() => {
+                      navigate(`/${user.role}/settings`);
+                      setShowUserMenu(false);
+                    }}
+                  >
+                    <Settings size={16} className="dropdown-icon" />
+                    <span>Settings</span>
+                  </button>
+                )}
 
                 <div className="dropdown-divider"></div>
 
@@ -288,10 +288,10 @@ const Navbar = () => {
         </div>
       </div>
 
-      {showAdminMenu && (
+      {showUserMenu && (
         <div
           className="dropdown-overlay"
-          onClick={() => setShowAdminMenu(false)}
+          onClick={() => setShowUserMenu(false)}
         />
       )}
     </nav>

@@ -165,11 +165,16 @@ const Register = () => {
 
             // If provider, create provider profile
             if (formData.role === "provider") {
+                const providersMap = JSON.parse(
+                    localStorage.getItem("allProvidersData") || "{}"
+                );
+
+                const providerId = `PROV_${Date.now()}`;
+
                 const newProvider = {
-                    id: `PROV_${Date.now()}`,
+                    id: providerId,
                     name: formData.name,
                     email: formData.email.toLowerCase(),
-                    password: formData.password,
                     serviceId: formData.serviceId,
                     category: formData.category,
                     phone: formData.phone || "Not provided",
@@ -178,22 +183,23 @@ const Register = () => {
                     reviews: 0,
                     experience: "New provider",
                     description: `${formData.category} service provider`,
-                    isActive: true,
-                    providerType: "registered", // Differentiate from manual providers
+                    providerType: "USER",
+                    createdBy: "USER",
+                    products: [],
+                    bookings: [],
                     profileCompleted: false,
                     createdAt: new Date().toISOString()
                 };
 
-                // Save to registered providers
-                const existingProviders = JSON.parse(localStorage.getItem("registeredProviders") || "[]");
-                const updatedProviders = [...existingProviders, newProvider];
-                localStorage.setItem("registeredProviders", JSON.stringify(updatedProviders));
+                // ✅ SAVE INTO MAIN PROVIDER STORE
+                providersMap[providerId] = newProvider;
+                localStorage.setItem("allProvidersData", JSON.stringify(providersMap));
 
-                // Set provider session for immediate access to dashboard
+                // ✅ PROVIDER SESSION
                 localStorage.setItem("providerSession", JSON.stringify(newProvider));
-                
-                // Also store in users for login system
-                newUser.providerData = newProvider;
+
+                // Link provider to user
+                newUser.providerId = providerId;
             }
 
             const updatedUsers = [...existingUsers, newUser];
@@ -210,8 +216,8 @@ const Register = () => {
                 if (formData.role === "client") {
                     navigate("/client/create-profile");
                 } else {
-                    // For providers, go directly to dashboard (no additional profile needed)
-                    navigate("/provider-dashboard");
+                    // ✅ FIXED: Correct provider dashboard route
+                    navigate("/provider/dashboard");
                 }
             }, 1500);
             

@@ -9,7 +9,6 @@ const ClientProfileEditPage = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    profileImage: "",
     phone: "",
     address: "",
     location: "",
@@ -17,8 +16,6 @@ const ClientProfileEditPage = () => {
   });
 
   const [loading, setLoading] = useState(false);
-  const [imageFile, setImageFile] = useState(null);
-  const [previewUrl, setPreviewUrl] = useState("");
   const [errors, setErrors] = useState({});
   const [success, setSuccess] = useState(false);
 
@@ -29,22 +26,14 @@ const ClientProfileEditPage = () => {
       JSON.parse(localStorage.getItem("user")) ||
       {};
 
-    const image =
-      savedUser.profileImage ||
-      savedUser.profilePic ||
-      "/assets/default-profile.png";
-
     setFormData({
       name: savedUser.name || "",
       email: savedUser.email || "",
-      profileImage: image,
       phone: savedUser.phone || savedUser.contact || "",
       address: savedUser.address || "",
       location: savedUser.location || "",
       bio: savedUser.bio || ""
     });
-
-    setPreviewUrl(image);
   }, []);
 
   const validateForm = () => {
@@ -65,22 +54,6 @@ const ClientProfileEditPage = () => {
 
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
-  };
-
-  // Profile Image Handling
-  const handleImageChange = (e) => {
-    const file = e.target.files[0];
-    if (!file) return;
-
-    if (file.size > 5 * 1024 * 1024) {
-      setErrors({ image: "Image must be less than 5MB" });
-      return;
-    }
-
-    setImageFile(file);
-    const url = URL.createObjectURL(file);
-    setPreviewUrl(url);
-    setErrors((prev) => ({ ...prev, image: "" }));
   };
 
   // Generic input handler
@@ -107,39 +80,27 @@ const ClientProfileEditPage = () => {
 
     try {
       const token = localStorage.getItem("token");
-      const submitData = new FormData();
-
-      Object.keys(formData).forEach((key) => {
-        if (key !== "profileImage") submitData.append(key, formData[key]);
-      });
-
-      if (imageFile) {
-        submitData.append("profileImage", imageFile);
-      }
+      let updatedUserData = null;
 
       // Send to API
-      let updatedUserData = null;
       try {
         const response = await axios.put(
           "http://localhost:5000/api/client/profile",
-          submitData,
+          formData,
           {
             headers: {
               Authorization: `Bearer ${token}`,
-              "Content-Type": "multipart/form-data"
+              "Content-Type": "application/json"
             }
           }
         );
 
         if (response.data.success) {
-          updatedUserData = response.data.user; // FULL IMAGE URL INCLUDED
+          updatedUserData = response.data.user;
         }
       } catch (apiErr) {
         console.log("API unreachable, falling back to local update.");
-        updatedUserData = {
-          ...formData,
-          profileImage: previewUrl
-        };
+        updatedUserData = formData;
       }
 
       updateLocalStorage(updatedUserData);
@@ -155,9 +116,10 @@ const ClientProfileEditPage = () => {
 
   // Sync localStorage
   const updateLocalStorage = (userData) => {
+    const existingUser = JSON.parse(localStorage.getItem("currentUser") || "{}");
     const updatedUser = {
+      ...existingUser,
       ...userData,
-      profileImage: userData.profileImage || previewUrl,
       updatedAt: new Date().toISOString()
     };
 
@@ -183,34 +145,17 @@ const ClientProfileEditPage = () => {
       >
         {/* Header */}
         <div className="profile-edit-header">
-          <h2>Edit Profile</h2>
-          <p>Update your personal information</p>
+          <div className="header-content">
+            <h1 className="page-title">Edit Profile</h1>
+            <p className="page-subtitle">Update your personal information</p>
+          </div>
+          <div className="user-identifier">
+            <span className="user-icon">👤</span>
+            <span className="user-email">{formData.email}</span>
+          </div>
         </div>
 
         <form onSubmit={handleSubmit} className="edit-profile-form">
-          {/* Image Upload */}
-          <div className="profile-pic-section">
-            <div className="image-preview-wrapper">
-              <img
-                src={previewUrl}
-                alt="Profile Preview"
-                className="profile-preview"
-              />
-
-              <label className="camera-button">
-                <input
-                  type="file"
-                  className="file-input"
-                  accept="image/*"
-                  onChange={handleImageChange}
-                />
-                Change Photo
-              </label>
-            </div>
-
-            {errors.image && <p className="error-text">{errors.image}</p>}
-          </div>
-
           {/* Success Message */}
           <AnimatePresence>
             {success && (
@@ -225,116 +170,143 @@ const ClientProfileEditPage = () => {
             )}
           </AnimatePresence>
 
-          {/* Form Fields */}
-          <div className="form-grid">
-            {/* Name */}
-            <Field
-              label="Full Name"
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-              error={errors.name}
-            />
+          {/* Personal Information Section */}
+          <div className="form-section">
+            <h3 className="section-title">Personal Information</h3>
+            
+            <div className="form-grid">
+              {/* Name */}
+              <div className="form-group">
+                <label className="form-label">Full Name *</label>
+                <input
+                  type="text"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  className={`form-input ${errors.name ? "error" : ""}`}
+                  placeholder="Enter your full name"
+                />
+                {errors.name && <p className="error-text">{errors.name}</p>}
+              </div>
 
-            {/* Email (disabled) */}
-            <Field
-              label="Email Address"
-              name="email"
-              value={formData.email}
-              disabled
-            />
+              {/* Email (read-only) */}
+              <div className="form-group">
+                <label className="form-label">Email Address</label>
+                <div className="read-only-field">
+                  {formData.email}
+                </div>
+                <p className="field-hint">Email cannot be changed</p>
+              </div>
 
-            {/* Phone */}
-            <Field
-              label="Phone Number"
-              name="phone"
-              value={formData.phone}
-              onChange={handleChange}
-              error={errors.phone}
-            />
+              {/* Phone */}
+              <div className="form-group">
+                <label className="form-label">Phone Number *</label>
+                <input
+                  type="text"
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  className={`form-input ${errors.phone ? "error" : ""}`}
+                  placeholder="Enter 10-digit phone number"
+                />
+                {errors.phone && <p className="error-text">{errors.phone}</p>}
+              </div>
 
-            {/* Location */}
-            <Field
-              label="Location"
-              name="location"
-              value={formData.location}
-              onChange={handleChange}
-              error={errors.location}
-            />
+              {/* Location */}
+              <div className="form-group">
+                <label className="form-label">Location *</label>
+                <input
+                  type="text"
+                  name="location"
+                  value={formData.location}
+                  onChange={handleChange}
+                  className={`form-input ${errors.location ? "error" : ""}`}
+                  placeholder="City, State"
+                />
+                {errors.location && <p className="error-text">{errors.location}</p>}
+              </div>
+            </div>
           </div>
 
-          {/* Address */}
-          <TextAreaField
-            label="Address"
-            name="address"
-            value={formData.address}
-            onChange={handleChange}
-            error={errors.address}
-          />
+          {/* Address Section */}
+          <div className="form-section">
+            <h3 className="section-title">Contact Details</h3>
+            
+            <div className="form-group">
+              <label className="form-label">Address *</label>
+              <textarea
+                rows="3"
+                name="address"
+                value={formData.address}
+                onChange={handleChange}
+                className={`form-textarea ${errors.address ? "error" : ""}`}
+                placeholder="Enter your complete address"
+              />
+              {errors.address && <p className="error-text">{errors.address}</p>}
+            </div>
+          </div>
 
-          {/* Bio */}
-          <TextAreaField
-            label="Bio"
-            name="bio"
-            value={formData.bio}
-            onChange={handleChange}
-            error={errors.bio}
-          />
+          {/* Bio Section */}
+          <div className="form-section">
+            <h3 className="section-title">About Yourself</h3>
+            
+            <div className="form-group">
+              <label className="form-label">Bio</label>
+              <textarea
+                rows="4"
+                name="bio"
+                value={formData.bio}
+                onChange={handleChange}
+                className={`form-textarea ${errors.bio ? "error" : ""}`}
+                placeholder="Tell us about yourself (optional)"
+              />
+              <div className="character-counter">
+                {formData.bio.length}/500 characters
+              </div>
+              {errors.bio && <p className="error-text">{errors.bio}</p>}
+            </div>
+          </div>
 
+          {/* Submit Error */}
           {errors.submit && (
             <div className="error-message">{errors.submit}</div>
           )}
 
-          {/* Buttons */}
+          {/* Form Actions */}
           <div className="form-actions">
-            <button className="save-btn" disabled={loading}>
-              {loading ? "Saving..." : "Save Changes"}
+            <button
+              type="submit"
+              className="save-btn primary-btn"
+              disabled={loading}
+            >
+              {loading ? (
+                <>
+                  <span className="spinner"></span>
+                  Saving...
+                </>
+              ) : (
+                "Save Changes"
+              )}
             </button>
 
             <button
               type="button"
-              className="cancel-btn"
+              className="cancel-btn secondary-btn"
               onClick={handleCancel}
               disabled={loading}
             >
               Cancel
             </button>
           </div>
+
+          {/* Required fields note */}
+          <div className="form-footer">
+            <p className="required-note">* Required fields</p>
+          </div>
         </form>
       </motion.div>
     </motion.div>
   );
 };
-
-/* ---------------- Reusable Field Components ---------------- */
-
-const Field = ({ label, name, value, onChange, disabled, error }) => (
-  <div className="form-group">
-    <label className="form-label">{label}</label>
-    <input
-      type="text"
-      name={name}
-      value={value}
-      disabled={disabled}
-      onChange={onChange}
-      className={`form-input ${error ? "error" : ""}`}
-    />
-    {error && <p className="error-text">{error}</p>}
-  </div>
-);
-
-const TextAreaField = ({ label, name, value, onChange, error }) => (
-  <div className="form-group full-width">
-    <label className="form-label">{label}</label>
-    <textarea
-      rows="3"
-      name={name}
-      value={value}
-      onChange={onChange}
-      className={`form-textarea ${error ? "error" : ""}`}
-    />
-    {error && <p className="error-text">{error}</p>}
-  </div>
-);
 
 export default ClientProfileEditPage;

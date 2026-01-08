@@ -1,3 +1,4 @@
+
 // src/components/client/ClientProfilePage.js
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
@@ -145,7 +146,6 @@ const ClientProfilePage = () => {
       const enhancedUser = {
         name: "Client User",
         email: "user@example.com",
-        profilePic: "/assets/default-profile.png",
         phone: "Not provided",
         address: "Not provided",
         location: "Not specified",
@@ -208,8 +208,23 @@ const ClientProfilePage = () => {
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
     >
-      {/* Header */}
-      <ProfileHeader userName={user.name} onLogout={handleLogout} />
+      {/* Header - Professional Style */}
+      <div className="professional-header">
+        <div className="header-content">
+          <div className="header-left">
+            <h1 className="page-title">Client Profile</h1>
+            <p className="page-subtitle">Welcome back, {user.name.split(" ")[0]}</p>
+          </div>
+          <Button
+            variant="outline"
+            onClick={handleLogout}
+            className="logout-button"
+          >
+            <span className="logout-icon">↪</span>
+            Logout
+          </Button>
+        </div>
+      </div>
 
       <div className="profile-content">
         {/* Profile Overview Card */}
@@ -243,28 +258,6 @@ const ClientProfilePage = () => {
 
 // ===== Sub-components =====
 
-const ProfileHeader = ({ userName, onLogout }) => (
-  <motion.div
-    className="profile-header"
-    initial={{ opacity: 0, y: -20 }}
-    animate={{ opacity: 1, y: 0 }}
-  >
-    <div className="header-content">
-      <div className="header-text">
-        <h1>My Profile</h1>
-        <p>Welcome back, {userName.split(" ")[0]}! 👋</p>
-      </div>
-      <IconButton
-        icon="🚪"
-        label="Logout"
-        onClick={onLogout}
-        variant="outline"
-        className="logout-btn"
-      />
-    </div>
-  </motion.div>
-);
-
 const ProfileOverview = ({ user, onEditProfile, joinDuration }) => (
   <motion.div
     initial={{ opacity: 0, y: 30 }}
@@ -273,67 +266,62 @@ const ProfileOverview = ({ user, onEditProfile, joinDuration }) => (
     className="profile-overview-card"
   >
     <div className="profile-main-info">
-      <div className="profile-image-section">
-        <motion.div
-          className="image-container"
-          whileHover={{ scale: 1.05 }}
-          transition={{ duration: 0.3 }}
-        >
-          <img
-            src={user.profilePic}
-            alt="Profile"
-            className="profile-image"
-            onError={(e) => {
-              e.target.src = "/assets/default-profile.png";
-            }}
-          />
-          <div className="online-status"></div>
-        </motion.div>
-        <IconButton
-          icon="✏️"
-          label="Edit Profile"
-          onClick={onEditProfile}
-          variant="primary"
-          size="medium"
-          className="edit-profile-btn"
-        />
+      <div className="profile-header-section">
+        <div className="profile-title-section">
+          <h2 className="profile-name">{user.name}</h2>
+          <div className="member-tag">
+            <span className="tag-icon">⭐</span>
+            <span className="tag-text">Premium Client</span>
+          </div>
+        </div>
+        
+        <div className="profile-actions">
+          <Button
+            variant="primary"
+            onClick={onEditProfile}
+            className="edit-profile-button"
+          >
+            <span className="edit-icon">✎</span>
+            Edit Profile
+          </Button>
+        </div>
       </div>
 
-      <div className="profile-details">
-        <div className="profile-header-info">
-          <h2>{user.name}</h2>
-          <div className="member-badge">
-            <span className="badge-icon">⭐</span>
-            Premium Member
-          </div>
+      <div className="profile-details-grid">
+        <div className="detail-item">
+          <div className="detail-label">Email Address</div>
+          <div className="detail-value">{user.email}</div>
         </div>
-
-        <div className="profile-meta">
-          <div className="meta-item">
-            <span className="meta-icon">📧</span>
-            <span>{user.email}</span>
-          </div>
-          <div className="meta-item">
-            <span className="meta-icon">📍</span>
-            <span>{user.location}</span>
-          </div>
-          <div className="meta-item">
-            <span className="meta-icon">📅</span>
-            <span>Joined {joinDuration} ago</span>
-          </div>
+        
+        <div className="detail-item">
+          <div className="detail-label">Location</div>
+          <div className="detail-value">{user.location}</div>
         </div>
-
-        {user.bio && (
-          <motion.div
-            className="bio-section"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.4 }}
-          >
-            <p>{user.bio}</p>
-          </motion.div>
+        
+        <div className="detail-item">
+          <div className="detail-label">Member Since</div>
+          <div className="detail-value">Joined {joinDuration} ago</div>
+        </div>
+        
+        {user.phone && user.phone !== "Not provided" && (
+          <div className="detail-item">
+            <div className="detail-label">Phone</div>
+            <div className="detail-value">{user.phone}</div>
+          </div>
         )}
       </div>
+
+      {user.bio && user.bio !== "No bio provided yet. Tell us about yourself!" && (
+        <motion.div
+          className="bio-section"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.4 }}
+        >
+          <div className="bio-label">About</div>
+          <p className="bio-text">{user.bio}</p>
+        </motion.div>
+      )}
     </div>
   </motion.div>
 );
@@ -346,7 +334,7 @@ const StatsSection = ({ stats }) => (
     className="stats-grid"
   >
     <StatCard
-      icon="📦"
+      icon="📊"
       label="Total Orders"
       value={stats.totalOrders}
       color="blue"
@@ -391,25 +379,25 @@ const QuickActions = ({ onBrowseServices, onViewOrders, onViewChats }) => (
     className="quick-actions-grid"
   >
     <ActionCard
-      icon="🛍️"
+      icon="🔍"
       title="Browse Services"
-      description="Discover amazing local services"
+      description="Discover and book local services"
       onClick={onBrowseServices}
       color="gradient-purple"
       delay={0}
     />
     <ActionCard
-      icon="📦"
+      icon="📋"
       title="My Orders"
-      description="Track your bookings and orders"
+      description="View and track your orders"
       onClick={onViewOrders}
       color="gradient-blue"
       delay={0.1}
     />
     <ActionCard
       icon="💬"
-      title="My Chats"
-      description="Message service providers"
+      title="Messages"
+      description="Chat with service providers"
       onClick={onViewChats}
       color="gradient-green"
       delay={0.2}
@@ -430,7 +418,7 @@ const ActivitySection = ({
     className="activity-section"
   >
     <div className="section-header">
-      <h3>Recent Activity</h3>
+      <h3 className="section-title">Recent Activity</h3>
       <div className="activity-tabs">
         <TabButton
           active={activeTab === "overview"}
@@ -445,7 +433,7 @@ const ActivitySection = ({
         <TabButton
           active={activeTab === "chats"}
           onClick={() => onTabChange("chats")}
-          label="Chats"
+          label="Messages"
         />
       </div>
     </div>
@@ -498,11 +486,11 @@ const StatCard = ({ icon, label, value, color, description }) => {
     <motion.div
       className={`stat-card stat-${color}`}
       whileHover={{
-        scale: 1.05,
-        y: -5,
+        scale: 1.03,
+        y: -3,
         transition: { duration: 0.3 },
       }}
-      whileTap={{ scale: 0.95 }}
+      whileTap={{ scale: 0.97 }}
     >
       <div className="stat-icon">{icon}</div>
       <div className="stat-content">
@@ -510,7 +498,6 @@ const StatCard = ({ icon, label, value, color, description }) => {
         <div className="stat-label">{label}</div>
         <div className="stat-description">{description}</div>
       </div>
-      <div className="stat-decoration"></div>
     </motion.div>
   );
 };
@@ -524,11 +511,11 @@ const ActionCard = ({ icon, title, description, onClick, color, delay }) => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay }}
       whileHover={{
-        scale: 1.05,
-        y: -5,
+        scale: 1.03,
+        y: -3,
         transition: { duration: 0.3 },
       }}
-      whileTap={{ scale: 0.95 }}
+      whileTap={{ scale: 0.97 }}
     >
       <div className="action-icon">{icon}</div>
       <div className="action-content">
@@ -552,6 +539,7 @@ const TabButton = ({ active, onClick, label }) => (
 );
 
 const RecentOrders = ({ onViewAll, showAll = false }) => {
+  const navigate = useNavigate();
   const orders = JSON.parse(localStorage.getItem("clientOrders") || "[]");
   const displayOrders = showAll ? orders : orders.slice(0, 3);
 
@@ -594,14 +582,14 @@ const RecentOrders = ({ onViewAll, showAll = false }) => {
               transition={{ delay: index * 0.1 }}
             >
               <div className="order-info">
-                <div className="order-service">{order.serviceType}</div>
+                <div className="order-service">{order.serviceType || "Service"}</div>
                 <div className="order-date">
-                  {new Date(order.bookingDate || order.date).toLocaleDateString()}
+                  {new Date(order.bookingDate || order.date || Date.now()).toLocaleDateString()}
                 </div>
               </div>
               <div className="order-meta">
                 <span className={`status-badge ${getStatusColor(order.status)}`}>
-                  {order.status}
+                  {order.status || "pending"}
                 </span>
                 {order.amount && (
                   <span className="order-amount">{order.amount}</span>
@@ -614,8 +602,7 @@ const RecentOrders = ({ onViewAll, showAll = false }) => {
             icon="📦"
             message="No orders yet"
             actionLabel="Explore Services"
-            // ✅ FIXED: route to categories instead of /client/services
-            onAction={() => (window.location.href = "/categories")}
+            onAction={() => navigate("/categories")}
           />
         )}
       </div>
@@ -624,12 +611,13 @@ const RecentOrders = ({ onViewAll, showAll = false }) => {
 };
 
 const RecentChats = ({ onViewAll, showAll = false }) => {
+  const navigate = useNavigate();
   const chats = JSON.parse(localStorage.getItem("recentChats") || "[]");
 
   return (
     <div className="recent-chats">
       <div className="section-header">
-        <h4>Recent Chats</h4>
+        <h4>Recent Messages</h4>
         {!showAll && (
           <Button
             variant="ghost"
@@ -652,16 +640,12 @@ const RecentChats = ({ onViewAll, showAll = false }) => {
               transition={{ delay: index * 0.1 }}
             >
               <div className="chat-avatar">
-                {chat.providerImage ? (
-                  <img src={chat.providerImage} alt={chat.providerName} />
-                ) : (
-                  <div className="avatar-placeholder">👤</div>
-                )}
+                <div className="avatar-placeholder">👤</div>
               </div>
               <div className="chat-content">
                 <div className="chat-header">
-                  <h5>{chat.providerName}</h5>
-                  <span className="chat-time">{chat.lastMessageTime}</span>
+                  <h5>{chat.providerName || "Service Provider"}</h5>
+                  <span className="chat-time">{chat.lastMessageTime || "Recently"}</span>
                 </div>
                 <p className="chat-preview">
                   {chat.lastMessage || "Start a conversation"}
@@ -675,10 +659,9 @@ const RecentChats = ({ onViewAll, showAll = false }) => {
         ) : (
           <EmptyState
             icon="💬"
-            message="No recent chats"
+            message="No recent messages"
             actionLabel="Find Providers"
-            // ✅ FIXED: route to categories
-            onAction={() => (window.location.href = "/categories")}
+            onAction={() => navigate("/categories")}
           />
         )}
       </div>
@@ -686,24 +669,28 @@ const RecentChats = ({ onViewAll, showAll = false }) => {
   );
 };
 
-const EmptyState = ({ icon, message, actionLabel, onAction }) => (
-  <motion.div
-    className="empty-state"
-    initial={{ opacity: 0 }}
-    animate={{ opacity: 1 }}
-  >
-    <div className="empty-icon">{icon}</div>
-    <p>{message}</p>
-    <Button
-      variant="primary"
-      size="small"
-      onClick={onAction}
-      className="explore-btn"
+const EmptyState = ({ icon, message, actionLabel, onAction }) => {
+  const navigate = useNavigate();
+  
+  return (
+    <motion.div
+      className="empty-state"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
     >
-      {actionLabel}
-    </Button>
-  </motion.div>
-);
+      <div className="empty-icon">{icon}</div>
+      <p>{message}</p>
+      <Button
+        variant="primary"
+        size="small"
+        onClick={onAction || (() => navigate("/categories"))}
+        className="explore-btn"
+      >
+        {actionLabel}
+      </Button>
+    </motion.div>
+  );
+};
 
 const LoadingState = () => (
   <motion.div
@@ -719,7 +706,7 @@ const LoadingState = () => (
         transition={{ delay: 0.5 }}
         className="loading-text"
       >
-        Loading your profile...
+        Loading profile data...
       </motion.p>
     </div>
   </motion.div>
@@ -732,18 +719,18 @@ const ErrorState = ({ onRetry, onGoHome }) => (
     animate={{ opacity: 1 }}
   >
     <div className="error-content">
-      <div className="error-icon">😕</div>
-      <h2>Profile Not Found</h2>
-      <p>We couldn't load your profile data. Please try again.</p>
+      <div className="error-icon">⚠️</div>
+      <h2>Unable to Load Profile</h2>
+      <p>There was an issue loading your profile data. Please try again.</p>
       <div className="error-actions">
         <Button variant="primary" onClick={onRetry} className="retry-btn">
-          🔄 Retry
+          Try Again
         </Button>
         <Button
           variant="ghost"
           onClick={onGoHome}
-          className="retry-btn"
-          style={{ marginLeft: "8px" }}
+          className="home-btn"
+          style={{ marginLeft: "12px" }}
         >
           Go to Dashboard
         </Button>

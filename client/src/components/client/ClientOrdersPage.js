@@ -166,7 +166,7 @@ const ClientOrdersPage = () => {
 
         {/* Header */}
         <motion.div className="orders-header">
-          <h2>📦 My Orders</h2>
+          <h2>My Orders</h2>
           <input
             type="text"
             placeholder="Search orders..."
@@ -176,18 +176,50 @@ const ClientOrdersPage = () => {
           />
         </motion.div>
 
+        {/* Order Stats */}
+        <div className="orders-stats">
+          <div className="stat-card">
+            <div className="stat-number">{stats.total}</div>
+            <div className="stat-label">Total Orders</div>
+          </div>
+          <div className="stat-card">
+            <div className="stat-number">{stats.pending}</div>
+            <div className="stat-label">Pending</div>
+          </div>
+          <div className="stat-card">
+            <div className="stat-number">{stats.inProgress}</div>
+            <div className="stat-label">In Progress</div>
+          </div>
+          <div className="stat-card">
+            <div className="stat-number">{stats.completed}</div>
+            <div className="stat-label">Completed</div>
+          </div>
+        </div>
+
         {/* List */}
         <div className="orders-list">
           {loading ? (
-            <p className="loading-state">Loading...</p>
+            <div className="loading-state">
+              <div className="loading-spinner"></div>
+              <p>Loading orders...</p>
+            </div>
           ) : filteredOrders.length === 0 ? (
-            <p className="empty-state">No orders found</p>
+            <div className="empty-state">
+              <div className="empty-icon">📦</div>
+              <h3>No Orders Found</h3>
+              <p>You haven't placed any orders yet.</p>
+              <button 
+                className="browse-services-btn"
+                onClick={() => navigate("/categories")}
+              >
+                Browse Services
+              </button>
+            </div>
           ) : (
             filteredOrders.map((order, index) => (
               <OrderCard
                 key={index}
                 order={order}
-                onChat={() => navigate(`/client/chat/${order.providerId}`)}
                 onTrack={() => setSelectedOrder(order)}
                 getStatusColor={getStatusColor}
                 getStatusIcon={getStatusIcon}
@@ -208,28 +240,54 @@ const ClientOrdersPage = () => {
   );
 };
 
-// ✅ Order Card (View Provider REMOVED)
-const OrderCard = ({ order, onChat, onTrack, getStatusColor, getStatusIcon }) => {
+// ✅ Order Card (Chat button REMOVED)
+const OrderCard = ({ order, onTrack, getStatusColor, getStatusIcon }) => {
   const tracking = order.tracking;
+  const orderDate = new Date(order.bookingDate || order.date || new Date());
 
   return (
-    <motion.div className="order-card">
+    <motion.div 
+      className="order-card"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: 0.1 }}
+    >
       <div className="order-header">
-        <h3>{order.serviceType}</h3>
+        <div className="order-title-section">
+          <h3>{order.serviceType || "Service"}</h3>
+          <span className="order-date">
+            {orderDate.toLocaleDateString('en-IN', { 
+              day: 'numeric',
+              month: 'short',
+              year: 'numeric'
+            })}
+          </span>
+        </div>
         <span className="order-status" style={{ backgroundColor: getStatusColor(tracking.currentStatus) }}>
           {getStatusIcon(tracking.currentStatus)} {tracking.currentStatus}
         </span>
       </div>
 
       <div className="order-details">
-        <strong>Provider:</strong> {order.providerName}
-        <br />
-        <strong>Amount:</strong> {order.amount}
+        <div className="detail-row">
+          <span className="detail-label">Provider:</span>
+          <span className="detail-value">{order.providerName}</span>
+        </div>
+        <div className="detail-row">
+          <span className="detail-label">Amount:</span>
+          <span className="detail-value amount">{order.amount}</span>
+        </div>
+        <div className="detail-row">
+          <span className="detail-label">Order ID:</span>
+          <span className="detail-value order-id">{order.id || order._id || "N/A"}</span>
+        </div>
       </div>
 
       <div className="order-actions">
-        <button onClick={onTrack} className="action-btn track">📍 Track</button>
-        <button onClick={onChat} className="action-btn chat">💬 Chat</button>
+        <button onClick={onTrack} className="action-btn track">
+          <span className="btn-icon">📍</span>
+          Track Order
+        </button>
       </div>
     </motion.div>
   );
@@ -240,22 +298,71 @@ const OrderTrackingModal = ({ order, onClose, getStatusIcon }) => {
   const tracking = order.tracking;
 
   return (
-    <div className="modal-overlay">
-      <motion.div className="modal-content">
+    <div className="modal-overlay" onClick={onClose}>
+      <motion.div 
+        className="modal-content"
+        initial={{ opacity: 0, scale: 0.9 }}
+        animate={{ opacity: 1, scale: 1 }}
+        onClick={(e) => e.stopPropagation()}
+      >
         <div className="modal-header">
-          <h2>Tracking - {order.serviceType}</h2>
+          <h2>Order Tracking</h2>
           <button className="modal-close" onClick={onClose}>×</button>
         </div>
 
-        {tracking.statusHistory.map((step, i) => (
-          <div key={i} className={`timeline-step ${i <= tracking.currentStep ? "completed" : ""}`}>
-            <div className="timeline-marker">{getStatusIcon(step.status)}</div>
-            <div className="timeline-content">
-              <strong>{step.status}</strong>
-              <p>{step.description}</p>
+        <div className="modal-body">
+          <div className="order-info-summary">
+            <div className="summary-item">
+              <span className="summary-label">Service:</span>
+              <span className="summary-value">{order.serviceType}</span>
+            </div>
+            <div className="summary-item">
+              <span className="summary-label">Provider:</span>
+              <span className="summary-value">{order.providerName}</span>
+            </div>
+            <div className="summary-item">
+              <span className="summary-label">Amount:</span>
+              <span className="summary-value">{order.amount}</span>
             </div>
           </div>
-        ))}
+
+          <div className="tracking-timeline">
+            <h3 className="timeline-title">Order Status</h3>
+            {tracking.statusHistory.map((step, i) => (
+              <div key={i} className={`timeline-step ${i <= tracking.currentStep ? "completed" : ""}`}>
+                <div className="timeline-marker">
+                  <div className="marker-circle">
+                    {getStatusIcon(step.status)}
+                  </div>
+                  {i < tracking.statusHistory.length - 1 && (
+                    <div className="timeline-connector"></div>
+                  )}
+                </div>
+                <div className="timeline-content">
+                  <div className="step-header">
+                    <strong>{step.status}</strong>
+                    <span className="step-status">
+                      {i === tracking.currentStep ? "Current" : i < tracking.currentStep ? "Completed" : "Pending"}
+                    </span>
+                  </div>
+                  <p className="step-description">{step.description}</p>
+                  <span className="step-time">
+                    {new Date(step.timestamp).toLocaleTimeString([], { 
+                      hour: '2-digit', 
+                      minute: '2-digit' 
+                    })}
+                  </span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="modal-footer">
+          <button className="modal-ok-btn" onClick={onClose}>
+            Close
+          </button>
+        </div>
       </motion.div>
     </div>
   );
