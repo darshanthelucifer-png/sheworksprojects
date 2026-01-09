@@ -139,13 +139,9 @@ const Navbar = () => {
           </>
         )}
 
-        {/* PROVIDER NAV ITEMS */}
+        {/* PROVIDER NAV ITEMS (Dashboard REMOVED) */}
         {user.role === "provider" && (
           <>
-            <NavLink to="/provider/dashboard" className="nav-item">
-              <span>Dashboard</span>
-            </NavLink>
-
             <NavLink to="/provider/services" className="nav-item">
               <span>My Services</span>
             </NavLink>
@@ -156,30 +152,7 @@ const Navbar = () => {
           </>
         )}
 
-        {/* ADMIN NAV ITEMS */}
-        {user.role === "admin" && (
-          <>
-            <NavLink to="/admin" className="nav-item">
-              <span>Dashboard</span>
-            </NavLink>
-            <NavLink to="/admin/orders" className="nav-item">
-              <span>Orders</span>
-            </NavLink>
-            <NavLink to="/admin/providers" className="nav-item">
-              <span>Providers</span>
-            </NavLink>
-            <NavLink to="/admin/users" className="nav-item">
-              <span>Users</span>
-            </NavLink>
-            <NavLink to="/admin/analytics" className="nav-item">
-              <span>Analytics</span>
-            </NavLink>
-            <NavLink to="/admin/settings" className="nav-item">
-              <span>Settings</span>
-            </NavLink>
-          </>
-        )}
-
+        {/* Admin quick access button (if user has admin privileges but not currently in admin role) */}
         {isAdmin && user.role !== "admin" && (
           <button
             className="nav-item admin-quick-access"
@@ -235,36 +208,26 @@ const Navbar = () => {
               <div className="dropdown-divider"></div>
 
               <div className="dropdown-items">
-                <button
-                  className="dropdown-item"
-                  onClick={() => {
-                    handleAvatarClick();
-                    setShowUserMenu(false);
-                  }}
-                >
-                  <User size={16} className="dropdown-icon" />
-                  <span>My Profile</span>
-                </button>
-
-                {isAdmin && (
+                {/* Show My Profile button only for non-admin users */}
+                {user.role !== "admin" && (
                   <button
                     className="dropdown-item"
                     onClick={() => {
-                      navigate("/admin");
+                      handleAvatarClick();
                       setShowUserMenu(false);
                     }}
                   >
-                    <Shield size={16} className="dropdown-icon" />
-                    <span>Admin Panel</span>
+                    <User size={16} className="dropdown-icon" />
+                    <span>My Profile</span>
                   </button>
                 )}
 
-                {/* Show Settings option only for non-client roles */}
-                {user.role !== "client" && (
+                {/* Show Settings option ONLY for ADMIN users */}
+                {user.role === "admin" && (
                   <button
                     className="dropdown-item"
                     onClick={() => {
-                      navigate(`/${user.role}/settings`);
+                      navigate("/admin/settings");
                       setShowUserMenu(false);
                     }}
                   >
