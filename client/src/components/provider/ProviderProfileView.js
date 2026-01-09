@@ -80,20 +80,29 @@ const ProviderProfileView = () => {
 
         <div className="profile-header-info">
           <h2>{provider.name}</h2>
-          <p className="provider-tag">{provider.category} · {provider.subCategory}</p>
+          <p className="provider-tag">
+            {provider.category} · {provider.subCategory}
+          </p>
 
-          <div className="rating-info">
-            ⭐ {provider.rating} <span>({provider.reviews} reviews)</span>
-          </div>
+          {/* ❌ Rating & Reviews REMOVED */}
 
           <div className="profile-buttons">
-            <button className="btn primary" onClick={() => navigate("/provider/dashboard")}>
+            <button
+              className="btn primary"
+              onClick={() => navigate("/provider/dashboard")}
+            >
               📊 Dashboard
             </button>
-            <button className="btn" onClick={() => navigate("/provider/manage-bookings")}>
+            <button
+              className="btn"
+              onClick={() => navigate("/provider/manage-bookings")}
+            >
               📅 Manage Bookings
             </button>
-            <button className="btn" onClick={() => navigate("/provider/edit-profile")}>
+            <button
+              className="btn"
+              onClick={() => navigate("/provider/edit-profile")}
+            >
               ✏️ Edit Profile
             </button>
           </div>
@@ -101,7 +110,11 @@ const ProviderProfileView = () => {
       </div>
 
       {/* ABOUT */}
-      <motion.div className="section" initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+      <motion.div
+        className="section"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+      >
         <h3>About</h3>
         <p>{provider.description || "No description added yet."}</p>
       </motion.div>
@@ -121,7 +134,9 @@ const ProviderProfileView = () => {
         <div className="services-list">
           {provider.services?.length > 0 ? (
             provider.services.map((service, index) => (
-              <span key={index} className="service-chip">{service}</span>
+              <span key={index} className="service-chip">
+                {service}
+              </span>
             ))
           ) : (
             <p>No services listed.</p>
@@ -131,10 +146,18 @@ const ProviderProfileView = () => {
 
       {/* BUSINESS STATS */}
       <div className="stats-grid">
-        <div className="stat-box"><span>{provider.reviews}</span>Completed Orders</div>
-        <div className="stat-box"><span>{provider.rating}/5</span>Rating</div>
-        <div className="stat-box"><span>98%</span>Response Rate</div>
-        <div className="stat-box"><span>24h</span>Avg Response Time</div>
+        <div className="stat-box">
+          <span>{provider.reviews}</span>Completed Orders
+        </div>
+        <div className="stat-box">
+          <span>{provider.rating}/5</span>Rating
+        </div>
+        <div className="stat-box">
+          <span>98%</span>Response Rate
+        </div>
+        <div className="stat-box">
+          <span>24h</span>Avg Response Time
+        </div>
       </div>
 
       {/* LOGOUT */}
