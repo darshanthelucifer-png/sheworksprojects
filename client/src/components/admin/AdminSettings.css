@@ -1,195 +1,240 @@
-.admin-settings {
-  max-width: 900px;
+/* ===================================================
+   ADMIN SETTINGS – PREMIUM SPACING & CLEAN UI
+   =================================================== */
+
+.admin-settings-container {
+  max-width: 1040px;
   margin: 0 auto;
-  padding: 30px 20px;
-  font-family: "Inter", sans-serif;
+  padding: 48px 32px 64px;
+  background: #f8fafc;
+  min-height: 100vh;
+  font-family: "Inter", "Segoe UI", Roboto, Arial, sans-serif;
 }
 
-.admin-settings h1 {
-  font-size: 32px;
+/* ---------------- Header ---------------- */
+.admin-settings-header {
+  margin-bottom: 40px;
+}
+
+.admin-settings-header h1 {
+  font-size: 30px;
   font-weight: 700;
-  margin-bottom: 8px;
+  letter-spacing: -0.02em;
+  color: #0f172a;
 }
 
-.admin-settings .sub {
-  font-size: 14px;
-  color: #6f6f6f;
-  margin-bottom: 30px;
-}
-
-/* Settings Card */
-.settings-section {
-  background: #ffffff;
-  border-radius: 14px;
-  padding: 22px 20px;
-  margin-bottom: 22px;
-  border: 1px solid #e5e7eb;
-  transition: 0.2s;
-}
-
-.settings-section:hover {
-  border-color: #c9ced6;
-}
-
-.settings-section h3 {
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 18px;
-  color: #111827;
-}
-
-/* Input Row */
-.input-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.input-row label {
-  font-size: 15px;
-  color: #333;
-  font-weight: 500;
-}
-
-.input-row input {
-  width: 120px;
-  padding: 8px 12px;
-  border-radius: 8px;
-  border: 1px solid #d1d5db;
-  font-size: 14px;
-  outline: none;
-  transition: 0.2s;
-}
-
-.input-row input:focus {
-  border-color: #111;
-}
-
-/* Toggle Switch */
-.toggle {
-  display: flex;
+.admin-settings-header p {
   margin-top: 10px;
-  align-items: center;
-  gap: 12px;
-  cursor: pointer;
-  font-weight: 500;
+  font-size: 15px;
+  color: #64748b;
+  max-width: 520px;
 }
 
-.toggle input {
+/* ---------------- Cards ---------------- */
+.settings-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 28px 28px 30px;
+  margin-bottom: 28px;
+  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.settings-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.09);
+}
+
+.settings-card h3 {
+  font-size: 19px;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 6px;
+}
+
+.hint {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #6b7280;
+  margin-bottom: 18px;
+}
+
+/* ---------------- Inputs ---------------- */
+.settings-card input[type="number"],
+.settings-card input[type="text"] {
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 15px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  background: #f9fafb;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.settings-card input::placeholder {
+  color: #9ca3af;
+}
+
+.settings-card input:focus {
+  background: #ffffff;
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.15);
+}
+
+/* ---------------- Toggle Cards ---------------- */
+.toggle-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.toggle-card.danger {
+  border-left: 5px solid #e11d48;
+  padding-left: 24px;
+}
+
+/* ---------------- Switch ---------------- */
+.switch {
+  position: relative;
+  width: 56px;
+  height: 30px;
+  flex-shrink: 0;
+}
+
+.switch input {
   display: none;
 }
 
-.toggle span {
-  width: 42px;
-  height: 22px;
-  background: #cfcfcf;
-  border-radius: 20px;
-  position: relative;
-  transition: 0.3s;
-}
-
-.toggle span::after {
-  content: "";
-  width: 18px;
-  height: 18px;
-  background: white;
+.slider {
   position: absolute;
-  top: 2px;
-  left: 2px;
+  cursor: pointer;
+  inset: 0;
+  background-color: #cbd5e1;
+  border-radius: 999px;
+  transition: background-color 0.3s ease;
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
   border-radius: 50%;
-  transition: 0.3s;
+  transition: transform 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
-.toggle input:checked + span {
-  background: #111;
+.switch input:checked + .slider {
+  background-color: #4f46e5;
 }
 
-.toggle input:checked + span::after {
-  transform: translateX(20px);
+.switch input:checked + .slider::before {
+  transform: translateX(26px);
 }
 
-/* Category List */
-.category-list {
-  margin-top: 10px;
+/* ---------------- Categories ---------------- */
+.category-grid {
   display: flex;
-  flex-direction: column;
-  gap: 8px;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 18px;
 }
 
-.category-item {
-  background: #f9fafb;
-  padding: 10px 14px;
-  border-radius: 10px;
-  display: flex;
-  justify-content: space-between;
-  border: 1px solid #e5e7eb;
-}
-
-.remove-btn {
-  background: transparent;
-  border: none;
-  font-size: 16px;
-  color: #b91c1c;
-  cursor: pointer;
-}
-
-/* Add Category Input */
-.add-category {
-  margin-top: 12px;
-  display: flex;
+.category-pill {
+  display: inline-flex;
+  align-items: center;
   gap: 10px;
-}
-
-.add-category input {
-  flex: 1;
-  border: 1px solid #d1d5db;
-  border-radius: 8px;
-  padding: 8px 12px;
+  background: #eef2ff;
+  color: #3730a3;
+  padding: 8px 14px;
+  border-radius: 999px;
   font-size: 14px;
+  font-weight: 500;
 }
 
-.add-btn {
-  padding: 8px 12px;
-  background: #111;
-  color: #fff;
-  border-radius: 8px;
+.category-pill button {
+  background: none;
+  border: none;
   cursor: pointer;
+  font-size: 14px;
+  color: #dc2626;
+  transition: transform 0.15s ease, color 0.15s ease;
 }
 
-/* Save Button */
-.save-btn {
-  width: 100%;
-  padding: 14px;
-  background: #111;
-  border-radius: 10px;
+.category-pill button:hover {
+  color: #991b1b;
+  transform: scale(1.15);
+}
+
+/* ---------------- Add Category ---------------- */
+.add-category-row {
+  display: flex;
+  gap: 14px;
+  margin-top: 14px;
+}
+
+.add-category-row input {
+  flex: 1;
+}
+
+/* ---------------- Buttons ---------------- */
+.primary-btn {
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
   color: white;
-  font-size: 16px;
-  margin-top: 30px;
+  padding: 14px 26px;
+  border-radius: 12px;
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
   cursor: pointer;
-  transition: 0.3s;
+  letter-spacing: 0.02em;
+  transition: all 0.25s ease;
 }
 
-.save-btn:hover {
-  background: #000;
+.primary-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(79, 70, 229, 0.45);
 }
 
-/* ----------- RESPONSIVE ----------- */
-@media (max-width: 600px) {
-  .input-row {
+.secondary-btn {
+  background: #e5e7eb;
+  color: #1f2937;
+  padding: 14px 20px;
+  border-radius: 12px;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.secondary-btn:hover {
+  background: #d1d5db;
+}
+
+/* ---------------- Footer ---------------- */
+.settings-footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 42px;
+}
+
+/* ---------------- Responsive ---------------- */
+@media (max-width: 768px) {
+  .admin-settings-container {
+    padding: 32px 20px 48px;
+  }
+
+  .toggle-card {
     flex-direction: column;
     align-items: flex-start;
-    gap: 8px;
   }
 
-  .input-row input {
-    width: 100%;
-  }
-
-  .add-category {
-    flex-direction: column;
-  }
-
-  .add-btn {
-    width: 100%;
+  .settings-footer {
+    justify-content: center;
   }
 }
