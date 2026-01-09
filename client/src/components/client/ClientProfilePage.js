@@ -1,4 +1,3 @@
-
 // src/components/client/ClientProfilePage.js
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
@@ -166,10 +165,6 @@ const ClientProfilePage = () => {
   // Navigation handlers
   const handleEditProfile = () => navigate("/client/edit-profile");
   const handleViewOrders = () => navigate("/client/orders");
-  const handleViewChats = () => navigate("/client/chats");
-
-  // ✅ FIXED: route to your existing service discovery page
-  const handleBrowseServices = () => navigate("/categories");
 
   const handleLogout = () => {
     localStorage.removeItem("token");
@@ -237,19 +232,14 @@ const ClientProfilePage = () => {
         {/* Stats Grid */}
         <StatsSection stats={stats} />
 
-        {/* Quick Actions */}
-        <QuickActions
-          onBrowseServices={handleBrowseServices}
-          onViewOrders={handleViewOrders}
-          onViewChats={handleViewChats}
-        />
+        {/* Quick Actions (ONLY "My Orders") */}
+        <QuickActions onViewOrders={handleViewOrders} />
 
         {/* Recent Activity Section */}
         <ActivitySection
           activeTab={activeTab}
           onTabChange={setActiveTab}
           onViewOrders={handleViewOrders}
-          onViewChats={handleViewChats}
         />
       </div>
     </motion.div>
@@ -371,7 +361,7 @@ const StatsSection = ({ stats }) => (
   </motion.div>
 );
 
-const QuickActions = ({ onBrowseServices, onViewOrders, onViewChats }) => (
+const QuickActions = ({ onViewOrders }) => (
   <motion.div
     initial={{ opacity: 0, y: 20 }}
     animate={{ opacity: 1, y: 0 }}
@@ -379,28 +369,12 @@ const QuickActions = ({ onBrowseServices, onViewOrders, onViewChats }) => (
     className="quick-actions-grid"
   >
     <ActionCard
-      icon="🔍"
-      title="Browse Services"
-      description="Discover and book local services"
-      onClick={onBrowseServices}
-      color="gradient-purple"
-      delay={0}
-    />
-    <ActionCard
       icon="📋"
       title="My Orders"
       description="View and track your orders"
       onClick={onViewOrders}
       color="gradient-blue"
-      delay={0.1}
-    />
-    <ActionCard
-      icon="💬"
-      title="Messages"
-      description="Chat with service providers"
-      onClick={onViewChats}
-      color="gradient-green"
-      delay={0.2}
+      delay={0}
     />
   </motion.div>
 );
@@ -409,7 +383,6 @@ const ActivitySection = ({
   activeTab,
   onTabChange,
   onViewOrders,
-  onViewChats,
 }) => (
   <motion.div
     initial={{ opacity: 0, y: 20 }}
@@ -430,11 +403,6 @@ const ActivitySection = ({
           onClick={() => onTabChange("orders")}
           label="Orders"
         />
-        <TabButton
-          active={activeTab === "chats"}
-          onClick={() => onTabChange("chats")}
-          label="Messages"
-        />
       </div>
     </div>
 
@@ -449,7 +417,6 @@ const ActivitySection = ({
             className="overview-grid"
           >
             <RecentOrders onViewAll={onViewOrders} />
-            <RecentChats onViewAll={onViewChats} />
           </motion.div>
         )}
 
@@ -461,17 +428,6 @@ const ActivitySection = ({
             exit={{ opacity: 0, x: -20 }}
           >
             <RecentOrders onViewAll={onViewOrders} showAll={true} />
-          </motion.div>
-        )}
-
-        {activeTab === "chats" && (
-          <motion.div
-            key="chats"
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: -20 }}
-          >
-            <RecentChats onViewAll={onViewChats} showAll={true} />
           </motion.div>
         )}
       </AnimatePresence>
@@ -602,65 +558,6 @@ const RecentOrders = ({ onViewAll, showAll = false }) => {
             icon="📦"
             message="No orders yet"
             actionLabel="Explore Services"
-            onAction={() => navigate("/categories")}
-          />
-        )}
-      </div>
-    </div>
-  );
-};
-
-const RecentChats = ({ onViewAll, showAll = false }) => {
-  const navigate = useNavigate();
-  const chats = JSON.parse(localStorage.getItem("recentChats") || "[]");
-
-  return (
-    <div className="recent-chats">
-      <div className="section-header">
-        <h4>Recent Messages</h4>
-        {!showAll && (
-          <Button
-            variant="ghost"
-            size="small"
-            onClick={onViewAll}
-            className="view-all-btn"
-          >
-            View All <span>→</span>
-          </Button>
-        )}
-      </div>
-      <div className="chats-list">
-        {chats.length > 0 ? (
-          chats.map((chat, index) => (
-            <motion.div
-              key={index}
-              className="chat-item"
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: index * 0.1 }}
-            >
-              <div className="chat-avatar">
-                <div className="avatar-placeholder">👤</div>
-              </div>
-              <div className="chat-content">
-                <div className="chat-header">
-                  <h5>{chat.providerName || "Service Provider"}</h5>
-                  <span className="chat-time">{chat.lastMessageTime || "Recently"}</span>
-                </div>
-                <p className="chat-preview">
-                  {chat.lastMessage || "Start a conversation"}
-                </p>
-              </div>
-              {chat.unreadCount > 0 && (
-                <div className="unread-badge">{chat.unreadCount}</div>
-              )}
-            </motion.div>
-          ))
-        ) : (
-          <EmptyState
-            icon="💬"
-            message="No recent messages"
-            actionLabel="Find Providers"
             onAction={() => navigate("/categories")}
           />
         )}
