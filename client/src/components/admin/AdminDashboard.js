@@ -356,15 +356,12 @@ const AdminDashboard = () => {
           
           <div className="header-right">
             <div className="view-tabs">
-              {['overview', 'performance', 'revenue'].map(view => (
-                <button
-                  key={view}
-                  className={`view-tab ${activeView === view ? 'active' : ''}`}
-                  onClick={() => setActiveView(view)}
-                >
-                  {view.charAt(0).toUpperCase() + view.slice(1)}
-                </button>
-              ))}
+              <button
+                className={`view-tab ${activeView === 'overview' ? 'active' : ''}`}
+                onClick={() => setActiveView('overview')}
+              >
+                Overview
+              </button>
             </div>
             <select 
               className="time-filter"
@@ -582,7 +579,7 @@ const AdminDashboard = () => {
                       <span className="health-score">Excellent</span>
                       <span className="score-dot"></span>
                     </div>
-                  </div>
+                    </div>
                   <div className="health-metrics">
                     <HealthMetric
                       label="Order Completion Rate"
