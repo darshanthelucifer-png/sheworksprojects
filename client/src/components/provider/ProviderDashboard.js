@@ -32,6 +32,12 @@ const generateImageName = (file) => {
   return `product_${timestamp}_${random}.${extension}`;
 };
 
+// Helper to normalize service IDs for matching
+const normalizeServiceId = (serviceId) => {
+  if (!serviceId) return "";
+  return serviceId.toString().toLowerCase().trim().replace(/\s+/g, '_');
+};
+
 /* ----------------- Sub Components ----------------- */
 const LoadingState = () => (
   <div className="pd-loading">
@@ -249,6 +255,7 @@ export default function ProviderDashboard() {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [providerServiceId, setProviderServiceId] = useState("");
 
   // Form state
   const [showForm, setShowForm] = useState(false);
@@ -402,49 +409,49 @@ export default function ProviderDashboard() {
         }
 
         setProvider(providerData);
+        
+        // Get provider's service ID with multiple fallbacks
+        const serviceId = providerData?.providerData?.serviceId || 
+                         providerData?.serviceId || 
+                         providerData?.providerData?.category?.toLowerCase().replace(/\s+/g, '_') ||
+                         providerData?.category?.toLowerCase().replace(/\s+/g, '_') ||
+                         providerData?.name?.toLowerCase().replace(/\s+/g, '_');
+        
+        console.log("Provider Service ID:", serviceId);
+        setProviderServiceId(serviceId || "");
       }
 
-      // Get serviceId from the provider data - with multiple fallbacks
-      const serviceId = providerData?.providerData?.serviceId || 
-                       providerData?.serviceId || 
-                       providerData?.providerData?.category?.toLowerCase().replace(/\s+/g, '_') ||
-                       providerData?.category?.toLowerCase().replace(/\s+/g, '_') ||
-                       providerData?.name?.toLowerCase().replace(/\s+/g, '_');
-      
-      if (!serviceId) {
-        setError("No service ID found for provider. Please complete your provider profile.");
-        setLoading(false);
-        return;
-      }
-
-      // Load products
+      // Load products with EXACT serviceId matching
       let providerProducts = [];
 
       try {
-        // Try localStorage first
-        const storedProvProducts = JSON.parse(localStorage.getItem("providerProducts") || "[]");
-        const storedGlobal = JSON.parse(localStorage.getItem("products") || "[]");
+        // Load all products from JSON
+        const imported = productsJson.products || productsJson || [];
         
-        if (storedProvProducts.length > 0) {
-          // Filter by serviceId
-          providerProducts = storedProvProducts.filter(p => 
-            (p.serviceId || "").trim() === serviceId.trim()
-          );
-        } else if (storedGlobal.length > 0) {
-          // Filter by serviceId
-          providerProducts = storedGlobal.filter(p => 
-            (p.serviceId || "").trim() === serviceId.trim()
-          );
-        } else {
-          // Fallback to JSON file
-          const imported = productsJson.products || productsJson || [];
-          localStorage.setItem("products", JSON.stringify(imported));
-          // Filter by serviceId
-          providerProducts = imported.filter(p => 
-            (p.serviceId || "").trim() === serviceId.trim()
-          );
-          localStorage.setItem("providerProducts", JSON.stringify(providerProducts));
+        // Get the normalized provider serviceId
+        const normalizedProviderServiceId = normalizeServiceId(providerServiceId);
+        console.log("Normalized Provider Service ID:", normalizedProviderServiceId);
+        
+        // Filter products by EXACT serviceId match
+        providerProducts = imported.filter(product => {
+          const productServiceId = normalizeServiceId(product.serviceId);
+          const match = productServiceId === normalizedProviderServiceId;
+          
+          // Debug logging for matching
+          if (match) {
+            console.log(`Matched product: ${product.name} with serviceId: ${product.serviceId}`);
+          }
+          
+          return match;
+        });
+
+        console.log(`Found ${providerProducts.length} products for serviceId: ${normalizedProviderServiceId}`);
+        
+        // If no matches, check if we should show any products at all
+        if (providerProducts.length === 0) {
+          console.log("No products found with exact serviceId match. Showing empty dashboard.");
         }
+
       } catch (err) {
         console.error("Products load error:", err);
         setError("Failed to load products data.");
@@ -463,7 +470,7 @@ export default function ProviderDashboard() {
     } finally {
       setLoading(false);
     }
-  }, []);
+  }, [providerServiceId]);
 
   useEffect(() => {
     initialize();
@@ -479,11 +486,10 @@ export default function ProviderDashboard() {
       imagePreview: "",
       imageBase64: "",
       category: "",
-      // Use correct serviceId from providerData
-      serviceId: provider?.providerData?.serviceId || provider?.serviceId || ""
+      serviceId: providerServiceId || provider?.providerData?.serviceId || provider?.serviceId || ""
     });
     setShowForm(true);
-  }, [provider]);
+  }, [provider, providerServiceId]);
 
   const openEditForm = useCallback((product) => {
     setEditing(product);
@@ -494,11 +500,10 @@ export default function ProviderDashboard() {
       imagePreview: product.imageBase64 || product._displayImage || "",
       imageBase64: product.imageBase64 || "",
       category: product.category || "",
-      // Use correct serviceId from providerData
-      serviceId: product.serviceId || provider?.providerData?.serviceId || provider?.serviceId || ""
+      serviceId: product.serviceId || providerServiceId || provider?.providerData?.serviceId || provider?.serviceId || ""
     });
     setShowForm(true);
-  }, [provider]);
+  }, [provider, providerServiceId]);
 
   const onFormChange = useCallback((e) => {
     const { name, value } = e.target;
@@ -519,17 +524,16 @@ export default function ProviderDashboard() {
       price: Number(form.price || 0),
       imagePath: form.imagePath.trim() || undefined,
       image: form.imagePath.trim() ? safeReplacePublic(form.imagePath.trim()) : undefined,
-      imageBase64: form.imageBase64 || undefined, // Store base64 image data
-      category: form.category.trim() || (form.serviceId || provider?.providerData?.serviceId || provider?.serviceId || ""),
-      // Use correct serviceId from providerData
-      serviceId: form.serviceId.trim() || provider?.providerData?.serviceId || provider?.serviceId || "",
+      imageBase64: form.imageBase64 || undefined,
+      category: form.category.trim() || (form.serviceId || providerServiceId || provider?.providerData?.serviceId || provider?.serviceId || ""),
+      serviceId: form.serviceId.trim() || providerServiceId || provider?.providerData?.serviceId || provider?.serviceId || "",
       salesCount: editing ? (editing.salesCount || 0) : 0,
       createdAt: editing ? (editing.createdAt || new Date().toISOString()) : new Date().toISOString(),
       updatedAt: new Date().toISOString()
     };
 
     try {
-      // Update provider products
+      // Update provider products in localStorage
       const provList = JSON.parse(localStorage.getItem("providerProducts") || "[]");
       let newProvList;
       
@@ -542,7 +546,7 @@ export default function ProviderDashboard() {
       }
       localStorage.setItem("providerProducts", JSON.stringify(newProvList));
 
-      // Update global products
+      // Update global products in localStorage
       const global = JSON.parse(localStorage.getItem("products") || "[]");
       let newGlobal;
       
@@ -555,13 +559,24 @@ export default function ProviderDashboard() {
       }
       localStorage.setItem("products", JSON.stringify(newGlobal));
 
-      // Use correct serviceId for filtering
-      const currentServiceId = provider?.providerData?.serviceId || provider?.serviceId;
-      const filtered = newProvList.filter(p => 
-        (p.serviceId || "").trim() === currentServiceId.trim()
+      // Filter products for this provider using EXACT serviceId match
+      const imported = productsJson.products || productsJson || [];
+      const normalizedProviderServiceId = normalizeServiceId(providerServiceId);
+      
+      // Combine JSON products with localStorage products
+      const allProducts = [...imported, ...newProvList];
+      
+      const filtered = allProducts.filter(product => {
+        const productServiceId = normalizeServiceId(product.serviceId);
+        return productServiceId === normalizedProviderServiceId;
+      });
+      
+      // Remove duplicates by id
+      const uniqueProducts = filtered.filter((product, index, self) =>
+        index === self.findIndex((p) => p.id === product.id)
       );
       
-      const normalized = filtered.map(p => ({
+      const normalized = uniqueProducts.map(p => ({
         ...p,
         _displayImage: p.imageBase64 || safeReplacePublic(p.imagePath || p.image) || "/assets/default-product.png"
       }));
@@ -580,7 +595,7 @@ export default function ProviderDashboard() {
       console.error("Save error:", err);
       alert("Failed to save product. Please try again.");
     }
-  }, [form, editing, provider]);
+  }, [form, editing, provider, providerServiceId]);
 
   const handleDeleteProduct = useCallback((id) => {
     if (!window.confirm("Are you sure you want to delete this product? This action cannot be undone.")) {
@@ -588,6 +603,7 @@ export default function ProviderDashboard() {
     }
 
     try {
+      // Remove from localStorage
       const provList = JSON.parse(localStorage.getItem("providerProducts") || "[]")
         .filter(p => String(p.id) !== String(id));
       localStorage.setItem("providerProducts", JSON.stringify(provList));
@@ -596,13 +612,24 @@ export default function ProviderDashboard() {
         .filter(p => String(p.id) !== String(id));
       localStorage.setItem("products", JSON.stringify(global));
 
-      // Use correct serviceId for filtering
-      const currentServiceId = provider?.providerData?.serviceId || provider?.serviceId;
-      const filtered = provList.filter(p => 
-        (p.serviceId || "").trim() === currentServiceId.trim()
+      // Filter products for this provider using EXACT serviceId match
+      const imported = productsJson.products || productsJson || [];
+      const normalizedProviderServiceId = normalizeServiceId(providerServiceId);
+      
+      // Combine JSON products with localStorage products
+      const allProducts = [...imported, ...provList];
+      
+      const filtered = allProducts.filter(product => {
+        const productServiceId = normalizeServiceId(product.serviceId);
+        return productServiceId === normalizedProviderServiceId;
+      });
+      
+      // Remove duplicates by id
+      const uniqueProducts = filtered.filter((product, index, self) =>
+        index === self.findIndex((p) => p.id === product.id)
       );
       
-      const normalized = filtered.map(p => ({
+      const normalized = uniqueProducts.map(p => ({
         ...p,
         _displayImage: p.imageBase64 || safeReplacePublic(p.imagePath || p.image) || "/assets/default-product.png"
       }));
@@ -613,7 +640,7 @@ export default function ProviderDashboard() {
       console.error("Delete error:", err);
       alert("Failed to delete product. Please try again.");
     }
-  }, [provider]);
+  }, [providerServiceId]);
 
   const closeForm = useCallback(() => {
     setShowForm(false);
@@ -648,8 +675,7 @@ export default function ProviderDashboard() {
                 <span>📍 {provider.providerData.location}</span>
               )}
               <span className="pd-service">
-                {(provider.providerData?.serviceId || provider.serviceId || "Unknown Service")
-                  .replace(/_/g, " ")}
+                Service: <strong>{providerServiceId || "Not specified"}</strong>
               </span>
               {provider.providerType === "registered" && (
                 <span className="pd-badge">New Provider</span>
@@ -672,12 +698,20 @@ export default function ProviderDashboard() {
       <section className="pd-products">
         <div className="pd-products-header">
           <h3>Your Products ({products.length})</h3>
+          {providerServiceId && (
+            <div className="pd-service-info">
+              <small>Filtered by service: <strong>{providerServiceId}</strong></small>
+            </div>
+          )}
         </div>
 
         {products.length === 0 ? (
           <div className="pd-empty">
-            <h3>No Products Yet</h3>
-            <p>Start by adding your first product to showcase your services</p>
+            <h3>No Products Found</h3>
+            <p>No products found matching your service: <strong>{providerServiceId}</strong></p>
+            <p className="pd-hint">
+              Start by adding your first product, or check if your service ID matches the products in the system.
+            </p>
             <button className="btn primary" onClick={openAddForm}>
               ➕ Add Your First Product
             </button>
